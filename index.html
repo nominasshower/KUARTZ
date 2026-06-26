@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Küartz Surfaces — Engineered Quartz</title>
-<link rel="icon" href="https://kuartzsurfaces.com/wp-content/uploads/2021/01/cropped-Kuartz_Favicon-270x270.png">
+<link rel="icon" href="media/Kuartz_Favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
@@ -12,51 +12,60 @@
 <style>
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:84px;}
-body{margin:0;background:#F6F5F2;font-family:'Jost',sans-serif;color:#1A1A1C;}
+body{margin:0;background:#F6F5F2;font-family:'Jost',sans-serif;color:#1A1A1C;overflow-x:hidden;}
 img{display:block;max-width:100%;}
 a{text-decoration:none;color:inherit;}
 input,select,textarea,button{font-family:inherit;}
 @keyframes kzfade{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+@keyframes kzoverlay{from{opacity:0;}to{opacity:1;}}
 :root{--accent:#2E6B3C;--radius:2px;}
+.nav-link:hover{color:#fff!important;}
+.app-card:hover{box-shadow:0 18px 44px rgba(0,0,0,0.12);}
+.app-card{transition:box-shadow .25s;}
+.color-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(0,0,0,0.12);}
+.color-card{transition:transform .25s,box-shadow .25s;cursor:pointer;}
+.chip{transition:all .2s;padding:10px 22px;font-family:'Jost',sans-serif;font-size:12.5px;letter-spacing:0.13em;text-transform:uppercase;cursor:pointer;border-radius:var(--radius);}
+.chip-inactive{border:1px solid #D8D6CF;background:transparent;color:#55554F;font-weight:400;}
+.chip-active{border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:500;}
+.gallery-scroll{overflow-x:auto;display:flex;gap:20px;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none;}
+.gallery-scroll::-webkit-scrollbar{display:none;}
+.lang-btn:hover{border-color:rgba(255,255,255,0.7)!important;color:#fff!important;}
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header style="position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px);background:rgba(18,20,22,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);">
-  <a href="#top" style="display:flex;align-items:center;gap:8px;flex-shrink:0;text-decoration:none;">
-    <svg width="44" height="44" viewBox="0 0 44 44" style="flex-shrink:0;">
-      <rect width="44" height="44" fill="none"/>
-      <path d="M10 22C10 15.4 15.4 10 22 10s12 5.4 12 12-5.4 12-12 12-12-5.4-12-12z" fill="none" stroke="white" stroke-width="1.5"/>
-      <text x="22" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="white" font-family="'Jost',sans-serif">K</text>
-    </svg>
+  <a href="#top" style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+    <img src="media/Kuartz_Favicon.png" alt="Küartz" style="height:44px;mix-blend-mode:screen;flex-shrink:0;">
     <span style="display:flex;flex-direction:column;gap:3px;margin-top:1px;">
       <span style="font-family:'Jost',sans-serif;font-weight:700;font-size:26px;letter-spacing:0.09em;color:#fff;line-height:1;">KÜARTZ</span>
       <span style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(255,255,255,0.52);font-weight:400;line-height:1;">SURFACES</span>
     </span>
   </a>
   <nav style="display:flex;align-items:center;gap:clamp(12px,2vw,28px);font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;">
-    <a href="#about" style="color:rgba(255,255,255,0.78);">About</a>
-    <a href="#apps" style="color:rgba(255,255,255,0.78);">Applications</a>
-    <a href="#collections" style="color:rgba(255,255,255,0.78);">Collections</a>
-    <a href="#catalog" style="color:rgba(255,255,255,0.78);">Catalog</a>
-    <a href="#contact" style="color:rgba(255,255,255,0.78);">Contact</a>
+    <a href="#nosotros" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navAbout">About</a>
+    <a href="#aplicaciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navApps">Applications</a>
+    <a href="#colecciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navColl">Collections</a>
+    <a href="#catalogo" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navCatalog">Catalog</a>
+    <a href="#contacto" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navContact">Contact</a>
   </nav>
   <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
-    <a href="#contact" style="background:var(--accent);color:#fff;padding:11px 22px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);">Get a quote</a>
+    <button id="lang-btn" class="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.3);padding:8px 14px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:var(--radius);color:rgba(255,255,255,0.75);">ES</button>
+    <a href="#contacto" style="background:var(--accent);color:#fff;padding:11px 22px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="navQuote">Get a quote</a>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="top" style="position:relative;min-height:90vh;display:flex;align-items:center;padding:150px clamp(20px,5vw,64px) 90px;background-image:linear-gradient(95deg,rgba(16,17,18,0.80) 0%,rgba(16,17,18,0.5) 52%,rgba(16,17,18,0.08) 100%),url('img/calacatta-bengala.jpg');background-size:cover;background-position:center;background-color:#16181A;">
+<section id="top" style="position:relative;min-height:90vh;display:flex;align-items:center;padding:150px clamp(20px,5vw,64px) 90px;background-image:linear-gradient(95deg,rgba(16,17,18,0.80) 0%,rgba(16,17,18,0.50) 52%,rgba(16,17,18,0.08) 100%),url('media/Calacatta-Statuario_Countertop2-scaled.jpg');background-size:cover;background-position:center;background-color:#16181A;">
   <div style="max-width:1280px;margin:0 auto;width:100%;">
     <div style="max-width:700px;animation:kzfade 0.9s ease both;">
-      <div style="font-size:12.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(255,255,255,0.80);font-weight:500;margin-bottom:24px;">KÜARTZ SURFACES · ENGINEERED STONE</div>
-      <h1 style="font-family:'Marcellus',serif;font-weight:400;color:#fff;font-size:clamp(2.6rem,6vw,5rem);line-height:1.03;margin:0;">Refresh your space with engineered stone.</h1>
-      <p style="font-size:clamp(15px,1.2vw,18px);line-height:1.72;color:rgba(255,255,255,0.84);max-width:540px;margin:26px 0 0;font-weight:300;">The first and only quartz slab factory in Mexico. Kitchen countertops, vanity tops, and surfaces crafted with precision and natural beauty.</p>
+      <div style="font-size:12.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(255,255,255,0.80);font-weight:500;margin-bottom:24px;" data-i18n="heroBadge">Küartz Surfaces · Engineered Stone</div>
+      <h1 style="font-family:'Marcellus',serif;font-weight:400;color:#fff;font-size:clamp(2.6rem,6vw,5rem);line-height:1.03;margin:0;" data-i18n="heroTitle">Refresh your space with engineered stone.</h1>
+      <p style="font-size:clamp(15px,1.2vw,18px);line-height:1.72;color:rgba(255,255,255,0.84);max-width:540px;margin:26px 0 0;font-weight:300;" data-i18n="heroSub">The first and only quartz slab factory in Mexico. Kitchen countertops, vanity tops, and surfaces crafted with precision and natural beauty.</p>
       <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:38px;">
-        <a href="#collections" style="background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);">See collections</a>
-        <a href="#contact" style="border:1px solid rgba(255,255,255,0.55);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;border-radius:var(--radius);">Request a quote</a>
+        <a href="#colecciones" style="background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="heroCta1">See collections</a>
+        <a href="#contacto" style="border:1px solid rgba(255,255,255,0.55);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;border-radius:var(--radius);" data-i18n="heroCta2">Request a quote</a>
       </div>
     </div>
   </div>
@@ -65,179 +74,233 @@ input,select,textarea,button{font-family:inherit;}
 <!-- STATS -->
 <section style="background:#16181A;color:#fff;padding:40px clamp(20px,5vw,64px);">
   <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:30px 60px;justify-content:space-between;">
-    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">2019</div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;">Founded</div></div>
-    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">75,348 <span style="font-size:1rem;">ft²</span></div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;">Plant in Nuevo León</div></div>
-    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">+48</div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;">Available colors</div></div>
-    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">2 &amp; 3 <span style="font-size:1rem;">cm</span></div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;">Thicknesses</div></div>
+    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">2019</div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;" data-i18n="stat1">Founded</div></div>
+    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">75,348 <span style="font-size:1rem;">ft²</span></div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;" data-i18n="stat2">Plant in Nuevo León</div></div>
+    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">+48</div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;" data-i18n="stat3">Available colors</div></div>
+    <div style="min-width:140px;"><div style="font-family:'Marcellus',serif;font-size:clamp(2rem,3vw,2.8rem);line-height:1;">2 &amp; 3 <span style="font-size:1rem;">cm</span></div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;" data-i18n="stat4">Thicknesses</div></div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" style="padding:clamp(64px,9vw,130px) clamp(20px,5vw,64px);">
+<section id="nosotros" style="padding:clamp(64px,9vw,130px) clamp(20px,5vw,64px);">
   <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(36px,5vw,80px);align-items:center;">
     <div>
-      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;">ABOUT US</div>
-      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;">The first quartz slab factory in Mexico.</h2>
-      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.78;color:#55554F;margin:24px 0 0;font-weight:300;">Founded in 2019, Küartz Surfaces joined the group and became the first and only quartz slab factory in Mexico. Located in Juárez, Nuevo León, our 75,348 ft² plant produces slabs, vanity tops, kitchen countertops, quartz walls and floors with specialized machinery.</p>
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="aboutEye">About us</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="aboutTitle">The first quartz slab factory in Mexico.</h2>
+      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.78;color:#55554F;margin:24px 0 0;font-weight:300;" data-i18n="aboutText">Founded in 2019, Küartz Surfaces joined the group and became the first and only quartz slab factory in Mexico. Located in Juárez, Nuevo León, our 75,348 ft² plant produces slabs, vanity tops, kitchen countertops, quartz walls and floors with specialized machinery.</p>
       <div style="display:flex;flex-wrap:wrap;gap:14px 40px;margin:32px 0 0;">
-        <div><div style="font-family:'Marcellus',serif;font-size:1.5rem;">Juárez, N.L.</div><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#9A988F;margin-top:4px;">Origin</div></div>
-        <div><div style="font-family:'Marcellus',serif;font-size:1.5rem;">IAPMO · NSF</div><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#9A988F;margin-top:4px;">Certifications</div></div>
+        <div><div style="font-family:'Marcellus',serif;font-size:1.5rem;">Juárez, N.L.</div><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#9A988F;margin-top:4px;" data-i18n="aboutOrigenLabel">Origin</div></div>
+        <div><div style="font-family:'Marcellus',serif;font-size:1.5rem;">IAPMO · NSF</div><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#9A988F;margin-top:4px;" data-i18n="aboutCertLabel">Certifications</div></div>
       </div>
+      <a href="#aplicaciones" style="display:inline-block;margin-top:36px;border-bottom:1px solid var(--accent);color:var(--accent);padding-bottom:4px;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;" data-i18n="aboutCta">Learn more →</a>
     </div>
-    <div style="aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;background:#e8e6e0;">
-      <img src="img/about-us.png" alt="About Küartz" style="width:100%;height:100%;object-fit:cover;">
-    </div>
-  </div>
-</section>
-
-<!-- GROUP SECTION -->
-<section style="background:#FAFAF8;padding:28px clamp(20px,5vw,64px);border-top:1px solid #E8E6E0;border-bottom:1px solid #E8E6E0;">
-  <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 40px;">
-    <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#B0ADA5;font-weight:500;">PART OF GRUPO MODULAR</span>
-    <div style="display:flex;align-items:center;gap:24px;font-weight:600;">
-      <span style="font-size:14px;">Modular</span>
-      <span style="color:#C8C6BF;">·</span>
-      <span style="font-size:14px;">Shower Walls</span>
-      <span style="color:#C8C6BF;">·</span>
-      <span style="font-size:14px;">Modul Woods</span>
-      <span style="color:#C8C6BF;">·</span>
-      <span style="font-size:14px;color:var(--accent);">Küartz Surfaces</span>
-    </div>
+    <div style="aspect-ratio:4/5;border-radius:var(--radius);background-image:url('media/kt/Iceberg-02.jpg');background-size:auto 160%;background-position:50% 100%;background-repeat:no-repeat;"></div>
   </div>
 </section>
 
 <!-- APPLICATIONS -->
-<section id="apps" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#F6F5F2;">
+<section id="aplicaciones" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#FFFFFF;border-top:1px solid #E8E6E0;border-bottom:1px solid #E8E6E0;">
   <div style="max-width:1280px;margin:0 auto;">
-    <div style="margin-bottom:clamp(36px,5vw,60px);">
-      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;">APPLICATIONS</div>
-      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;max-width:520px;">Surfaces for every space in your home.</h2>
+    <div style="max-width:640px;">
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="appsEye">Applications</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="appsTitle">A surface for every space.</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
-      <!-- Kitchen Countertops -->
-      <a href="https://kuartzsurfaces.com/kitchen-counter%e2%80%8btops/" target="_blank" style="display:block;border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid #E8E6E0;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;background:#e8e6e0;">
-          <img src="img/kitchen-countertops.png" alt="Kitchen Countertops" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <div style="padding:24px 28px 28px;">
-          <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#9A988F;margin-bottom:10px;">Kitchen</div>
-          <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Countertops</div>
-          <div style="font-size:13px;color:#55554F;margin-top:10px;line-height:1.6;font-weight:300;">Durable, non-porous surfaces ideal for cooking environments. Available in 2 and 3 cm thicknesses.</div>
-          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);font-weight:500;">See all →</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;">
+      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+        <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Statuario-01.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
+        <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app1">Kitchen countertops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app1s">Durable and elegant surfaces.</div></div>
+          <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <!-- Vanity Tops -->
-      <a href="https://kuartzsurfaces.com/vanity-tops/" target="_blank" style="display:block;border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid #E8E6E0;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;background:#e8e6e0;">
-          <img src="img/vanity-tops.png" alt="Vanity Tops" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <div style="padding:24px 28px 28px;">
-          <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#9A988F;margin-bottom:10px;">Bathroom</div>
-          <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Vanity Tops</div>
-          <div style="font-size:13px;color:#55554F;margin-top:10px;line-height:1.6;font-weight:300;">Elegant and moisture-resistant surfaces for bathroom vanities, pre-cut with precision.</div>
-          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);font-weight:500;">See all →</div>
+      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+        <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/VanityTops-01.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;"></div>
+        <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app2">Vanity tops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app2s">Custom bathroom surfaces.</div></div>
+          <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <!-- Surroundings -->
-      <a href="https://kuartzsurfaces.com/surroundings/" target="_blank" style="display:block;border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid #E8E6E0;text-decoration:none;color:inherit;">
-        <div style="aspect-ratio:4/3;overflow:hidden;background:#e8e6e0;">
-          <img src="img/surroundings.png" alt="Surroundings" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <div style="padding:24px 28px 28px;">
-          <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#9A988F;margin-bottom:10px;">Walls &amp; Floors</div>
-          <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Surroundings</div>
-          <div style="font-size:13px;color:#55554F;margin-top:10px;line-height:1.6;font-weight:300;">Quartz walls and floors that transform any space with consistent patterns and lasting finish.</div>
-          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);font-weight:500;">See all →</div>
+      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+        <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Marquina-02.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
+        <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
+          <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app3">Walls &amp; surfaces</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app3s">Quartz wall cladding and floors.</div></div>
+          <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- COLLECTIONS / COLORS -->
-<section id="collections" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#16181A;color:#fff;">
-  <div style="max-width:1280px;margin:0 auto;">
-    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(36px,5vw,56px);">
-      <div>
-        <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.52);font-weight:500;">COLLECTIONS</div>
-        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;">+48 colors across 5 families.</h2>
-      </div>
-      <a href="https://kuartzsurfaces.com/all-families/" target="_blank" style="border:1px solid rgba(255,255,255,0.3);color:#fff;padding:12px 28px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;border-radius:var(--radius);">View all colors</a>
+<!-- FEATURED SLAB -->
+<section style="background:#16181A;color:#fff;padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,5vw,80px);align-items:center;">
+    <div style="aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,rgba(255,255,255,0.06),transparent 70%);">
+      <img src="media/Calacatta-Bengala_Slab_2.png" alt="Calacatta Bengala" style="max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 30px 50px rgba(0,0,0,0.5));">
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;">
-      <!-- Marquina -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/marquina.png" alt="Marquina" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Marquina</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Galaxy</div></div>
-      </div>
-      <!-- Calacatta Lincoln Marquina -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/calacatta-lincoln.jpg" alt="Calacatta Lincoln Marquina" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Calacatta Lincoln Marquina</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Calacatta</div></div>
-      </div>
-      <!-- Calacatta Bengala -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/calacatta-bengala.jpg" alt="Calacatta Bengala" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Calacatta Bengala</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Calacatta</div></div>
-      </div>
-      <!-- Galaxy White -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/galaxy-white.png" alt="Galaxy White" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Galaxy White</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Galaxy</div></div>
-      </div>
-      <!-- Pure White -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/pure-white.png" alt="Pure White" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Pure White</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Solid</div></div>
-      </div>
-      <!-- Calacatta Statuario -->
-      <div style="border-radius:var(--radius);overflow:hidden;background:#1e2022;">
-        <img src="img/calacatta-statuario.png" alt="Calacatta Statuario" style="width:100%;aspect-ratio:1;object-fit:cover;">
-        <div style="padding:14px 16px;"><div style="font-size:13px;font-weight:400;">Calacatta Statuario</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-top:4px;">Calacatta</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CATALOG -->
-<section id="catalog" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#FAFAF8;">
-  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,6vw,80px);align-items:center;">
     <div>
-      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;">CATALOG</div>
-      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.08;margin:18px 0 0;">2024 Product Catalog</h2>
-      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.78;color:#55554F;margin:24px 0 0;font-weight:300;">Browse our full range of engineered quartz surfaces, colors, finishes, and technical specifications.</p>
-      <a href="https://online.fliphtml5.com/axpys/oxdn/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;margin-top:32px;background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);">Download Catalog</a>
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.58);font-weight:500;" data-i18n="featEye">Featured color</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.05;margin:16px 0 0;">Calacatta Bengala</h2>
+      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.75;color:rgba(255,255,255,0.72);margin:22px 0 0;font-weight:300;max-width:440px;" data-i18n="featDesc">Soft veins on a luminous white background. A timeless classic of the Calacatta family, ideal for refined kitchens and bathrooms.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:0;margin:34px 0 0;border-top:1px solid rgba(255,255,255,0.14);">
+        <div style="flex:1;min-width:120px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.14);"><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.48);" data-i18n="featMedida">Size</div><div style="font-family:'Marcellus',serif;font-size:1.2rem;margin-top:6px;">63" × 127"</div></div>
+        <div style="flex:1;min-width:120px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.14);"><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.48);" data-i18n="featEspesor">Thicknesses</div><div style="font-family:'Marcellus',serif;font-size:1.2rem;margin-top:6px;">2 y 3 cm</div></div>
+        <div style="flex:1;min-width:120px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.14);"><div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.48);" data-i18n="featAcabado">Finish</div><div style="font-family:'Marcellus',serif;font-size:1.2rem;margin-top:6px;">Gloss</div></div>
+      </div>
+      <a href="#colecciones" style="display:inline-block;margin-top:34px;border:1px solid rgba(255,255,255,0.5);color:#fff;padding:14px 30px;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;border-radius:var(--radius);" data-i18n="featCta">See all collections</a>
     </div>
-    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12);">
-      <img src="img/catalogo.png" alt="Küartz Catalog 2024" style="width:100%;display:block;">
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="colecciones" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="max-width:640px;">
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="colEye">Collections</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="colTitle">Choose your hue and your family.</h2>
+      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.75;color:#55554F;margin:18px 0 0;font-weight:300;" data-i18n="colIntro">Filter our colors by tone and explore each design family.</p>
     </div>
+    <div style="display:flex;flex-wrap:wrap;gap:36px;align-items:flex-end;margin:44px 0 34px;">
+      <div>
+        <div style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#9A988F;margin-bottom:12px;" data-i18n="toneLabel">Hue</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;" id="hue-filters"></div>
+      </div>
+      <div>
+        <div style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#9A988F;margin-bottom:12px;" data-i18n="famLabel">Family</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;" id="family-filters"></div>
+      </div>
+      <div style="margin-left:auto;font-size:13px;letter-spacing:0.1em;color:#9A988F;" id="color-count"></div>
+    </div>
+    <div id="color-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px;"></div>
+  </div>
+</section>
+
+<!-- WHY QUARTZ -->
+<section id="ventajas" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#FFFFFF;border-top:1px solid #E8E6E0;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(36px,5vw,70px);">
+      <div>
+        <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="whyEye">Why quartz</div>
+        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.08;margin:18px 0 0;" data-i18n="whyTitle">Beauty that holds up day after day.</h2>
+        <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.75;color:#55554F;margin:20px 0 0;font-weight:300;" data-i18n="whyDesc">Engineered quartz combines the elegance of natural stone with superior performance. Certified under IAPMO and NSF standards for food-contact use.</p>
+        <div style="margin-top:28px;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9;">
+          <img src="media/kt/Marquina-01.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;">
+        </div>
+      </div>
+      <div id="why-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px 28px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG CTA -->
+<section id="catalogo" style="position:relative;padding:clamp(70px,10vw,130px) clamp(20px,5vw,64px);background-image:linear-gradient(rgba(16,17,18,0.80),rgba(16,17,18,0.80)),url('media/Calacatta-Bengala_Slab_1-scaled.jpg');background-size:cover;background-position:center;color:#fff;text-align:center;">
+  <div style="max-width:680px;margin:0 auto;">
+    <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.62);font-weight:500;" data-i18n="catEye">Catalog</div>
+    <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:18px 0 0;" data-i18n="catTitle">Download the full catalog.</h2>
+    <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:rgba(255,255,255,0.76);margin:20px 0 0;font-weight:300;" data-i18n="catDesc">All colors, sizes and technical specifications in one document.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:36px;">
+      <a href="https://online.fliphtml5.com/axpys/oxdn/" target="_blank" style="background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="catCta1">Download PDF</a>
+      <a href="#contacto" style="border:1px solid rgba(255,255,255,0.52);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;border-radius:var(--radius);" data-i18n="catCta2">Talk to an advisor</a>
+    </div>
+  </div>
+</section>
+
+<!-- TEXTURE BREAK -->
+<div style="width:100%;height:clamp(220px,30vw,380px);overflow:hidden;position:relative;">
+  <img src="media/kt/Slabs-02.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(246,245,242,1) 0%,rgba(246,245,242,0) 18%,rgba(246,245,242,0) 82%,rgba(246,245,242,1) 100%);"></div>
+</div>
+
+<!-- INSPIRATION GALLERY -->
+<section style="padding:clamp(64px,9vw,110px) 0 clamp(64px,9vw,110px) clamp(20px,5vw,64px);overflow:hidden;">
+  <div style="max-width:1280px;margin:0 auto clamp(36px,4vw,52px);">
+    <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="inspEye">Inspiration</div>
+    <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="inspTitle">Spaces designed with quartz.</h2>
+  </div>
+  <div class="gallery-scroll" style="padding-right:clamp(20px,5vw,64px);">
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/Statuario-01.jpg" alt="Calacatta Statuario" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Calacatta Statuario</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp1room">Kitchen</div>
+      </div>
+    </div>
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/Iceberg-02.jpg" alt="Iceberg" style="width:100%;height:100%;object-fit:cover;object-position:50% 100%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Iceberg</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp2room">Kitchen · Island</div>
+      </div>
+    </div>
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/Sandrift-02.jpg" alt="Calacatta Sand Drift" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Calacatta Sand Drift</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp3room">Countertop</div>
+      </div>
+    </div>
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/Marquina-01.jpg" alt="Marquina" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Marquina</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp4room">Kitchen · Wall</div>
+      </div>
+    </div>
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/VanityTops-01.jpg" alt="Vanity Tops" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Galaxy · Vienna</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp5room">Vanity tops</div>
+      </div>
+    </div>
+    <div style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;">
+      <img src="media/kt/Marquina-03.jpg" alt="Marquina" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
+        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Marquina</div>
+        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp6room">Bathroom · Wall</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP -->
+<section style="background:#FAFAF8;padding:28px clamp(20px,5vw,64px);border-top:1px solid #E8E6E0;border-bottom:1px solid #E8E6E0;">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 40px;">
+    <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#B0ADA5;font-weight:500;" data-i18n="grupoBadge">Part of Grupo Modular</span>
+    <img src="media/kt/Applications-03.jpg" alt="Grupo Modular" style="height:48px;object-fit:contain;filter:grayscale(20%);">
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
-  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(48px,6vw,100px);align-items:start;">
+<section id="contacto" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,5vw,72px);align-items:start;">
     <div>
-      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;">CONTACT</div>
-      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;">Request your quote.</h2>
-      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.75;color:#55554F;margin:20px 0 0;font-weight:300;max-width:420px;">Tell us about your project and an advisor will contact you with availability and pricing.</p>
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="contactEye">Contact</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="contactTitle">Request your quote.</h2>
+      <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.75;color:#55554F;margin:20px 0 0;font-weight:300;max-width:420px;" data-i18n="contactDesc">Tell us about your project and an advisor will contact you with availability and pricing.</p>
       <div style="margin-top:38px;display:flex;flex-direction:column;gap:24px;">
-        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;">Plant</div><div style="font-family:'Marcellus',serif;font-size:1.25rem;margin-top:6px;">Juárez, Nuevo León, México</div></div>
-        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;">Email</div><div style="font-family:'Marcellus',serif;font-size:1.25rem;margin-top:6px;"><a href="mailto:sales@kuartzsurfaces.com" style="color:inherit;">sales@kuartzsurfaces.com</a></div></div>
-        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;">Hours</div><div style="font-family:'Marcellus',serif;font-size:1.2rem;margin-top:6px;">Mon – Fri · 9:00 – 18:00</div></div>
+        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;" data-i18n="contactPlanta">Plant</div><div style="font-family:'Marcellus',serif;font-size:1.25rem;margin-top:6px;">Juárez, Nuevo León, México</div></div>
+        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;" data-i18n="contactCorreo">Email</div><div style="font-family:'Marcellus',serif;font-size:1.25rem;margin-top:6px;"><a href="mailto:sales@kuartzsurfaces.com" style="color:inherit;">sales@kuartzsurfaces.com</a></div></div>
+        <div><div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9A988F;" data-i18n="contactHorario">Hours</div><div style="font-family:'Marcellus',serif;font-size:1.2rem;margin-top:6px;" data-i18n="contactHours">Mon – Fri · 9:00 – 18:00</div></div>
       </div>
     </div>
-    <form id="kz-form" action="https://formspree.io/f/xwvdlypy" method="POST" style="background:#FFFFFF;border:1px solid #E8E6E0;border-radius:var(--radius);padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:18px;">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;">
-        <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;">Name<input required type="text" name="name" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);"></label>
-        <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;">Phone<input type="tel" name="phone" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);"></label>
+    <div style="background:#FFFFFF;border:1px solid #E8E6E0;border-radius:var(--radius);padding:clamp(28px,4vw,44px);">
+      <form id="kz-form" action="https://formspree.io/f/xwvdlypy" method="POST" style="display:flex;flex-direction:column;gap:18px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;">
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;"><span data-i18n="fName">Name</span><input required type="text" name="name" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);outline-color:var(--accent);"></label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;"><span data-i18n="fPhone">Phone</span><input type="tel" name="phone" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);outline-color:var(--accent);"></label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;"><span data-i18n="fEmail">Email</span><input required type="email" name="email" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);outline-color:var(--accent);"></label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;"><span data-i18n="fColor">Color of interest</span>
+          <select name="color" id="color-select" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);"></select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;"><span data-i18n="fMsg">Message</span><textarea rows="4" name="message" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);resize:vertical;outline-color:var(--accent);"></textarea></label>
+        <button type="submit" id="form-btn" style="background:var(--accent);color:#fff;padding:16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border:none;border-radius:var(--radius);cursor:pointer;" data-i18n="fSend">Send request</button>
+      </form>
+      <div id="kz-success" style="display:none;text-align:center;padding:40px 10px;">
+        <div style="font-family:'Marcellus',serif;font-size:1.8rem;color:var(--accent);" data-i18n="thankTitle">Thank you!</div>
+        <p style="font-size:15px;line-height:1.7;color:#55554F;margin:14px 0 0;font-weight:300;" data-i18n="thankMsg">We have received your request. An advisor will contact you shortly.</p>
       </div>
-      <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;">Email<input required type="email" name="email" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);"></label>
-      <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;">Color of interest<select name="color" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);"><option>Undecided</option><option>Calacatta Bengala</option><option>Marquina</option><option>Galaxy White</option><option>Pure White</option><option>Other</option></select></label>
-      <label style="display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#9A988F;">Message<textarea rows="4" name="message" style="border:1px solid #DAD8D1;background:#F8F7F4;padding:13px 14px;font-size:15px;color:#1A1A1C;border-radius:var(--radius);resize:vertical;"></textarea></label>
-      <button type="submit" style="background:var(--accent);color:#fff;padding:16px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border:none;border-radius:var(--radius);cursor:pointer;">Send request</button>
-      <div id="kz-success" style="display:none;text-align:center;padding:16px;background:#F0F7F2;border:1px solid #C3DFC9;border-radius:var(--radius);color:#2E6B3C;font-size:14px;letter-spacing:0.06em;">Thank you! We'll be in touch shortly.</div>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -245,73 +308,335 @@ input,select,textarea,button{font-family:inherit;}
 <footer style="background:#16181A;color:rgba(255,255,255,0.7);padding:clamp(56px,7vw,90px) clamp(20px,5vw,64px) 36px;">
   <div style="max-width:1280px;margin:0 auto;">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.12);">
-      <div style="grid-column:span 2;">
-        <span style="font-family:'Jost',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.09em;color:#fff;">KÜARTZ SURFACES</span>
-        <p style="font-size:14px;line-height:1.7;margin:20px 0 0;font-weight:300;color:rgba(255,255,255,0.58);max-width:280px;">Quartz surfaces manufactured in Mexico. Part of Grupo Modular.</p>
+      <div style="grid-column:1/-1;max-width:320px;">
+        <img src="media/Logos-01.png" alt="Küartz Surfaces" style="height:30px;">
+        <p style="font-size:14px;line-height:1.7;margin:20px 0 0;font-weight:300;color:rgba(255,255,255,0.58);" data-i18n="footerTagline">Quartz surfaces manufactured in Mexico. Part of Grupo Modular.</p>
       </div>
       <div>
-        <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:16px;">Applications</div>
+        <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:16px;" data-i18n="footerC1">Collections</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;font-weight:300;">
-          <a href="#apps" style="color:rgba(255,255,255,0.7);">Kitchen Countertops</a>
-          <a href="#apps" style="color:rgba(255,255,255,0.7);">Vanity Tops</a>
-          <a href="#apps" style="color:rgba(255,255,255,0.7);">Surroundings</a>
+          <a href="#colecciones" style="color:rgba(255,255,255,0.7);">Calacatta</a>
+          <a href="#colecciones" style="color:rgba(255,255,255,0.7);">Galaxy</a>
+          <a href="#colecciones" style="color:rgba(255,255,255,0.7);" data-i18n="footerSolid">Solid</a>
+          <a href="#colecciones" style="color:rgba(255,255,255,0.7);" data-i18n="footerVeined">Veined</a>
         </div>
       </div>
       <div>
-        <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:16px;">Company</div>
+        <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:16px;" data-i18n="footerC2">Applications</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;font-weight:300;">
-          <a href="#about" style="color:rgba(255,255,255,0.7);">About Us</a>
-          <a href="#catalog" style="color:rgba(255,255,255,0.7);">Catalog</a>
-          <a href="#contact" style="color:rgba(255,255,255,0.7);">Contact</a>
+          <a href="#aplicaciones" style="color:rgba(255,255,255,0.7);" data-i18n="app1">Kitchen countertops</a>
+          <a href="#aplicaciones" style="color:rgba(255,255,255,0.7);" data-i18n="app2">Vanity tops</a>
+          <a href="#aplicaciones" style="color:rgba(255,255,255,0.7);" data-i18n="app3">Walls &amp; surfaces</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:16px;" data-i18n="footerC3">Company</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;font-weight:300;">
+          <a href="#nosotros" style="color:rgba(255,255,255,0.7);" data-i18n="navAbout">About</a>
+          <a href="#ventajas" style="color:rgba(255,255,255,0.7);" data-i18n="whyEye">Why quartz</a>
+          <a href="#contacto" style="color:rgba(255,255,255,0.7);" data-i18n="navContact">Contact</a>
         </div>
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;padding-top:28px;font-size:13px;color:rgba(255,255,255,0.42);font-weight:300;">
-      <div>© 2026 Küartz Surfaces. All rights reserved.</div>
-      <div>Juárez, N.L., Mexico</div>
+      <div data-i18n="copyright">© 2026 Küartz Surfaces. All rights reserved.</div>
+      <div style="display:flex;gap:24px;"><a href="#top" data-i18n="privacy">Privacy policy</a><a href="#top" data-i18n="footerLocation">Juárez, N.L., México</a></div>
     </div>
   </div>
 </footer>
 
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(10,10,10,0.92);align-items:center;justify-content:center;padding:20px;animation:kzoverlay .25s ease both;">
+  <div onclick="event.stopPropagation()" style="position:relative;max-width:920px;width:100%;max-height:92vh;display:flex;flex-direction:column;align-items:center;gap:22px;">
+    <button onclick="closeLightbox()" style="position:absolute;top:-48px;right:0;background:none;border:1px solid rgba(255,255,255,0.3);color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:8px 14px;border-radius:var(--radius);">✕</button>
+    <div style="width:100%;display:flex;align-items:center;justify-content:center;max-height:72vh;padding:10px;">
+      <img id="lb-img" alt="" style="max-width:100%;max-height:68vh;object-fit:contain;filter:drop-shadow(0 40px 70px rgba(0,0,0,0.7));border-radius:var(--radius);">
+    </div>
+    <div style="text-align:center;color:#fff;">
+      <div id="lb-name" style="font-family:'Marcellus',serif;font-size:clamp(1.5rem,3vw,2rem);"></div>
+      <div id="lb-family" style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;"></div>
+    </div>
+  </div>
+</div>
+
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    const id = link.getAttribute('href').slice(1);
+// ─── DATA ────────────────────────────────────────────────────────
+var lang = 'en';
+
+var catalog = [
+  { name:'Calacatta Bengala',         img:'media/Calacatta-Bengala_Slab_2.png',              family:'calacatta', hue:'light' },
+  { name:'Calacatta Carola',          img:'media/Calacatta-Carola_Slab_2.png',               family:'calacatta', hue:'light' },
+  { name:'Calacatta Everest',         img:'media/Calacatta-Everest_Slab_2.png',              family:'calacatta', hue:'light' },
+  { name:'Calacatta Florida',         img:'media/Calacatta-Florida_Slab_2.png',              family:'calacatta', hue:'light' },
+  { name:'Calacatta Golden Pearl',    img:'media/Calacatta-Golden-pearl_Slab_2.png',         family:'calacatta', hue:'light' },
+  { name:'Calacatta Monaco',          img:'media/Calacatta-Monaco_Slab_2.png',               family:'calacatta', hue:'light' },
+  { name:'Calacatta Porto',           img:'media/Calacatta-Porto_Slab_2.png',                family:'calacatta', hue:'light' },
+  { name:'Calacatta Salamanca',       img:'media/Calacatta-Salamanca_Slab_2.png',            family:'calacatta', hue:'light' },
+  { name:'Calacatta Victoria',        img:'media/Calacatta-Victoria_Slab_2.png',             family:'calacatta', hue:'light' },
+  { name:'Calacatta Almond',          img:'media/Calacatta-Almond_Slab_2.png',               family:'calacatta', hue:'light' },
+  { name:'Calacatta Statuario',       img:'media/Calacatta-Statuario_Slab_2.png',            family:'calacatta', hue:'light' },
+  { name:'Calacatta Lincoln Marquina',img:'media/Calacatta-Lincoln-marquina_Slab_2.png',     family:'calacatta', hue:'dark'  },
+  { name:'Pure White',                img:'media/Pure-white_Slab_2.png',                     family:'solid',     hue:'light' },
+  { name:'Snow White',                img:'media/Snow-white_Slab_2.png',                     family:'solid',     hue:'light' },
+  { name:'Frost White',               img:'media/frost-white_Slab_2.png',                    family:'solid',     hue:'light' },
+  { name:'Iced White',                img:'media/iced-white_Slab_2.png',                     family:'solid',     hue:'light' },
+  { name:'Manhattan Gray',            img:'media/Manhattan-gray_Slab_2.png',                 family:'solid',     hue:'dark'  },
+  { name:'Galaxy White',              img:'media/galaxy-white_Slab_2.png',                   family:'galaxy',    hue:'light' },
+  { name:'Galaxy Sand',               img:'media/galaxy-sand_Slab_2.png',                    family:'galaxy',    hue:'light' },
+  { name:'Galaxy Gray',               img:'media/galaxy-gray_Slab_2.png',                    family:'galaxy',    hue:'dark'  },
+  { name:'Galaxy Black',              img:'media/galaxy-black_Slab_2.png',                   family:'galaxy',    hue:'dark'  },
+  { name:'Marquina',                  img:'media/Marquina_Slab_2.png',                       family:'veined',    hue:'dark'  },
+  { name:'Iceberg',                   img:'media/Iceberg_Slab_2.png',                        family:'veined',    hue:'light' },
+  { name:'Lyra',                      img:'media/Lyra_Slab_2.png',                           family:'veined',    hue:'light' }
+];
+
+var translations = {
+  en: {
+    navAbout:'About', navApps:'Applications', navColl:'Collections', navCatalog:'Catalog', navContact:'Contact', navQuote:'Get a quote',
+    heroBadge:'Küartz Surfaces · Engineered Stone',
+    heroTitle:'Refresh your space with engineered stone.',
+    heroSub:'The first and only quartz slab factory in Mexico. Kitchen countertops, vanity tops, and surfaces crafted with precision and natural beauty.',
+    heroCta1:'See collections', heroCta2:'Request a quote',
+    stat1:'Founded', stat2:'Plant in Nuevo León', stat3:'Available colors', stat4:'Thicknesses',
+    aboutEye:'About us', aboutTitle:'The first quartz slab factory in Mexico.',
+    aboutText:'Founded in 2019, Küartz Surfaces joined the group and became the first and only quartz slab factory in Mexico. Located in Juárez, Nuevo León, our 75,348 ft² plant produces slabs, vanity tops, kitchen countertops, quartz walls and floors with specialized machinery.',
+    aboutOrigenLabel:'Origin', aboutCertLabel:'Certifications', aboutCta:'Learn more →',
+    appsEye:'Applications', appsTitle:'A surface for every space.',
+    app1:'Kitchen countertops', app1s:'Durable and elegant surfaces.',
+    app2:'Vanity tops', app2s:'Custom bathroom surfaces.',
+    app3:'Walls & surfaces', app3s:'Quartz wall cladding and floors.',
+    featEye:'Featured color', featDesc:'Soft veins on a luminous white background. A timeless classic of the Calacatta family, ideal for refined kitchens and bathrooms.',
+    featMedida:'Size', featEspesor:'Thicknesses', featAcabado:'Finish', featCta:'See all collections',
+    colEye:'Collections', colTitle:'Choose your hue and your family.',
+    colIntro:'Filter our colors by tone and explore each design family.',
+    toneLabel:'Hue', famLabel:'Family',
+    hueDefs:[['all','All'],['light','Light'],['dark','Dark']],
+    famDefs:[['all','All'],['calacatta','Calacatta'],['solid','Solid'],['galaxy','Galaxy'],['veined','Veined']],
+    famLabels:{calacatta:'Calacatta',solid:'Solid',galaxy:'Galaxy',veined:'Veined'},
+    colorCount:function(n){return n+' colors';},
+    whyEye:'Why quartz', whyTitle:'Beauty that holds up day after day.',
+    whyDesc:'Engineered quartz combines the elegance of natural stone with superior performance. Certified under IAPMO and NSF standards for food-contact use.',
+    whyItems:[
+      {num:'01',title:'Non-porous & hygienic',desc:'Sealed surface that does not absorb liquids or bacteria.'},
+      {num:'02',title:'Scratch-resistant',desc:'One of the hardest surfaces for everyday use.'},
+      {num:'03',title:'Heat-resistant',desc:'Handles daily kitchen use with basic care.'},
+      {num:'04',title:'Low maintenance',desc:'No periodic sealing; simple soap-and-water cleaning.'},
+      {num:'05',title:'Stain-resistant',desc:'Impermeable surface; does not absorb liquids or pigments.'},
+      {num:'06',title:'Fire-resistant',desc:'Non-combustible material suitable for kitchen surfaces.'}
+    ],
+    inspEye:'Inspiration', inspTitle:'Spaces designed with quartz.',
+    insp1room:'Kitchen', insp2room:'Kitchen · Island', insp3room:'Countertop', insp4room:'Kitchen · Wall', insp5room:'Vanity tops', insp6room:'Bathroom · Wall',
+    grupoBadge:'Part of Grupo Modular',
+    catEye:'Catalog', catTitle:'Download the full catalog.',
+    catDesc:'All colors, sizes and technical specifications in one document.',
+    catCta1:'Download PDF', catCta2:'Talk to an advisor',
+    contactEye:'Contact', contactTitle:'Request your quote.',
+    contactDesc:'Tell us about your project and an advisor will contact you with availability and pricing.',
+    contactPlanta:'Plant', contactCorreo:'Email', contactHorario:'Hours', contactHours:'Mon – Fri · 9:00 – 18:00',
+    fName:'Name', fPhone:'Phone', fEmail:'Email', fColor:'Color of interest', fMsg:'Message', fSend:'Send request',
+    fOptions:['Undecided','Calacatta Bengala','Marquina','Galaxy White','Pure White','Other'],
+    thankTitle:'Thank you!', thankMsg:'We have received your request. An advisor will contact you shortly.',
+    footerTagline:'Quartz surfaces manufactured in Mexico. Part of Grupo Modular.',
+    footerC1:'Collections', footerC2:'Applications', footerC3:'Company',
+    footerSolid:'Solid', footerVeined:'Veined',
+    copyright:'© 2026 Küartz Surfaces. All rights reserved.',
+    privacy:'Privacy policy', footerLocation:'Juárez, N.L., México'
+  },
+  es: {
+    navAbout:'Nosotros', navApps:'Aplicaciones', navColl:'Colecciones', navCatalog:'Catálogo', navContact:'Contacto', navQuote:'Cotizar',
+    heroBadge:'Küartz Surfaces · Superficies de cuarzo',
+    heroTitle:'Renueva tu espacio con piedra de ingeniería.',
+    heroSub:'La primera y única fábrica de slabs de cuarzo en México. Encimeras, vanity tops y superficies fabricadas con precisión y belleza natural.',
+    heroCta1:'Ver colecciones', heroCta2:'Solicitar cotización',
+    stat1:'Año de fundación', stat2:'Planta en Nuevo León', stat3:'Colores disponibles', stat4:'Espesores',
+    aboutEye:'Quiénes somos', aboutTitle:'La primera fábrica de slabs de cuarzo en México.',
+    aboutText:'Fundada en 2019, Küartz Surfaces se integró al grupo y se convirtió en la primera y única fábrica de slabs de cuarzo en México. Ubicada en Juárez, Nuevo León, nuestra planta produce slabs, vanity tops, encimeras de cocina, muros y pisos de cuarzo con maquinaria especializada.',
+    aboutOrigenLabel:'Origen', aboutCertLabel:'Certificaciones', aboutCta:'Conoce más →',
+    appsEye:'Aplicaciones', appsTitle:'Una superficie para cada espacio.',
+    app1:'Encimeras de cocina', app1s:'Cubiertas resistentes y elegantes.',
+    app2:'Vanity tops', app2s:'Cubiertas para baño a medida.',
+    app3:'Muros y superficies', app3s:'Revestimientos y pisos de cuarzo.',
+    featEye:'Color destacado', featDesc:'Vetas suaves sobre fondo blanco luminoso. Un clásico atemporal de la familia Calacatta, ideal para cocinas y baños de estilo refinado.',
+    featMedida:'Medida', featEspesor:'Espesores', featAcabado:'Acabado', featCta:'Ver todas las colecciones',
+    colEye:'Colecciones', colTitle:'Elige tu tono y tu familia.',
+    colIntro:'Filtra entre nuestros colores por tono e inspírate con cada familia de diseño.',
+    toneLabel:'Tono', famLabel:'Familia',
+    hueDefs:[['all','Todos'],['light','Claros'],['dark','Oscuros']],
+    famDefs:[['all','Todas'],['calacatta','Calacatta'],['solid','Sólidos'],['galaxy','Galaxy'],['veined','Veteados']],
+    famLabels:{calacatta:'Calacatta',solid:'Sólido',galaxy:'Galaxy',veined:'Veteado'},
+    colorCount:function(n){return n+' colores';},
+    whyEye:'Por qué cuarzo', whyTitle:'Belleza que resiste el día a día.',
+    whyDesc:'El cuarzo de ingeniería combina la elegancia de la piedra natural con un desempeño superior. Certificado bajo normas IAPMO y NSF para uso en contacto con alimentos.',
+    whyItems:[
+      {num:'01',title:'No poroso e higiénico',desc:'Superficie sellada que no absorbe líquidos ni bacterias.'},
+      {num:'02',title:'Resistente a rayones',desc:'Una de las superficies más duras para uso cotidiano.'},
+      {num:'03',title:'Resistente al calor',desc:'Soporta el uso diario en cocina con cuidado básico.'},
+      {num:'04',title:'Bajo mantenimiento',desc:'Sin sellados periódicos; limpieza simple con agua y jabón.'},
+      {num:'05',title:'Resistente a manchas',desc:'No absorbe líquidos ni pigmentos; superficie impermeable.'},
+      {num:'06',title:'Resistencia al fuego',desc:'Material no combustible apto para superficies de cocina.'}
+    ],
+    inspEye:'Inspiración', inspTitle:'Espacios diseñados con cuarzo.',
+    insp1room:'Cocina', insp2room:'Cocina · Isla', insp3room:'Encimera', insp4room:'Cocina · Muro', insp5room:'Vanity tops', insp6room:'Baño · Muro',
+    grupoBadge:'Parte de Grupo Modular',
+    catEye:'Catálogo', catTitle:'Descarga el catálogo completo.',
+    catDesc:'Todos los colores, medidas y especificaciones técnicas en un solo documento.',
+    catCta1:'Descargar PDF', catCta2:'Hablar con un asesor',
+    contactEye:'Contacto', contactTitle:'Solicita tu cotización.',
+    contactDesc:'Cuéntanos sobre tu proyecto y un asesor te contactará con disponibilidad y precios.',
+    contactPlanta:'Planta', contactCorreo:'Correo', contactHorario:'Horario', contactHours:'Lun – Vie · 9:00 – 18:00',
+    fName:'Nombre', fPhone:'Teléfono', fEmail:'Correo', fColor:'Color de interés', fMsg:'Mensaje', fSend:'Enviar solicitud',
+    fOptions:['Sin definir','Calacatta Bengala','Marquina','Galaxy White','Pure White','Otro'],
+    thankTitle:'¡Gracias!', thankMsg:'Hemos recibido tu solicitud. Un asesor te contactará pronto.',
+    footerTagline:'Superficies de cuarzo fabricadas en México. Parte de Grupo Modular.',
+    footerC1:'Colecciones', footerC2:'Aplicaciones', footerC3:'Empresa',
+    footerSolid:'Sólidos', footerVeined:'Veteados',
+    copyright:'© 2026 Küartz Surfaces. Todos los derechos reservados.',
+    privacy:'Aviso de privacidad', footerLocation:'Juárez, N.L., México'
+  }
+};
+
+// ─── STATE ───────────────────────────────────────────────────────
+var activeHue = 'all', activeFamily = 'all';
+
+// ─── LANGUAGE TOGGLE ─────────────────────────────────────────────
+function toggleLang() {
+  lang = (lang === 'en') ? 'es' : 'en';
+  document.getElementById('lang-btn').textContent = lang === 'en' ? 'ES' : 'EN';
+  applyTranslations();
+  renderCollections();
+  renderWhyItems();
+  renderColorSelect();
+}
+
+function applyTranslations() {
+  var t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined && typeof t[key] === 'string') el.textContent = t[key];
+  });
+}
+
+// ─── COLLECTIONS ─────────────────────────────────────────────────
+function renderCollections() {
+  var t = translations[lang];
+  // Hue filters
+  var hueEl = document.getElementById('hue-filters');
+  hueEl.innerHTML = '';
+  t.hueDefs.forEach(function(d) {
+    var btn = document.createElement('button');
+    btn.className = 'chip ' + (activeHue === d[0] ? 'chip-active' : 'chip-inactive');
+    btn.textContent = d[1];
+    btn.onclick = function() { activeHue = d[0]; renderCollections(); };
+    hueEl.appendChild(btn);
+  });
+  // Family filters
+  var famEl = document.getElementById('family-filters');
+  famEl.innerHTML = '';
+  t.famDefs.forEach(function(d) {
+    var btn = document.createElement('button');
+    btn.className = 'chip ' + (activeFamily === d[0] ? 'chip-active' : 'chip-inactive');
+    btn.textContent = d[1];
+    btn.onclick = function() { activeFamily = d[0]; renderCollections(); };
+    famEl.appendChild(btn);
+  });
+  // Grid
+  var filtered = catalog.filter(function(c) {
+    return (activeHue === 'all' || c.hue === activeHue) && (activeFamily === 'all' || c.family === activeFamily);
+  });
+  document.getElementById('color-count').textContent = t.colorCount(filtered.length);
+  var grid = document.getElementById('color-grid');
+  grid.innerHTML = '';
+  filtered.forEach(function(c) {
+    var card = document.createElement('div');
+    card.className = 'color-card';
+    card.style.cssText = 'background:linear-gradient(160deg,#FFFFFF,#EFEEE9);border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;';
+    card.innerHTML = '<div style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="'+c.img+'" alt="'+c.name+'" style="max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 12px 20px rgba(0,0,0,0.17));"></div><div style="padding:16px 18px 20px;border-top:1px solid #ECEAE4;"><div style="font-family:\'Marcellus\',serif;font-size:19px;">'+c.name+'</div><div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A29F95;margin-top:5px;">'+t.famLabels[c.family]+'</div></div>';
+    card.onclick = function() { openLightbox(c, t.famLabels[c.family]); };
+    grid.appendChild(card);
+  });
+}
+
+// ─── WHY ITEMS ───────────────────────────────────────────────────
+function renderWhyItems() {
+  var items = translations[lang].whyItems;
+  var grid = document.getElementById('why-grid');
+  grid.innerHTML = '';
+  items.forEach(function(wi) {
+    var div = document.createElement('div');
+    div.innerHTML = '<div style="font-family:\'Marcellus\',serif;font-size:1.4rem;color:var(--accent);">'+wi.num+'</div><div style="font-family:\'Marcellus\',serif;font-size:1.2rem;margin-top:10px;">'+wi.title+'</div><div style="font-size:14px;line-height:1.65;color:#7C7A72;margin-top:8px;font-weight:300;">'+wi.desc+'</div>';
+    grid.appendChild(div);
+  });
+}
+
+// ─── COLOR SELECT ────────────────────────────────────────────────
+function renderColorSelect() {
+  var opts = translations[lang].fOptions;
+  var sel = document.getElementById('color-select');
+  sel.innerHTML = '';
+  opts.forEach(function(o) {
+    var opt = document.createElement('option');
+    opt.textContent = o;
+    sel.appendChild(opt);
+  });
+}
+
+// ─── LIGHTBOX ────────────────────────────────────────────────────
+function openLightbox(c, familyLabel) {
+  document.getElementById('lb-img').src = c.img;
+  document.getElementById('lb-img').alt = c.name;
+  document.getElementById('lb-name').textContent = c.name;
+  document.getElementById('lb-family').textContent = familyLabel + ' · 63" × 127" · Gloss';
+  var lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
+// ─── SMOOTH SCROLL ───────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var id = link.getAttribute('href').slice(1);
     if (id) {
-      const el = document.getElementById(id);
-      if (el) { window.scrollTo({ top: el.offsetTop - 84, behavior: 'smooth' }); }
-      e.preventDefault();
+      var el = document.getElementById(id);
+      if (el) { window.scrollTo({ top: el.offsetTop - 84, behavior: 'smooth' }); e.preventDefault(); }
     }
   });
 });
 
-const form = document.getElementById('kz-form');
-if (form) {
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    const token = await grecaptcha.execute('6LdUDDUtAAAAJnoLDjZC48y253hyCANcU4rGIPd', {action: 'submit'});
-    const data = new FormData(form);
+// ─── FORM ────────────────────────────────────────────────────────
+var form = document.getElementById('kz-form');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  var btn = document.getElementById('form-btn');
+  btn.disabled = true;
+  btn.textContent = lang === 'es' ? 'Enviando…' : 'Sending…';
+  try {
+    var token = await grecaptcha.execute('6LdUDDUtAAAAJnoLDjZC48y253hyCANcU4rGIPd', {action:'submit'});
+    var data = new FormData(form);
     data.append('g-recaptcha-response', token);
-    const res = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' }
-    });
+    var res = await fetch(form.action, { method:'POST', body:data, headers:{Accept:'application/json'} });
     if (res.ok) {
-      form.reset();
-      form.querySelector('#kz-success').style.display = 'block';
-      btn.style.display = 'none';
+      form.style.display = 'none';
+      document.getElementById('kz-success').style.display = 'block';
     } else {
       btn.disabled = false;
-      btn.textContent = 'Send request';
-      alert('Something went wrong. Please try again or email us directly.');
+      btn.textContent = translations[lang].fSend;
+      alert(lang === 'es' ? 'Algo salió mal. Por favor intenta de nuevo.' : 'Something went wrong. Please try again.');
     }
-  });
-}
-</script>
+  } catch(err) {
+    btn.disabled = false;
+    btn.textContent = translations[lang].fSend;
+  }
+});
 
+// ─── INIT ────────────────────────────────────────────────────────
+renderCollections();
+renderWhyItems();
+renderColorSelect();
+</script>
 </body>
 </html>
