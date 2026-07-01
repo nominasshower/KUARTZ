@@ -30,6 +30,27 @@ input,select,textarea,button{font-family:inherit;}
 .gallery-scroll{overflow-x:auto;display:flex;gap:20px;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none;}
 .gallery-scroll::-webkit-scrollbar{display:none;}
 .lang-btn:hover{border-color:rgba(255,255,255,0.7)!important;color:#fff!important;}
+/* Showroom Slider */
+.kz-slider{position:relative;height:92vh;min-height:560px;overflow:hidden;background:#16181A;}
+.kz-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .85s ease;pointer-events:none;}
+.kz-slide.active{opacity:1;pointer-events:auto;}
+.kz-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(14,14,12,.82) 0%,rgba(14,14,12,.18) 60%,rgba(14,14,12,.06) 100%);}
+.kz-slide-info{position:absolute;bottom:clamp(36px,6vw,72px);left:clamp(20px,5vw,64px);z-index:2;color:#fff;}
+.kz-slide-label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:12px;}
+.kz-slide-name{font-family:'Marcellus',serif;font-size:clamp(2rem,4.5vw,3.8rem);line-height:1.05;}
+.kz-slide-room{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.58);margin-top:10px;}
+.kz-arrow{position:absolute;top:50%;z-index:3;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:22px;transition:all .2s;transform:translateY(-50%);backdrop-filter:blur(6px);}
+.kz-arrow:hover{background:rgba(255,255,255,.22);}
+.kz-prev{left:clamp(16px,3vw,40px);}
+.kz-next{right:clamp(16px,3vw,40px);}
+.kz-dots{position:absolute;bottom:clamp(32px,5vw,52px);right:clamp(20px,5vw,64px);z-index:3;display:flex;gap:8px;align-items:center;}
+.kz-dot{width:24px;height:2px;background:rgba(255,255,255,.3);border-radius:2px;cursor:pointer;transition:all .3s;}
+.kz-dot.active{background:#fff;width:44px;}
+/* Advantages */
+.adv-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #E8E6E0;font-size:15px;color:#3A3830;}
+.adv-item:last-child{border-bottom:none;}
+.adv-check{flex-shrink:0;width:22px;height:22px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+.adv-check svg{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 </head>
 <body>
@@ -48,6 +69,8 @@ input,select,textarea,button{font-family:inherit;}
     <a href="#aplicaciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navApps">Applications</a>
     <a href="#colecciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navColl">Collections</a>
     <a href="#catalogo" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navCatalog">Catalog</a>
+    <a href="#recursos" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navResources">Resources</a>
+    <a href="#showroom" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navShowroom">Showroom</a>
     <a href="#contacto" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navContact">Contact</a>
   </nav>
   <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
@@ -205,56 +228,101 @@ input,select,textarea,button{font-family:inherit;}
 </section>
 
 
-<!-- INSPIRATION GALLERY -->
-<section style="padding:clamp(64px,9vw,110px) 0 clamp(64px,9vw,110px) clamp(20px,5vw,64px);overflow:hidden;">
-  <div style="max-width:1280px;margin:0 auto clamp(36px,4vw,52px);">
-    <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="inspEye">Inspiration</div>
-    <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="inspTitle">Spaces designed with quartz.</h2>
-  </div>
-  <div class="gallery-scroll" style="padding-right:clamp(20px,5vw,64px);">
-    <div onclick="openImg('media/kt/cocina-blanca.webp','Pure White · Cocina')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/cocina-blanca.webp" alt="Pure White" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Pure White</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp1room">Kitchen</div>
+<!-- RESOURCES -->
+<section id="recursos" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#F6F5F2;border-top:1px solid #E8E6E0;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <!-- Advantages + Care tabs header -->
+    <div style="display:flex;gap:40px;border-bottom:2px solid #E8E6E0;margin-bottom:56px;">
+      <button onclick="kzTab('adv')" id="tab-adv" style="font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;background:none;border:none;cursor:pointer;padding:0 0 18px;color:var(--accent);border-bottom:2px solid var(--accent);margin-bottom:-2px;" data-i18n="tabAdv">Advantages</button>
+      <button onclick="kzTab('care')" id="tab-care" style="font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;background:none;border:none;cursor:pointer;padding:0 0 18px;color:#9A988F;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;" data-i18n="tabCare">Care &amp; Maintenance</button>
+    </div>
+
+    <!-- Advantages panel -->
+    <div id="panel-adv" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:center;">
+      <div>
+        <div style="font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:14px;" data-i18n="advEye">Material benefits</div>
+        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.1;margin:0 0 32px;" data-i18n="advTitle">Engineered for real life.</h2>
+        <div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv1">Scratch and stain resistant</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv2">Low maintenance surface</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv3">Resistant to household chemicals</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv4">Excellent workability — custom cuts &amp; shapes</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv5">Non-porous — hygienic and food-safe</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv6">Impact resistant</span></div>
+          <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv7">Fire resistant — non-combustible</span></div>
+        </div>
+      </div>
+      <div style="border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;">
+        <img src="media/kt/Statuario-03.webp" alt="Küartz surface quality" style="width:100%;height:100%;object-fit:cover;">
       </div>
     </div>
-    <div onclick="openImg('media/kt/cocina-galaxy-white.webp','Galaxy White · Cocina')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/cocina-galaxy-white.webp" alt="Galaxy White" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Galaxy White</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp2room">Kitchen · Island</div>
+
+    <!-- Care panel -->
+    <div id="panel-care" style="display:none;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:center;">
+      <div style="border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;">
+        <img src="media/kt/Slabs-05.webp" alt="Küartz care" style="width:100%;height:100%;object-fit:cover;">
       </div>
-    </div>
-    <div onclick="openImg('media/kt/cocina-galaxy-gray.webp','Galaxy Gray · Cocina')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/cocina-galaxy-gray.webp" alt="Galaxy Gray" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Galaxy Gray</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp3room">Countertop</div>
-      </div>
-    </div>
-    <div onclick="openImg('media/kt/cocina-pure-white.webp','Pure White · Cocina Escandinava')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/cocina-pure-white.webp" alt="Pure White Escandinava" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Pure White</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp4room">Kitchen · Wall</div>
-      </div>
-    </div>
-    <div onclick="openImg('media/kt/vanity-newport.webp','Küartz · Vanity Top')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/vanity-newport.webp" alt="Vanity Top Küartz" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Calacatta Tree</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp5room">Vanity tops</div>
-      </div>
-    </div>
-    <div onclick="openImg('media/kt/cocina-galaxy-gray-2.webp','Galaxy Gray · Isla')" style="flex:0 0 clamp(280px,38vw,500px);aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;cursor:zoom-in;">
-      <img src="media/kt/cocina-galaxy-gray-2.webp" alt="Galaxy Gray isla" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;">
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;background:linear-gradient(transparent,rgba(12,12,12,0.72));color:#fff;">
-        <div style="font-family:'Marcellus',serif;font-size:1.3rem;">Galaxy Gray</div>
-        <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:4px;" data-i18n="insp6room">Bathroom · Wall</div>
+      <div>
+        <div style="font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:14px;" data-i18n="careEye">Easy to clean</div>
+        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.1;margin:0 0 24px;" data-i18n="careTitle">Care &amp; Maintenance</h2>
+        <p style="font-size:15px;line-height:1.78;color:#55554F;font-weight:300;margin-bottom:20px;" data-i18n="careDesc1">Küartz is a non-porous material characterized by its hardness and high resistance to stains, making it one of the easiest surfaces to maintain. Unlike natural stone, it requires no sealing.</p>
+        <p style="font-size:15px;line-height:1.78;color:#55554F;font-weight:300;margin-bottom:28px;" data-i18n="careDesc2">For everyday cleaning, use a soft cloth with warm water and mild soap. Avoid abrasive pads, bleach-based cleaners, and prolonged exposure to direct heat above 150°C.</p>
+        <div style="background:#fff;border:1px solid #E8E6E0;border-radius:var(--radius);padding:20px 24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="font-size:26px;line-height:1;">⚠</div>
+          <div style="font-size:13.5px;color:#55554F;line-height:1.65;" data-i18n="careTip">Do not place hot pots or pans directly on the surface. Always use trivets or heat pads to protect the finish.</div>
+        </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- SHOWROOM -->
+<section id="showroom" class="kz-slider">
+  <div class="kz-slide active" style="background-image:url('media/kt/cocina-blanca.webp');" onclick="openImg('media/kt/cocina-blanca.webp','Pure White · Kitchen')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Pure White</div>
+      <div class="kz-slide-room" data-i18n="insp1room">Kitchen</div>
+    </div>
+  </div>
+  <div class="kz-slide" style="background-image:url('media/kt/cocina-galaxy-white.webp');" onclick="openImg('media/kt/cocina-galaxy-white.webp','Galaxy White · Kitchen')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Galaxy White</div>
+      <div class="kz-slide-room" data-i18n="insp2room">Kitchen · Island</div>
+    </div>
+  </div>
+  <div class="kz-slide" style="background-image:url('media/kt/cocina-galaxy-gray.webp');" onclick="openImg('media/kt/cocina-galaxy-gray.webp','Galaxy Gray · Countertop')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Galaxy Gray</div>
+      <div class="kz-slide-room" data-i18n="insp3room">Countertop</div>
+    </div>
+  </div>
+  <div class="kz-slide" style="background-image:url('media/kt/cocina-pure-white.webp');" onclick="openImg('media/kt/cocina-pure-white.webp','Pure White · Kitchen Wall')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Pure White</div>
+      <div class="kz-slide-room" data-i18n="insp4room">Kitchen · Wall</div>
+    </div>
+  </div>
+  <div class="kz-slide" style="background-image:url('media/kt/vanity-newport.webp');background-position:center top;" onclick="openImg('media/kt/vanity-newport.webp','Calacatta Tree · Vanity')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Calacatta Tree</div>
+      <div class="kz-slide-room" data-i18n="insp5room">Vanity tops</div>
+    </div>
+  </div>
+  <div class="kz-slide" style="background-image:url('media/kt/cocina-galaxy-gray-2.webp');" onclick="openImg('media/kt/cocina-galaxy-gray-2.webp','Galaxy Gray · Island')">
+    <div class="kz-slide-info">
+      <div class="kz-slide-label" data-i18n="inspEye">Inspiration</div>
+      <div class="kz-slide-name">Galaxy Gray</div>
+      <div class="kz-slide-room" data-i18n="insp6room">Bathroom · Wall</div>
+    </div>
+  </div>
+  <button class="kz-arrow kz-prev" onclick="kzSlide(-1)" aria-label="Previous">&#8592;</button>
+  <button class="kz-arrow kz-next" onclick="kzSlide(1)" aria-label="Next">&#8594;</button>
+  <div class="kz-dots" id="kz-dots"></div>
 </section>
 
 <!-- GROUP -->
@@ -417,7 +485,11 @@ var catalog = [
 
 var translations = {
   en: {
-    navAbout:'About', navApps:'Applications', navColl:'Collections', navCatalog:'Catalog', navContact:'Contact', navQuote:'Get a quote',
+    navAbout:'About', navApps:'Applications', navColl:'Collections', navCatalog:'Catalog', navResources:'Resources', navShowroom:'Showroom', navContact:'Contact', navQuote:'Get a quote',
+    tabAdv:'Advantages', tabCare:'Care & Maintenance',
+    advEye:'Material benefits', advTitle:'Engineered for real life.',
+    adv1:'Scratch and stain resistant', adv2:'Low maintenance surface', adv3:'Resistant to household chemicals', adv4:'Excellent workability — custom cuts & shapes', adv5:'Non-porous — hygienic and food-safe', adv6:'Impact resistant', adv7:'Fire resistant — non-combustible',
+    careEye:'Easy to clean', careTitle:'Care & Maintenance', careDesc1:'Küartz is a non-porous material characterized by its hardness and high resistance to stains, making it one of the easiest surfaces to maintain. Unlike natural stone, it requires no sealing.', careDesc2:'For everyday cleaning, use a soft cloth with warm water and mild soap. Avoid abrasive pads, bleach-based cleaners, and prolonged exposure to direct heat above 150°C.', careTip:'Do not place hot pots or pans directly on the surface. Always use trivets or heat pads to protect the finish.',
     heroBadge:'Küartz Surfaces · Engineered Stone',
     heroTitle:'Refresh your space with engineered stone.',
     heroSub:'The first and only quartz slab factory in Mexico. Kitchen countertops, vanity tops, and surfaces crafted with precision and natural beauty.',
@@ -468,7 +540,11 @@ var translations = {
     privacy:'Privacy policy', footerLocation:'Juárez, N.L., México'
   },
   es: {
-    navAbout:'Nosotros', navApps:'Aplicaciones', navColl:'Colecciones', navCatalog:'Catálogo', navContact:'Contacto', navQuote:'Cotizar',
+    navAbout:'Nosotros', navApps:'Aplicaciones', navColl:'Colecciones', navCatalog:'Catálogo', navResources:'Recursos', navShowroom:'Showroom', navContact:'Contacto', navQuote:'Cotizar',
+    tabAdv:'Ventajas', tabCare:'Cuidado y Mantenimiento',
+    advEye:'Beneficios del material', advTitle:'Diseñado para la vida real.',
+    adv1:'Resistente a rayones y manchas', adv2:'Superficie de bajo mantenimiento', adv3:'Resistente a productos químicos domésticos', adv4:'Excelente trabajabilidad — cortes y formas personalizadas', adv5:'No poroso — higiénico y apto para contacto con alimentos', adv6:'Resistente a impactos', adv7:'Resistente al fuego — material no combustible',
+    careEye:'Fácil de limpiar', careTitle:'Cuidado y Mantenimiento', careDesc1:'Küartz es un material no poroso caracterizado por su dureza y alta resistencia a las manchas, lo que lo convierte en una de las superficies más fáciles de mantener. A diferencia de la piedra natural, no requiere sellado.', careDesc2:'Para la limpieza diaria, use un paño suave con agua tibia y jabón neutro. Evite estropajos abrasivos, limpiadores con cloro y exposición prolongada a calor directo superior a 150°C.', careTip:'No coloque ollas o sartenes calientes directamente sobre la superficie. Use siempre salvamanteles o bases de calor para proteger el acabado.',
     heroBadge:'Küartz Surfaces · Superficies de cuarzo',
     heroTitle:'Renueva tu espacio con piedra de ingeniería.',
     heroSub:'La primera y única fábrica de slabs de cuarzo en México. Encimeras, vanity tops y superficies fabricadas con precisión y belleza natural.',
@@ -524,6 +600,50 @@ var translations = {
 var activeHue = 'all', activeFamily = 'all';
 
 // ─── LANGUAGE TOGGLE ─────────────────────────────────────────────
+// ── SHOWROOM SLIDER ──────────────────────────────────────────────────────────
+var kzCurrent = 0;
+var kzSlides = [];
+var kzTimer = null;
+function kzInit() {
+  kzSlides = document.querySelectorAll('.kz-slide');
+  var dotsEl = document.getElementById('kz-dots');
+  if (!dotsEl || !kzSlides.length) return;
+  kzSlides.forEach(function(_, i) {
+    var d = document.createElement('div');
+    d.className = 'kz-dot' + (i === 0 ? ' active' : '');
+    d.onclick = function() { kzGoto(i); };
+    dotsEl.appendChild(d);
+  });
+  kzAutoplay();
+}
+function kzGoto(n) {
+  kzSlides[kzCurrent].classList.remove('active');
+  document.querySelectorAll('.kz-dot')[kzCurrent].classList.remove('active');
+  kzCurrent = (n + kzSlides.length) % kzSlides.length;
+  kzSlides[kzCurrent].classList.add('active');
+  document.querySelectorAll('.kz-dot')[kzCurrent].classList.add('active');
+}
+function kzSlide(dir) { clearTimeout(kzTimer); kzGoto(kzCurrent + dir); kzAutoplay(); }
+function kzAutoplay() { kzTimer = setTimeout(function(){ kzGoto(kzCurrent + 1); kzAutoplay(); }, 5000); }
+
+// ── RESOURCES TABS ───────────────────────────────────────────────────────────
+function kzTab(tab) {
+  var adv = document.getElementById('panel-adv');
+  var care = document.getElementById('panel-care');
+  var tabAdv = document.getElementById('tab-adv');
+  var tabCare = document.getElementById('tab-care');
+  if (tab === 'adv') {
+    adv.style.display = 'grid'; care.style.display = 'none';
+    tabAdv.style.color = 'var(--accent)'; tabAdv.style.borderBottomColor = 'var(--accent)'; tabAdv.style.fontWeight = '600';
+    tabCare.style.color = '#9A988F'; tabCare.style.borderBottomColor = 'transparent'; tabCare.style.fontWeight = '500';
+  } else {
+    adv.style.display = 'none'; care.style.display = 'grid';
+    tabCare.style.color = 'var(--accent)'; tabCare.style.borderBottomColor = 'var(--accent)'; tabCare.style.fontWeight = '600';
+    tabAdv.style.color = '#9A988F'; tabAdv.style.borderBottomColor = 'transparent'; tabAdv.style.fontWeight = '500';
+  }
+}
+document.addEventListener('DOMContentLoaded', kzInit);
+
 function toggleLang() {
   lang = (lang === 'en') ? 'es' : 'en';
   document.getElementById('lang-btn').textContent = lang === 'en' ? 'ES' : 'EN';
