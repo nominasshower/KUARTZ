@@ -13,6 +13,23 @@
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:84px;}
 body{margin:0;background:#F6F5F2;font-family:'Jost',sans-serif;color:#1A1A1C;overflow-x:hidden;}
+/* ── SCROLL REVEAL ── */
+.kz-reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);}
+.kz-reveal.visible{opacity:1;transform:none;}
+.kz-reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1);}
+.kz-reveal-left.visible{opacity:1;transform:none;}
+.kz-reveal-right{opacity:0;transform:translateX(32px);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1);}
+.kz-reveal-right.visible{opacity:1;transform:none;}
+/* stagger children */
+.kz-stagger>*{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1);}
+.kz-stagger.visible>*:nth-child(1){opacity:1;transform:none;transition-delay:.05s;}
+.kz-stagger.visible>*:nth-child(2){opacity:1;transform:none;transition-delay:.13s;}
+.kz-stagger.visible>*:nth-child(3){opacity:1;transform:none;transition-delay:.21s;}
+.kz-stagger.visible>*:nth-child(4){opacity:1;transform:none;transition-delay:.29s;}
+.kz-stagger.visible>*:nth-child(5){opacity:1;transform:none;transition-delay:.37s;}
+.kz-stagger.visible>*:nth-child(6){opacity:1;transform:none;transition-delay:.45s;}
+.kz-stagger.visible>*:nth-child(n+7){opacity:1;transform:none;transition-delay:.5s;}
+@media(prefers-reduced-motion:reduce){.kz-reveal,.kz-reveal-left,.kz-reveal-right,.kz-stagger>*{opacity:1!important;transform:none!important;transition:none!important;}}
 img{display:block;max-width:100%;}
 a{text-decoration:none;color:inherit;}
 input,select,textarea,button{font-family:inherit;}
@@ -642,7 +659,65 @@ function kzTab(tab) {
     tabAdv.style.color = '#9A988F'; tabAdv.style.borderBottomColor = 'transparent'; tabAdv.style.fontWeight = '500';
   }
 }
-document.addEventListener('DOMContentLoaded', kzInit);
+document.addEventListener('DOMContentLoaded', function() {
+  kzInit();
+
+  // ── SCROLL REVEAL ─────────────────────────────────────────────────────────
+  if (window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  // Apply to section eyebrows + titles
+  document.querySelectorAll('[data-i18n$="Eye"],[data-i18n$="Title"],[data-i18n$="title"]').forEach(function(el) {
+    el.classList.add('kz-reveal'); io.observe(el);
+  });
+
+  // About section: grid columns
+  var aboutGrid = document.querySelector('#nosotros [style*="grid"]');
+  if (aboutGrid) {
+    var cols = aboutGrid.children;
+    if (cols[0]) { cols[0].classList.add('kz-reveal-left'); io.observe(cols[0]); }
+    if (cols[1]) { cols[1].classList.add('kz-reveal-right'); io.observe(cols[1]); }
+  }
+
+  // Applications cards
+  var appGrid = document.querySelector('#aplicaciones [style*="grid"]');
+  if (appGrid) { appGrid.classList.add('kz-stagger'); io.observe(appGrid); }
+
+  // Why quartz grid
+  var whyGrid = document.getElementById('why-grid');
+  if (whyGrid) { whyGrid.classList.add('kz-stagger'); io.observe(whyGrid); }
+
+  // Stats bar items
+  var statsInner = document.querySelector('[style*="grid-template-columns:repeat(4"]');
+  if (statsInner) { statsInner.classList.add('kz-stagger'); io.observe(statsInner); }
+
+  // Resources panels
+  ['panel-adv','panel-care'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) { el.classList.add('kz-reveal'); io.observe(el); }
+  });
+
+  // Contact section columns
+  var contactGrid = document.querySelector('#contacto [style*="grid"]');
+  if (contactGrid) {
+    var cc = contactGrid.children;
+    if (cc[0]) { cc[0].classList.add('kz-reveal-left'); io.observe(cc[0]); }
+    if (cc[1]) { cc[1].classList.add('kz-reveal-right'); io.observe(cc[1]); }
+  }
+
+  // Generic section descriptions
+  document.querySelectorAll('[data-i18n$="Desc"],[data-i18n$="desc"],[data-i18n$="Sub"],[data-i18n$="sub"]').forEach(function(el) {
+    if (!el.closest('#top')) { el.classList.add('kz-reveal'); io.observe(el); }
+  });
+});
 
 function toggleLang() {
   lang = (lang === 'en') ? 'es' : 'en';
