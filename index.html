@@ -146,21 +146,21 @@ input,select,textarea,button{font-family:inherit;}
       <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="appsTitle">A surface for every space.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;">
-      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom-head" onclick="kzSlideTo(2)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Statuario-01.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app1">Kitchen countertops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app1s">Durable and elegant surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom-head" onclick="kzSlideTo(4)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/VanityTops-01.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app2">Vanity tops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app2s">Custom bathroom surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#colecciones" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom-head" onclick="kzSlideTo(3)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Marquina-02.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app3">Walls &amp; surfaces</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app3s">Quartz wall cladding and floors.</div></div>
@@ -658,6 +658,7 @@ function kzGoto(n) {
   document.querySelectorAll('.kz-dot')[kzCurrent].classList.add('active');
 }
 function kzSlide(dir) { clearTimeout(kzTimer); kzGoto(kzCurrent + dir); kzAutoplay(); }
+function kzSlideTo(n) { clearTimeout(kzTimer); kzGoto(n); kzAutoplay(); }
 function kzAutoplay() { kzTimer = setTimeout(function(){ kzGoto(kzCurrent + 1); kzAutoplay(); }, 5000); }
 
 // ── RESOURCES TABS ───────────────────────────────────────────────────────────
