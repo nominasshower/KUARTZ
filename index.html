@@ -87,7 +87,7 @@ input,select,textarea,button{font-family:inherit;}
     <a href="#colecciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navColl">Collections</a>
     <a href="#catalogo" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navCatalog">Catalog</a>
     <a href="#recursos" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navResources">Resources</a>
-    <a href="#showroom" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navShowroom">Showroom</a>
+    <a href="#showroom-head" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navShowroom">Showroom</a>
     <a href="#contacto" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navContact">Contact</a>
   </nav>
   <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
@@ -248,6 +248,10 @@ input,select,textarea,button{font-family:inherit;}
 <!-- RESOURCES -->
 <section id="recursos" style="padding:clamp(64px,9vw,120px) clamp(20px,5vw,64px);background:#F6F5F2;border-top:1px solid #E8E6E0;">
   <div style="max-width:1280px;margin:0 auto;">
+    <div class="kz-reveal" style="max-width:680px;margin-bottom:48px;">
+      <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="recEye">Resources</div>
+      <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="recTitle">Everything you need to know about quartz.</h2>
+    </div>
     <!-- Advantages + Care tabs header -->
     <div style="display:flex;gap:40px;border-bottom:2px solid #E8E6E0;margin-bottom:56px;">
       <button onclick="kzTab('adv')" id="tab-adv" style="font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;background:none;border:none;cursor:pointer;padding:0 0 18px;color:var(--accent);border-bottom:2px solid var(--accent);margin-bottom:-2px;" data-i18n="tabAdv">Advantages</button>
@@ -258,7 +262,8 @@ input,select,textarea,button{font-family:inherit;}
     <div id="panel-adv" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,90px);align-items:center;">
       <div>
         <div style="font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:14px;" data-i18n="advEye">Material benefits</div>
-        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.1;margin:0 0 32px;" data-i18n="advTitle">Engineered for real life.</h2>
+        <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.1;margin:0 0 20px;" data-i18n="advTitle">Engineered for real life.</h2>
+        <p style="font-size:14.5px;line-height:1.75;color:#55554F;font-weight:300;margin-bottom:26px;" data-i18n="advIntro">Natural quartz is one of nature's hardest materials. Our slabs are engineered consisting of 95% quartz mineral along with resin made up of polymers and pigments. Since it is a man-made material, it can come in a broad variety of colors and textures.</p>
         <div>
           <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv1">Scratch and stain resistant</span></div>
           <div class="adv-item"><div class="adv-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span data-i18n="adv2">Low maintenance surface</span></div>
@@ -294,6 +299,12 @@ input,select,textarea,button{font-family:inherit;}
 </section>
 
 <!-- SHOWROOM -->
+<section id="showroom-head" style="padding:clamp(56px,8vw,90px) clamp(20px,5vw,64px) 0;background:#16181A;">
+  <div class="kz-reveal" style="max-width:680px;margin:0 auto;">
+    <div style="font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);font-weight:500;" data-i18n="showEye">Showroom</div>
+    <h2 style="font-family:'Marcellus',serif;font-weight:400;color:#fff;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 40px;" data-i18n="showTitle">See Küartz in real spaces.</h2>
+  </div>
+</section>
 <section id="showroom" class="kz-slider">
   <div class="kz-slide active" style="background-image:url('media/kt/cocina-blanca.webp');" onclick="openImg('media/kt/cocina-blanca.webp','Pure White · Kitchen')">
     <div class="kz-slide-info">
@@ -503,10 +514,13 @@ var catalog = [
 var translations = {
   en: {
     navAbout:'About', navApps:'Applications', navColl:'Collections', navCatalog:'Catalog', navResources:'Resources', navShowroom:'Showroom', navContact:'Contact', navQuote:'Get a quote',
+    recEye:'Resources', recTitle:'Everything you need to know about quartz.',
+    showEye:'Showroom', showTitle:'See Küartz in real spaces.',
     tabAdv:'Advantages', tabCare:'Care & Maintenance',
     advEye:'Material benefits', advTitle:'Engineered for real life.',
-    adv1:'Scratch and stain resistant', adv2:'Low maintenance surface', adv3:'Resistant to household chemicals', adv4:'Excellent workability — custom cuts & shapes', adv5:'Non-porous — hygienic and food-safe', adv6:'Impact resistant', adv7:'Fire resistant — non-combustible',
-    careEye:'Easy to clean', careTitle:'Care & Maintenance', careDesc1:'Küartz is a non-porous material characterized by its hardness and high resistance to stains, making it one of the easiest surfaces to maintain. Unlike natural stone, it requires no sealing.', careDesc2:'For everyday cleaning, use a soft cloth with warm water and mild soap. Avoid abrasive pads, bleach-based cleaners, and prolonged exposure to direct heat above 150°C.', careTip:'Do not place hot pots or pans directly on the surface. Always use trivets or heat pads to protect the finish.',
+    advIntro:'Natural quartz is one of nature\'s hardest materials. Our slabs are engineered consisting of 95% quartz mineral along with resin made up of polymers and pigments. Since it is a man-made material, it can come in a broad variety of colors and textures.',
+    adv1:'Scratch and stain resistant', adv2:'Low maintenance', adv3:'Resistant to household chemicals', adv4:'Workability of the material', adv5:'Non-porous material', adv6:'Impact resistance', adv7:'Fire resistance',
+    careEye:'Easy to clean', careTitle:'Care & Maintenance', careDesc1:'Quartz is a pore-less material characterized by its hardness and its high resistance to stains, which makes it a surface that is easy to clean. Unlike natural stone, it requires no sealing.', careDesc2:'Clean regularly with lukewarm water and neutral soap. Clean acidic substances promptly, use cutting boards, and rely on pH-appropriate degreasers when needed.', careTip:'Avoid abrasive materials, sealants and polishing products — they are not necessary and can damage the finish over time.',
     heroBadge:'Küartz Surfaces · Engineered Stone',
     heroTitle:'Refresh your space with engineered stone.',
     heroSub:'The first and only quartz slab factory in Mexico. Kitchen countertops, vanity tops, and surfaces crafted with precision and natural beauty.',
@@ -558,10 +572,13 @@ var translations = {
   },
   es: {
     navAbout:'Nosotros', navApps:'Aplicaciones', navColl:'Colecciones', navCatalog:'Catálogo', navResources:'Recursos', navShowroom:'Showroom', navContact:'Contacto', navQuote:'Cotizar',
+    recEye:'Recursos', recTitle:'Todo lo que necesitas saber sobre el cuarzo.',
+    showEye:'Showroom', showTitle:'Conoce Küartz en espacios reales.',
     tabAdv:'Ventajas', tabCare:'Cuidado y Mantenimiento',
     advEye:'Beneficios del material', advTitle:'Diseñado para la vida real.',
-    adv1:'Resistente a rayones y manchas', adv2:'Superficie de bajo mantenimiento', adv3:'Resistente a productos químicos domésticos', adv4:'Excelente trabajabilidad — cortes y formas personalizadas', adv5:'No poroso — higiénico y apto para contacto con alimentos', adv6:'Resistente a impactos', adv7:'Resistente al fuego — material no combustible',
-    careEye:'Fácil de limpiar', careTitle:'Cuidado y Mantenimiento', careDesc1:'Küartz es un material no poroso caracterizado por su dureza y alta resistencia a las manchas, lo que lo convierte en una de las superficies más fáciles de mantener. A diferencia de la piedra natural, no requiere sellado.', careDesc2:'Para la limpieza diaria, use un paño suave con agua tibia y jabón neutro. Evite estropajos abrasivos, limpiadores con cloro y exposición prolongada a calor directo superior a 150°C.', careTip:'No coloque ollas o sartenes calientes directamente sobre la superficie. Use siempre salvamanteles o bases de calor para proteger el acabado.',
+    advIntro:'El cuarzo natural es uno de los materiales más duros de la naturaleza. Nuestros slabs están fabricados con 95% de mineral de cuarzo junto con resina compuesta de polímeros y pigmentos. Al ser un material fabricado, puede presentarse en una amplia variedad de colores y texturas.',
+    adv1:'Resistente a rayones y manchas', adv2:'Bajo mantenimiento', adv3:'Resistente a productos químicos domésticos', adv4:'Facilidad de trabajo del material', adv5:'Material no poroso', adv6:'Resistencia a impactos', adv7:'Resistencia al fuego',
+    careEye:'Fácil de limpiar', careTitle:'Cuidado y Mantenimiento', careDesc1:'El cuarzo es un material no poroso caracterizado por su dureza y su alta resistencia a las manchas, lo que lo convierte en una superficie fácil de limpiar. A diferencia de la piedra natural, no requiere sellado.', careDesc2:'Limpie regularmente con agua tibia y jabón neutro. Limpie de inmediato sustancias ácidas, use tablas para cortar y utilice desengrasantes con pH adecuado cuando sea necesario.', careTip:'Evite materiales abrasivos, selladores y productos para pulir — no son necesarios y pueden dañar el acabado con el tiempo.',
     heroBadge:'Küartz Surfaces · Superficies de cuarzo',
     heroTitle:'Renueva tu espacio con piedra de ingeniería.',
     heroSub:'La primera y única fábrica de slabs de cuarzo en México. Encimeras, vanity tops y superficies fabricadas con precisión y belleza natural.',
