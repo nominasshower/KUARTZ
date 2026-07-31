@@ -184,21 +184,21 @@ input,select,textarea,button{font-family:inherit;}
       <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="appsTitle">A surface for every space.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;">
-      <a href="#showroom" onclick="kzSlideTo(2)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#" onclick="openAppGallery('kitchen', event)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Statuario-01.webp" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app1">Kitchen countertops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app1s">Durable and elegant surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#showroom" onclick="kzSlideTo(4)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#" onclick="openAppGallery('vanity', event)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/VanityTops-01.webp" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app2">Vanity tops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app2s">Custom bathroom surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#showroom" onclick="kzSlideTo(3)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#" onclick="openAppGallery('walls', event)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Marquina-02.webp" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app3">Walls &amp; surfaces</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app3s">Quartz wall cladding and floors.</div></div>
@@ -515,6 +515,17 @@ input,select,textarea,button{font-family:inherit;}
       <div id="lb-name" style="font-family:'Marcellus',serif;font-size:clamp(1.5rem,3vw,2rem);"></div>
       <div id="lb-family" style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:8px;"></div>
     </div>
+  </div>
+</div>
+
+<!-- APPLICATION GALLERY -->
+<div id="app-gallery" onclick="closeAppGallery()" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(10,10,10,0.92);overflow-y:auto;padding:70px 20px;animation:kzoverlay .25s ease both;">
+  <div onclick="event.stopPropagation()" style="position:relative;max-width:1000px;width:100%;margin:0 auto;background:#F6F5F2;border-radius:var(--radius);padding:clamp(28px,5vw,56px);">
+    <button onclick="closeAppGallery()" style="position:absolute;top:-48px;right:0;background:none;border:1px solid rgba(255,255,255,0.3);color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:8px 14px;border-radius:var(--radius);">✕</button>
+    <div id="ag-title" style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.1;"></div>
+    <div id="ag-desc" style="font-size:15px;line-height:1.7;color:#55554F;margin-top:14px;max-width:640px;font-weight:300;"></div>
+    <div id="ag-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:32px;"></div>
+    <div id="ag-note" style="font-size:13px;color:#9A988F;margin-top:24px;font-style:italic;"></div>
   </div>
 </div>
 
@@ -903,6 +914,70 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
+// ─── APPLICATION GALLERY ─────────────────────────────────────────
+var appGalleries = {
+  kitchen: {
+    title: { en: 'Kitchen Countertops', es: 'Cubiertas de Cocina' },
+    desc: {
+      en: 'Our manufacturing process creates quartz slabs free of pores. Our slabs are the ideal option for kitchen countertops since they are stain and scratch resistant, with maximum durability and low maintenance.',
+      es: 'Nuestro proceso de fabricación crea slabs de cuarzo libres de poros. Ideales para cubiertas de cocina por su resistencia a manchas y rayones, con máxima durabilidad y bajo mantenimiento.'
+    },
+    photos: [
+      { img: 'media/kt/cocina-blanca.webp', name: 'Pure White' },
+      { img: 'media/kt/cocina-pure-white.webp', name: 'Pure White · Wall' },
+      { img: 'media/kt/cocina-galaxy-white.webp', name: 'Galaxy White' },
+      { img: 'media/kt/cocina-galaxy-gray.webp', name: 'Galaxy Gray' },
+      { img: 'media/kt/cocina-galaxy-gray-2.webp', name: 'Galaxy Gray · Island' }
+    ]
+  },
+  vanity: {
+    title: { en: 'Vanity Tops', es: 'Cubiertas de Baño' },
+    desc: {
+      en: 'Quartz is the ideal material for vanity tops — it adapts to your needs and lets you design your vanity top cut to size, in a wide variety of colors.',
+      es: 'El cuarzo es el material ideal para cubiertas de baño: se adapta a tus necesidades y permite diseñar tu cubierta a la medida, en una amplia variedad de colores.'
+    },
+    photos: [
+      { img: 'media/kt/vanity-newport.webp', name: 'Calacatta Tree' }
+    ],
+    note: { en: 'More vanity installation photos coming soon.', es: 'Pronto más fotos de instalaciones de baño.' }
+  },
+  walls: {
+    title: { en: 'Walls & Surfaces', es: 'Muros y Superficies' },
+    desc: {
+      en: 'Quartz slabs can also be installed on walls and backsplashes, bringing the same durability and easy-clean surface to vertical spaces.',
+      es: 'Los slabs de cuarzo también se pueden instalar en muros y respaldos, llevando la misma durabilidad y facilidad de limpieza a superficies verticales.'
+    },
+    photos: [
+      { img: 'media/kt/cocina-pure-white.webp', name: 'Pure White · Kitchen Wall' }
+    ],
+    note: { en: 'More wall installation photos coming soon.', es: 'Pronto más fotos de instalaciones en muro.' }
+  }
+};
+function openAppGallery(key, e) {
+  if (e) e.preventDefault();
+  var g = appGalleries[key];
+  document.getElementById('ag-title').textContent = g.title[lang];
+  document.getElementById('ag-desc').textContent = g.desc[lang];
+  var grid = document.getElementById('ag-grid');
+  grid.innerHTML = '';
+  g.photos.forEach(function(p) {
+    var fig = document.createElement('div');
+    fig.style.cssText = 'border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;cursor:pointer;';
+    fig.innerHTML = '<img src="'+p.img+'" alt="'+p.name+'" style="width:100%;height:100%;object-fit:cover;">';
+    fig.onclick = function() { openImg(p.img, p.name); };
+    grid.appendChild(fig);
+  });
+  var noteEl = document.getElementById('ag-note');
+  noteEl.textContent = g.note ? g.note[lang] : '';
+  document.getElementById('app-gallery').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+function closeAppGallery() {
+  document.getElementById('app-gallery').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeAppGallery(); });
 
 // ─── SMOOTH SCROLL ───────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
