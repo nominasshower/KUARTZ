@@ -76,6 +76,22 @@ input,select,textarea,button{font-family:inherit;}
 .adv-item:last-child{border-bottom:none;}
 .adv-check{flex-shrink:0;width:22px;height:22px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;}
 .adv-check svg{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+/* Mobile nav */
+.kz-burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-shrink:0;}
+.kz-burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:transform .25s,opacity .25s;}
+.kz-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.kz-burger.open span:nth-child(2){opacity:0;}
+.kz-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.kz-mobile-nav{position:fixed;top:0;right:0;height:100vh;width:min(320px,82vw);background:#16181A;z-index:99;padding:96px 28px 28px;display:flex;flex-direction:column;gap:4px;transform:translateX(100%);transition:transform .3s ease;overflow-y:auto;}
+.kz-mobile-nav.open{transform:translateX(0);}
+.kz-mobile-nav a{color:rgba(255,255,255,0.85);font-size:15px;letter-spacing:0.08em;text-transform:uppercase;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.kz-mobile-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:98;opacity:0;pointer-events:none;transition:opacity .3s ease;}
+.kz-mobile-backdrop.open{opacity:1;pointer-events:auto;}
+@media(max-width:880px){
+  header nav.kz-desktop-nav{display:none!important;}
+  .kz-burger{display:block;}
+  header a[data-i18n="navQuote"]{display:none!important;}
+}
 </style>
 </head>
 <body>
@@ -89,7 +105,7 @@ input,select,textarea,button{font-family:inherit;}
       <span style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(255,255,255,0.52);font-weight:400;line-height:1;">SURFACES</span>
     </span>
   </a>
-  <nav style="display:flex;align-items:center;gap:clamp(12px,2vw,28px);font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;">
+  <nav class="kz-desktop-nav" style="display:flex;align-items:center;gap:clamp(12px,2vw,28px);font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;">
     <a href="#nosotros" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navAbout">About</a>
     <a href="#aplicaciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navApps">Applications</a>
     <a href="#colecciones" class="nav-link" style="color:rgba(255,255,255,0.78);" data-i18n="navColl">Collections</a>
@@ -101,8 +117,22 @@ input,select,textarea,button{font-family:inherit;}
   <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
     <button id="lang-btn" class="lang-btn" onclick="toggleLang()" style="background:none;border:1px solid rgba(255,255,255,0.3);padding:8px 14px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:var(--radius);color:rgba(255,255,255,0.75);">ES</button>
     <a href="#contacto" style="background:var(--accent);color:#fff;padding:11px 22px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="navQuote">Get a quote</a>
+    <button id="kz-burger" class="kz-burger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<div id="kz-mobile-backdrop" class="kz-mobile-backdrop" onclick="toggleMobileNav()"></div>
+<nav id="kz-mobile-nav" class="kz-mobile-nav">
+  <a href="#nosotros" onclick="toggleMobileNav()" data-i18n="navAbout">About</a>
+  <a href="#aplicaciones" onclick="toggleMobileNav()" data-i18n="navApps">Applications</a>
+  <a href="#colecciones" onclick="toggleMobileNav()" data-i18n="navColl">Collections</a>
+  <a href="#catalogo" onclick="toggleMobileNav()" data-i18n="navCatalog">Catalog</a>
+  <a href="#recursos" onclick="toggleMobileNav()" data-i18n="navResources">Resources</a>
+  <a href="#showroom-head" onclick="toggleMobileNav()" data-i18n="navShowroom">Showroom</a>
+  <a href="#contacto" onclick="toggleMobileNav()" data-i18n="navContact">Contact</a>
+  <a href="#contacto" onclick="toggleMobileNav()" data-i18n="navQuote" style="margin-top:16px;text-align:center;background:var(--accent);border-bottom:none;border-radius:var(--radius);color:#fff;">Get a quote</a>
+</nav>
 
 <!-- HERO -->
 <section id="top" style="position:relative;min-height:90vh;display:flex;align-items:center;padding:150px clamp(20px,5vw,64px) 90px;background-image:linear-gradient(95deg,rgba(16,17,18,0.80) 0%,rgba(16,17,18,0.50) 52%,rgba(16,17,18,0.08) 100%),url('media/Calacatta-Statuario_Countertop2-scaled.webp');background-size:cover;background-position:center;background-color:#16181A;">
@@ -154,21 +184,21 @@ input,select,textarea,button{font-family:inherit;}
       <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:18px 0 0;" data-i18n="appsTitle">A surface for every space.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;">
-      <a href="#showroom-head" onclick="kzSlideTo(2)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom" onclick="kzSlideTo(2)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Statuario-01.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app1">Kitchen countertops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app1s">Durable and elegant surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#showroom-head" onclick="kzSlideTo(4)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom" onclick="kzSlideTo(4)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/VanityTops-01.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app2">Vanity tops</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app2s">Custom bathroom surfaces.</div></div>
           <span style="color:var(--accent);font-size:18px;">→</span>
         </div>
       </a>
-      <a href="#showroom-head" onclick="kzSlideTo(3)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
+      <a href="#showroom" onclick="kzSlideTo(3)" class="app-card" style="display:block;background:#F6F5F2;border:1px solid #E8E6E0;border-radius:var(--radius);overflow:hidden;">
         <div style="aspect-ratio:3/2;overflow:hidden;"><img src="media/kt/Marquina-02.webp" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 88%;"></div>
         <div style="padding:24px 26px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
           <div><div style="font-family:'Marcellus',serif;font-size:1.6rem;" data-i18n="app3">Walls &amp; surfaces</div><div style="font-size:13px;color:#7C7A72;margin-top:6px;font-weight:300;" data-i18n="app3s">Quartz wall cladding and floors.</div></div>
@@ -744,6 +774,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!el.closest('#top')) { el.classList.add('kz-reveal'); io.observe(el); }
   });
 });
+
+function toggleMobileNav() {
+  document.getElementById('kz-mobile-nav').classList.toggle('open');
+  document.getElementById('kz-mobile-backdrop').classList.toggle('open');
+  document.getElementById('kz-burger').classList.toggle('open');
+}
 
 function toggleLang() {
   lang = (lang === 'en') ? 'es' : 'en';
