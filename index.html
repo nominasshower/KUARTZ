@@ -276,7 +276,7 @@ input,select,textarea,button{font-family:inherit;}
     <h2 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:18px 0 0;" data-i18n="catTitle">Download the full catalog.</h2>
     <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:rgba(255,255,255,0.76);margin:20px 0 0;font-weight:300;" data-i18n="catDesc">All colors, sizes and technical specifications in one document.</p>
     <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:36px;">
-      <a href="media/Kuartz-Catalog-2025.pdf" download target="_blank" style="background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="catCta1">Download PDF</a>
+      <a href="media/Kuartz-Catalog-2025.pdf" download target="_blank" onclick="if (typeof gtag === 'function') gtag('event', 'download_catalog');" style="background:var(--accent);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;border-radius:var(--radius);" data-i18n="catCta1">Download PDF</a>
       <a href="#contacto" style="border:1px solid rgba(255,255,255,0.52);color:#fff;padding:16px 34px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;border-radius:var(--radius);" data-i18n="catCta2">Talk to an advisor</a>
     </div>
   </div>
@@ -811,6 +811,7 @@ function toggleMobileNav() {
 
 function toggleLang() {
   lang = (lang === 'en') ? 'es' : 'en';
+  if (typeof gtag === 'function') gtag('event', 'language_toggle', { language: lang });
   document.getElementById('lang-btn').textContent = lang === 'en' ? 'ES' : 'EN';
   applyTranslations();
   renderCollections();
@@ -836,7 +837,7 @@ function renderCollections() {
     var btn = document.createElement('button');
     btn.className = 'chip ' + (activeHue === d[0] ? 'chip-active' : 'chip-inactive');
     btn.textContent = d[1];
-    btn.onclick = function() { activeHue = d[0]; renderCollections(); };
+    btn.onclick = function() { activeHue = d[0]; if (typeof gtag === 'function') gtag('event', 'filter_collections', { hue: activeHue, family: activeFamily }); renderCollections(); };
     hueEl.appendChild(btn);
   });
   // Family filters
@@ -846,7 +847,7 @@ function renderCollections() {
     var btn = document.createElement('button');
     btn.className = 'chip ' + (activeFamily === d[0] ? 'chip-active' : 'chip-inactive');
     btn.textContent = d[1];
-    btn.onclick = function() { activeFamily = d[0]; renderCollections(); };
+    btn.onclick = function() { activeFamily = d[0]; if (typeof gtag === 'function') gtag('event', 'filter_collections', { hue: activeHue, family: activeFamily }); renderCollections(); };
     famEl.appendChild(btn);
   });
   // Grid
@@ -892,6 +893,7 @@ function renderColorSelect() {
 
 // ─── LIGHTBOX ────────────────────────────────────────────────────
 function openImg(src, name) {
+  if (typeof gtag === 'function') gtag('event', 'view_photo', { photo_name: name });
   document.getElementById('lb-img').src = src;
   document.getElementById('lb-img').alt = name;
   document.getElementById('lb-name').textContent = name;
@@ -901,6 +903,7 @@ function openImg(src, name) {
   document.body.style.overflow = 'hidden';
 }
 function openLightbox(c, familyLabel) {
+  if (typeof gtag === 'function') gtag('event', 'view_color', { color_name: c.name, color_family: familyLabel });
   document.getElementById('lb-img').src = c.img;
   document.getElementById('lb-img').alt = c.name;
   document.getElementById('lb-name').textContent = c.name;
@@ -964,6 +967,7 @@ var appGalleries = {
 };
 function openAppGallery(key, e) {
   if (e) e.preventDefault();
+  if (typeof gtag === 'function') gtag('event', 'view_application', { application_type: key });
   var g = appGalleries[key];
   document.getElementById('ag-title').textContent = g.title[lang];
   document.getElementById('ag-desc').textContent = g.desc[lang];
@@ -1011,6 +1015,7 @@ form.addEventListener('submit', async function(e) {
     data.append('g-recaptcha-response', token);
     var res = await fetch(form.action, { method:'POST', body:data, headers:{Accept:'application/json'} });
     if (res.ok) {
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { color_of_interest: data.get('color') || '' });
       form.style.display = 'none';
       document.getElementById('kz-success').style.display = 'block';
     } else {
