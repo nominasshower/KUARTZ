@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-07-31T15:15:50.148333+00:00",
+  "daily": [
+    {
+      "date": "20260730",
+      "sessions": 5,
+      "users": 4,
+      "pageviews": 36
+    },
+    {
+      "date": "20260731",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 8
+    }
+  ],
+  "totals": {
+    "sessions": 7,
+    "users": 4,
+    "pageviews": 44
+  },
+  "applications": [],
+  "colors_viewed": [],
+  "leads_by_color": [],
+  "total_leads": 0,
+  "downloads_catalog": 0,
+  "quote_form_submits": 0,
+  "countries": [
+    {
+      "name": "Mexico",
+      "users": 4
+    }
+  ]
+}

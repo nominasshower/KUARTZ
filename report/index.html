@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Küartz — Reporte de interés de clientes</title>
+<link rel="icon" href="../media/Kuartz_Favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;background:#F6F5F2;font-family:'Jost',sans-serif;color:#1A1A1C;}
+h1,h2{font-family:'Marcellus',serif;font-weight:400;margin:0;}
+header{background:#16181A;color:#fff;padding:28px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+header img{height:36px;mix-blend-mode:screen;}
+header .brand{display:flex;align-items:center;gap:10px;}
+header .brand-text{font-weight:700;letter-spacing:0.08em;font-size:18px;}
+header .updated{font-size:12.5px;color:rgba(255,255,255,0.55);}
+main{max-width:1180px;margin:0 auto;padding:clamp(24px,5vw,48px) clamp(20px,5vw,64px) 80px;}
+.eyebrow{font-size:12.5px;letter-spacing:0.22em;text-transform:uppercase;color:#2E6B3C;font-weight:500;margin-bottom:10px;}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:28px 0 40px;}
+.stat{background:#fff;border:1px solid #E8E6E0;border-radius:4px;padding:20px 22px;}
+.stat .num{font-family:'Marcellus',serif;font-size:2.1rem;line-height:1;}
+.stat .label{font-size:12.5px;color:#7C7A72;margin-top:8px;letter-spacing:0.03em;}
+.panel{background:#fff;border:1px solid #E8E6E0;border-radius:4px;padding:24px 26px;margin-bottom:24px;}
+.panel h2{font-size:1.35rem;margin-bottom:4px;}
+.panel .sub{font-size:13px;color:#9A988F;margin-bottom:18px;}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+@media(max-width:820px){.grid-2{grid-template-columns:1fr;}}
+.bar-row{display:flex;align-items:center;gap:12px;margin:10px 0;}
+.bar-row .name{width:150px;flex-shrink:0;font-size:13.5px;color:#3A3830;text-align:right;}
+.bar-track{flex:1;background:#F0EFEA;border-radius:2px;height:22px;position:relative;overflow:hidden;}
+.bar-fill{height:100%;border-radius:2px;background:#2E6B3C;display:flex;align-items:center;}
+.bar-count{font-size:12px;color:#fff;padding:0 8px;font-weight:500;white-space:nowrap;}
+.bar-count.outside{color:#3A3830;padding-left:8px;}
+.empty{font-size:13.5px;color:#9A988F;font-style:italic;padding:8px 0;}
+.line-chart{width:100%;height:220px;}
+.line-chart path.area{fill:rgba(46,107,60,0.10);}
+.line-chart path.line{fill:none;stroke:#2E6B3C;stroke-width:2;}
+.line-chart circle{fill:#2E6B3C;}
+.line-chart .axis-label{font-size:10.5px;fill:#9A988F;font-family:'Jost',sans-serif;}
+.countries{display:flex;flex-direction:column;gap:8px;}
+.country-row{display:flex;justify-content:space-between;font-size:14px;padding:6px 0;border-bottom:1px solid #F0EFEA;}
+.country-row:last-child{border-bottom:none;}
+.note{font-size:12.5px;color:#9A988F;margin-top:6px;}
+footer{text-align:center;padding:30px 20px;font-size:12px;color:#9A988F;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="../media/Kuartz_Favicon.webp" alt="Küartz">
+    <span class="brand-text">KÜARTZ · REPORTE</span>
+  </div>
+  <div class="updated" id="updated">Cargando…</div>
+</header>
+
+<main>
+  <div class="eyebrow">Interés de clientes</div>
+  <h1>Qué está buscando la gente en kuartzsurfaces</h1>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="stat-users">–</div><div class="label">Usuarios (30 días)</div></div>
+    <div class="stat"><div class="num" id="stat-sessions">–</div><div class="label">Sesiones (30 días)</div></div>
+    <div class="stat"><div class="num" id="stat-pageviews">–</div><div class="label">Vistas de página</div></div>
+    <div class="stat"><div class="num" id="stat-leads">–</div><div class="label">Cotizaciones enviadas</div></div>
+    <div class="stat"><div class="num" id="stat-downloads">–</div><div class="label">Catálogos descargados</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Tráfico diario</h2>
+    <div class="sub">Sesiones por día, últimos 30 días</div>
+    <svg class="line-chart" id="daily-chart" viewBox="0 0 900 220" preserveAspectRatio="none"></svg>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Qué aplicación les interesa</h2>
+      <div class="sub">Clics en las tarjetas Kitchen / Vanity / Walls</div>
+      <div id="applications"></div>
+    </div>
+    <div class="panel">
+      <h2>Colores más vistos</h2>
+      <div class="sub">Zoom de colores en Colecciones</div>
+      <div id="colors"></div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h2>Color pedido en cotizaciones</h2>
+      <div class="sub">El dato más directo de intención de compra</div>
+      <div id="leads"></div>
+    </div>
+    <div class="panel">
+      <h2>De dónde nos visitan</h2>
+      <div class="sub">Países con más usuarios activos</div>
+      <div class="countries" id="countries"></div>
+    </div>
+  </div>
+
+  <p class="note" id="fresh-note"></p>
+</main>
+
+<footer>Reporte generado automáticamente a partir de Google Analytics · kuartzsurfaces.com</footer>
+
+<script>
+function fmt(n) { return new Intl.NumberFormat('es-MX').format(n); }
+
+function renderBars(containerId, items, opts) {
+  opts = opts || {};
+  var el = document.getElementById(containerId);
+  if (!items || !items.length) {
+    el.innerHTML = '<div class="empty">' + (opts.emptyText || 'Todavía no hay datos suficientes — se irá llenando con el tráfico del sitio.') + '</div>';
+    return;
+  }
+  var max = Math.max.apply(null, items.map(function(i){ return i.count; }));
+  el.innerHTML = items.map(function(i) {
+    var pct = max ? Math.max(6, Math.round((i.count / max) * 100)) : 0;
+    var wide = pct > 22;
+    return '<div class="bar-row">' +
+      '<div class="name">' + i.name + '</div>' +
+      '<div class="bar-track">' +
+        '<div class="bar-fill" style="width:' + pct + '%">' +
+          (wide ? '<span class="bar-count">' + fmt(i.count) + '</span>' : '') +
+        '</div>' +
+        (wide ? '' : '<span class="bar-count outside" style="position:absolute;left:calc(' + pct + '% + 6px);top:0;line-height:22px;">' + fmt(i.count) + '</span>') +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function renderDailyChart(daily) {
+  var svg = document.getElementById('daily-chart');
+  if (!daily || daily.length < 2) {
+    svg.outerHTML = '<div class="empty">Todavía no hay suficiente historial diario — vuelve en unos días.</div>';
+    return;
+  }
+  var w = 900, h = 220, padL = 30, padB = 24, padT = 10, padR = 10;
+  var max = Math.max.apply(null, daily.map(function(d){ return d.sessions; })) || 1;
+  var stepX = (w - padL - padR) / (daily.length - 1);
+  var pts = daily.map(function(d, i) {
+    var x = padL + i * stepX;
+    var y = padT + (h - padT - padB) * (1 - d.sessions / max);
+    return [x, y];
+  });
+  var linePath = pts.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ');
+  var areaPath = linePath + ' L' + pts[pts.length-1][0].toFixed(1) + ',' + (h-padB) + ' L' + pts[0][0].toFixed(1) + ',' + (h-padB) + ' Z';
+  var circles = pts.map(function(p) { return '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3"></circle>'; }).join('');
+  var firstLabel = daily[0].date.slice(4,6) + '/' + daily[0].date.slice(6,8);
+  var lastLabel = daily[daily.length-1].date.slice(4,6) + '/' + daily[daily.length-1].date.slice(6,8);
+  svg.innerHTML =
+    '<path class="area" d="' + areaPath + '"></path>' +
+    '<path class="line" d="' + linePath + '"></path>' +
+    circles +
+    '<text class="axis-label" x="' + padL + '" y="' + (h-4) + '">' + firstLabel + '</text>' +
+    '<text class="axis-label" x="' + (w-padR) + '" y="' + (h-4) + '" text-anchor="end">' + lastLabel + '</text>' +
+    '<text class="axis-label" x="' + padL + '" y="' + (padT+8) + '">' + max + ' sesiones/día (máx.)</text>';
+}
+
+fetch('data.json?_=' + Date.now())
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    document.getElementById('updated').textContent = 'Actualizado: ' + new Date(data.generated_at).toLocaleString('es-MX', { dateStyle: 'medium', timeStyle: 'short' });
+    document.getElementById('stat-users').textContent = fmt(data.totals.users);
+    document.getElementById('stat-sessions').textContent = fmt(data.totals.sessions);
+    document.getElementById('stat-pageviews').textContent = fmt(data.totals.pageviews);
+    document.getElementById('stat-leads').textContent = fmt(data.quote_form_submits || data.total_leads || 0);
+    document.getElementById('stat-downloads').textContent = fmt(data.downloads_catalog || 0);
+
+    renderDailyChart(data.daily);
+    renderBars('applications', data.applications);
+    renderBars('colors', data.colors_viewed);
+    renderBars('leads', data.leads_by_color, { emptyText: 'Todavía no hay cotizaciones registradas con este detalle.' });
+
+    var countriesEl = document.getElementById('countries');
+    if (data.countries && data.countries.length) {
+      countriesEl.innerHTML = data.countries.map(function(c) {
+        return '<div class="country-row"><span>' + c.name + '</span><span>' + fmt(c.users) + '</span></div>';
+      }).join('');
+    } else {
+      countriesEl.innerHTML = '<div class="empty">Sin datos todavía.</div>';
+    }
+
+    document.getElementById('fresh-note').textContent =
+      'Nota: los desgloses por color y por aplicación empezaron a registrarse el 31 de julio de 2026 — antes de esa fecha no hay ese detalle, así que el reporte se va a ir llenando con el tráfico de los próximos días.';
+  })
+  .catch(function(err) {
+    document.querySelector('main').insertAdjacentHTML('afterbegin', '<div class="panel" style="border-color:#e34948;color:#e34948;">No se pudo cargar data.json: ' + err + '</div>');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+name: Actualizar reporte de Analytics
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # todos los dias 7am hora Mexico (13:00 UTC)
+  workflow_dispatch: {}     # tambien se puede correr manual desde Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install google-analytics-data
+
+      - name: Escribir credenciales
+        run: echo "$GA_SERVICE_ACCOUNT_JSON" > /tmp/ga-key.json
+        env:
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+
+      - name: Generar reporte
+        run: python report/generate_report.py
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/ga-key.json
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add report/data.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: actualizar reporte de analytics [skip ci]"
+            git push
+          else
+            echo "Sin cambios en data.json"
+          fi
