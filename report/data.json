@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T16:11:01.061662+00:00",
+  "generated_at": "2026-08-01T14:23:56.377810+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -9,26 +9,78 @@
     },
     {
       "date": "20260731",
-      "sessions": 2,
-      "users": 2,
-      "pageviews": 8
+      "sessions": 7,
+      "users": 4,
+      "pageviews": 11
+    },
+    {
+      "date": "20260801",
+      "sessions": 4,
+      "users": 4,
+      "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 7,
-    "users": 4,
-    "pageviews": 44
+    "sessions": 16,
+    "users": 10,
+    "pageviews": 52
   },
-  "applications": [],
-  "colors_viewed": [],
+  "applications": [
+    {
+      "name": "kitchen",
+      "count": 1
+    },
+    {
+      "name": "walls",
+      "count": 1
+    }
+  ],
+  "colors_viewed": [
+    {
+      "name": "Calacatta Bengala",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Golden Pearl",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Lincoln Marquina",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Victoria",
+      "count": 1
+    },
+    {
+      "name": "Iced White",
+      "count": 1
+    },
+    {
+      "name": "Lyra",
+      "count": 1
+    },
+    {
+      "name": "Marquina",
+      "count": 1
+    }
+  ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 0,
+  "downloads_catalog": 1,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "Mexico",
+      "users": 5
+    },
+    {
+      "name": "United States",
       "users": 4
+    },
+    {
+      "name": "India",
+      "users": 1
     }
   ]
 }
