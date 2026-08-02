@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T14:23:56.377810+00:00",
+  "generated_at": "2026-08-02T14:25:33.320364+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -11,23 +11,33 @@
       "date": "20260731",
       "sessions": 7,
       "users": 4,
-      "pageviews": 11
+      "pageviews": 10
     },
     {
       "date": "20260801",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 5
+      "sessions": 16,
+      "users": 14,
+      "pageviews": 16
+    },
+    {
+      "date": "20260802",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 16,
-    "users": 10,
-    "pageviews": 52
+    "sessions": 30,
+    "users": 22,
+    "pageviews": 64
   },
   "applications": [
     {
       "name": "kitchen",
+      "count": 4
+    },
+    {
+      "name": "vanity",
       "count": 1
     },
     {
@@ -37,7 +47,23 @@
   ],
   "colors_viewed": [
     {
+      "name": "Calacatta Statuario",
+      "count": 2
+    },
+    {
+      "name": "Galaxy Gray",
+      "count": 2
+    },
+    {
+      "name": "Lyra",
+      "count": 2
+    },
+    {
       "name": "Calacatta Bengala",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Carola",
       "count": 1
     },
     {
@@ -49,7 +75,19 @@
       "count": 1
     },
     {
+      "name": "Calacatta Monaco",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Porto",
+      "count": 1
+    },
+    {
       "name": "Calacatta Victoria",
+      "count": 1
+    },
+    {
+      "name": "Galaxy Black",
       "count": 1
     },
     {
@@ -57,7 +95,7 @@
       "count": 1
     },
     {
-      "name": "Lyra",
+      "name": "Manhattan Gray",
       "count": 1
     },
     {
@@ -67,16 +105,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 1,
+  "downloads_catalog": 2,
   "quote_form_submits": 0,
   "countries": [
     {
-      "name": "Mexico",
-      "users": 5
+      "name": "United States",
+      "users": 12
     },
     {
-      "name": "United States",
-      "users": 4
+      "name": "Mexico",
+      "users": 6
+    },
+    {
+      "name": "China",
+      "users": 2
+    },
+    {
+      "name": "France",
+      "users": 1
     },
     {
       "name": "India",
