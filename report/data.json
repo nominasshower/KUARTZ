@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T14:25:33.320364+00:00",
+  "generated_at": "2026-08-03T15:40:01.730718+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -15,21 +15,27 @@
     },
     {
       "date": "20260801",
-      "sessions": 16,
-      "users": 14,
-      "pageviews": 16
+      "sessions": 17,
+      "users": 15,
+      "pageviews": 19
     },
     {
       "date": "20260802",
-      "sessions": 2,
-      "users": 2,
-      "pageviews": 2
+      "sessions": 13,
+      "users": 12,
+      "pageviews": 13
+    },
+    {
+      "date": "20260803",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 30,
-    "users": 22,
-    "pageviews": 64
+    "sessions": 48,
+    "users": 38,
+    "pageviews": 84
   },
   "applications": [
     {
@@ -47,6 +53,18 @@
   ],
   "colors_viewed": [
     {
+      "name": "Calacatta Carola",
+      "count": 3
+    },
+    {
+      "name": "Calacatta Bengala",
+      "count": 2
+    },
+    {
+      "name": "Calacatta Monaco",
+      "count": 2
+    },
+    {
       "name": "Calacatta Statuario",
       "count": 2
     },
@@ -59,23 +77,11 @@
       "count": 2
     },
     {
-      "name": "Calacatta Bengala",
-      "count": 1
-    },
-    {
-      "name": "Calacatta Carola",
-      "count": 1
-    },
-    {
       "name": "Calacatta Golden Pearl",
       "count": 1
     },
     {
       "name": "Calacatta Lincoln Marquina",
-      "count": 1
-    },
-    {
-      "name": "Calacatta Monaco",
       "count": 1
     },
     {
@@ -105,27 +111,47 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 2,
+  "downloads_catalog": 3,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 12
+      "users": 19
+    },
+    {
+      "name": "China",
+      "users": 6
     },
     {
       "name": "Mexico",
       "users": 6
     },
     {
-      "name": "China",
-      "users": 2
-    },
-    {
       "name": "France",
       "users": 1
     },
     {
+      "name": "Germany",
+      "users": 1
+    },
+    {
+      "name": "Hong Kong",
+      "users": 1
+    },
+    {
       "name": "India",
+      "users": 1
+    },
+    {
+      "name": "Netherlands",
+      "users": 1
+    },
+    {
+      "name": "Romania",
+      "users": 1
+    },
+    {
+      "name": "United Kingdom",
       "users": 1
     }
   ]
