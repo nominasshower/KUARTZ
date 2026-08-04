@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T15:40:01.730718+00:00",
+  "generated_at": "2026-08-04T15:21:14.299304+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -27,20 +27,26 @@
     },
     {
       "date": "20260803",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 6
+      "sessions": 23,
+      "users": 20,
+      "pageviews": 22
+    },
+    {
+      "date": "20260804",
+      "sessions": 8,
+      "users": 8,
+      "pageviews": 8
     }
   ],
   "totals": {
-    "sessions": 48,
-    "users": 38,
-    "pageviews": 84
+    "sessions": 73,
+    "users": 60,
+    "pageviews": 108
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 4
+      "count": 5
     },
     {
       "name": "vanity",
@@ -54,18 +60,18 @@
   "colors_viewed": [
     {
       "name": "Calacatta Carola",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Calacatta Bengala",
-      "count": 2
-    },
-    {
-      "name": "Calacatta Monaco",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Calacatta Statuario",
+      "count": 3
+    },
+    {
+      "name": "Calacatta Monaco",
       "count": 2
     },
     {
@@ -73,8 +79,24 @@
       "count": 2
     },
     {
+      "name": "Iced White",
+      "count": 2
+    },
+    {
       "name": "Lyra",
       "count": 2
+    },
+    {
+      "name": "Pure White",
+      "count": 2
+    },
+    {
+      "name": "Calacatta Almond",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Florida",
+      "count": 1
     },
     {
       "name": "Calacatta Golden Pearl",
@@ -91,22 +113,6 @@
     {
       "name": "Calacatta Victoria",
       "count": 1
-    },
-    {
-      "name": "Galaxy Black",
-      "count": 1
-    },
-    {
-      "name": "Iced White",
-      "count": 1
-    },
-    {
-      "name": "Manhattan Gray",
-      "count": 1
-    },
-    {
-      "name": "Marquina",
-      "count": 1
     }
   ],
   "leads_by_color": [],
@@ -116,15 +122,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 19
+      "users": 34
     },
     {
       "name": "China",
-      "users": 6
+      "users": 10
     },
     {
       "name": "Mexico",
-      "users": 6
+      "users": 7
     },
     {
       "name": "France",
@@ -151,7 +157,7 @@
       "users": 1
     },
     {
-      "name": "United Kingdom",
+      "name": "Spain",
       "users": 1
     }
   ]
