@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T15:10:36.234098+00:00",
+  "generated_at": "2026-08-06T15:09:57.343992+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -33,26 +33,32 @@
     },
     {
       "date": "20260804",
-      "sessions": 16,
-      "users": 16,
-      "pageviews": 16
+      "sessions": 17,
+      "users": 17,
+      "pageviews": 20
     },
     {
       "date": "20260805",
-      "sessions": 6,
-      "users": 6,
+      "sessions": 24,
+      "users": 20,
+      "pageviews": 23
+    },
+    {
+      "date": "20260806",
+      "sessions": 5,
+      "users": 5,
       "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 89,
-    "users": 75,
-    "pageviews": 125
+    "sessions": 113,
+    "users": 94,
+    "pageviews": 152
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 6
+      "count": 7
     },
     {
       "name": "vanity",
@@ -65,15 +71,23 @@
   ],
   "colors_viewed": [
     {
+      "name": "Galaxy White",
+      "count": 5
+    },
+    {
+      "name": "Pure White",
+      "count": 5
+    },
+    {
       "name": "Calacatta Carola",
       "count": 4
     },
     {
-      "name": "Galaxy White",
+      "name": "Calacatta Statuario",
       "count": 4
     },
     {
-      "name": "Pure White",
+      "name": "Iced White",
       "count": 4
     },
     {
@@ -81,23 +95,19 @@
       "count": 3
     },
     {
-      "name": "Calacatta Statuario",
+      "name": "Frost White",
       "count": 3
+    },
+    {
+      "name": "Calacatta Almond",
+      "count": 2
     },
     {
       "name": "Calacatta Monaco",
       "count": 2
     },
     {
-      "name": "Frost White",
-      "count": 2
-    },
-    {
       "name": "Galaxy Gray",
-      "count": 2
-    },
-    {
-      "name": "Iced White",
       "count": 2
     },
     {
@@ -107,10 +117,6 @@
     {
       "name": "Snow White",
       "count": 2
-    },
-    {
-      "name": "Calacatta Almond",
-      "count": 1
     },
     {
       "name": "Calacatta Florida",
@@ -128,19 +134,19 @@
   "countries": [
     {
       "name": "United States",
-      "users": 41
+      "users": 51
     },
     {
       "name": "China",
-      "users": 14
+      "users": 15
     },
     {
       "name": "Mexico",
-      "users": 9
+      "users": 14
     },
     {
       "name": "Germany",
-      "users": 2
+      "users": 4
     },
     {
       "name": "France",
@@ -155,15 +161,15 @@
       "users": 1
     },
     {
+      "name": "Iran",
+      "users": 1
+    },
+    {
       "name": "Netherlands",
       "users": 1
     },
     {
       "name": "Romania",
-      "users": 1
-    },
-    {
-      "name": "Singapore",
       "users": 1
     }
   ]
