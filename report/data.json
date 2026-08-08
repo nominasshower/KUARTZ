@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T14:08:30.483396+00:00",
+  "generated_at": "2026-08-08T13:40:30.644517+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -45,43 +45,53 @@
     },
     {
       "date": "20260806",
-      "sessions": 22,
-      "users": 17,
-      "pageviews": 26
+      "sessions": 25,
+      "users": 20,
+      "pageviews": 29
     },
     {
       "date": "20260807",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 3
+      "sessions": 26,
+      "users": 22,
+      "pageviews": 21
+    },
+    {
+      "date": "20260808",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 139,
-    "users": 113,
-    "pageviews": 183
+    "sessions": 168,
+    "users": 136,
+    "pageviews": 209
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 8
-    },
-    {
-      "name": "vanity",
-      "count": 3
+      "count": 9
     },
     {
       "name": "walls",
+      "count": 4
+    },
+    {
+      "name": "vanity",
       "count": 3
     }
   ],
   "colors_viewed": [
     {
+      "name": "Galaxy White",
+      "count": 6
+    },
+    {
       "name": "Calacatta Statuario",
       "count": 5
     },
     {
-      "name": "Galaxy White",
+      "name": "Iced White",
       "count": 5
     },
     {
@@ -90,10 +100,6 @@
     },
     {
       "name": "Calacatta Carola",
-      "count": 4
-    },
-    {
-      "name": "Iced White",
       "count": 4
     },
     {
@@ -113,7 +119,15 @@
       "count": 2
     },
     {
+      "name": "Calacatta Golden Pearl",
+      "count": 2
+    },
+    {
       "name": "Calacatta Monaco",
+      "count": 2
+    },
+    {
+      "name": "Calacatta Porto",
       "count": 2
     },
     {
@@ -125,11 +139,7 @@
       "count": 2
     },
     {
-      "name": "Lyra",
-      "count": 2
-    },
-    {
-      "name": "Snow White",
+      "name": "Iceberg",
       "count": 2
     }
   ],
@@ -140,15 +150,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 60
-    },
-    {
-      "name": "Mexico",
-      "users": 20
+      "users": 75
     },
     {
       "name": "China",
-      "users": 19
+      "users": 26
+    },
+    {
+      "name": "Mexico",
+      "users": 21
     },
     {
       "name": "Germany",
