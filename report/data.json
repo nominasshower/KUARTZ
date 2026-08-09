@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T13:40:30.644517+00:00",
+  "generated_at": "2026-08-09T13:43:54.541124+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -57,20 +57,26 @@
     },
     {
       "date": "20260808",
-      "sessions": 5,
-      "users": 5,
-      "pageviews": 5
+      "sessions": 15,
+      "users": 14,
+      "pageviews": 15
+    },
+    {
+      "date": "20260809",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 168,
-    "users": 136,
-    "pageviews": 209
+    "sessions": 181,
+    "users": 145,
+    "pageviews": 222
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 9
+      "count": 10
     },
     {
       "name": "walls",
@@ -87,6 +93,10 @@
       "count": 6
     },
     {
+      "name": "Calacatta Carola",
+      "count": 5
+    },
+    {
       "name": "Calacatta Statuario",
       "count": 5
     },
@@ -99,7 +109,7 @@
       "count": 5
     },
     {
-      "name": "Calacatta Carola",
+      "name": "Calacatta Bengala",
       "count": 4
     },
     {
@@ -107,7 +117,7 @@
       "count": 3
     },
     {
-      "name": "Calacatta Bengala",
+      "name": "Calacatta Golden Pearl",
       "count": 3
     },
     {
@@ -115,11 +125,19 @@
       "count": 3
     },
     {
-      "name": "Calacatta Florida",
-      "count": 2
+      "name": "Galaxy Sand",
+      "count": 3
     },
     {
-      "name": "Calacatta Golden Pearl",
+      "name": "Iceberg",
+      "count": 3
+    },
+    {
+      "name": "Lyra",
+      "count": 3
+    },
+    {
+      "name": "Calacatta Florida",
       "count": 2
     },
     {
@@ -128,18 +146,6 @@
     },
     {
       "name": "Calacatta Porto",
-      "count": 2
-    },
-    {
-      "name": "Galaxy Black",
-      "count": 2
-    },
-    {
-      "name": "Galaxy Gray",
-      "count": 2
-    },
-    {
-      "name": "Iceberg",
       "count": 2
     }
   ],
@@ -150,19 +156,23 @@
   "countries": [
     {
       "name": "United States",
-      "users": 75
+      "users": 78
     },
     {
       "name": "China",
-      "users": 26
+      "users": 29
     },
     {
       "name": "Mexico",
-      "users": 21
+      "users": 23
     },
     {
       "name": "Germany",
       "users": 4
+    },
+    {
+      "name": "Iran",
+      "users": 2
     },
     {
       "name": "Canada",
@@ -178,10 +188,6 @@
     },
     {
       "name": "India",
-      "users": 1
-    },
-    {
-      "name": "Iran",
       "users": 1
     },
     {
