@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T13:43:54.541124+00:00",
+  "generated_at": "2026-08-10T14:17:12.336999+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -51,9 +51,9 @@
     },
     {
       "date": "20260807",
-      "sessions": 26,
-      "users": 22,
-      "pageviews": 21
+      "sessions": 27,
+      "users": 23,
+      "pageviews": 28
     },
     {
       "date": "20260808",
@@ -63,15 +63,21 @@
     },
     {
       "date": "20260809",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
+      "sessions": 13,
+      "users": 13,
+      "pageviews": 13
+    },
+    {
+      "date": "20260810",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 181,
-    "users": 145,
-    "pageviews": 222
+    "sessions": 198,
+    "users": 161,
+    "pageviews": 245
   },
   "applications": [
     {
@@ -89,11 +95,15 @@
   ],
   "colors_viewed": [
     {
+      "name": "Calacatta Carola",
+      "count": 6
+    },
+    {
       "name": "Galaxy White",
       "count": 6
     },
     {
-      "name": "Calacatta Carola",
+      "name": "Calacatta Bengala",
       "count": 5
     },
     {
@@ -107,10 +117,6 @@
     {
       "name": "Pure White",
       "count": 5
-    },
-    {
-      "name": "Calacatta Bengala",
-      "count": 4
     },
     {
       "name": "Calacatta Almond",
@@ -151,24 +157,28 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 7,
+  "downloads_catalog": 8,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 78
+      "users": 85
     },
     {
       "name": "China",
-      "users": 29
+      "users": 35
     },
     {
       "name": "Mexico",
-      "users": 23
+      "users": 24
     },
     {
       "name": "Germany",
       "users": 4
+    },
+    {
+      "name": "India",
+      "users": 2
     },
     {
       "name": "Iran",
@@ -184,10 +194,6 @@
     },
     {
       "name": "Hong Kong",
-      "users": 1
-    },
-    {
-      "name": "India",
       "users": 1
     },
     {
