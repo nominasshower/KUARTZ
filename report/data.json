@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T14:17:12.336999+00:00",
+  "generated_at": "2026-08-11T14:16:19.583946+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -65,24 +65,30 @@
       "date": "20260809",
       "sessions": 13,
       "users": 13,
-      "pageviews": 13
+      "pageviews": 14
     },
     {
       "date": "20260810",
-      "sessions": 5,
-      "users": 5,
-      "pageviews": 6
+      "sessions": 21,
+      "users": 20,
+      "pageviews": 22
+    },
+    {
+      "date": "20260811",
+      "sessions": 4,
+      "users": 3,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 198,
-    "users": 161,
-    "pageviews": 245
+    "sessions": 218,
+    "users": 179,
+    "pageviews": 265
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 10
+      "count": 12
     },
     {
       "name": "walls",
@@ -95,20 +101,20 @@
   ],
   "colors_viewed": [
     {
+      "name": "Calacatta Statuario",
+      "count": 8
+    },
+    {
       "name": "Calacatta Carola",
+      "count": 7
+    },
+    {
+      "name": "Calacatta Bengala",
       "count": 6
     },
     {
       "name": "Galaxy White",
       "count": 6
-    },
-    {
-      "name": "Calacatta Bengala",
-      "count": 5
-    },
-    {
-      "name": "Calacatta Statuario",
-      "count": 5
     },
     {
       "name": "Iced White",
@@ -119,15 +125,23 @@
       "count": 5
     },
     {
+      "name": "Calacatta Golden Pearl",
+      "count": 4
+    },
+    {
+      "name": "Frost White",
+      "count": 4
+    },
+    {
+      "name": "Iceberg",
+      "count": 4
+    },
+    {
       "name": "Calacatta Almond",
       "count": 3
     },
     {
-      "name": "Calacatta Golden Pearl",
-      "count": 3
-    },
-    {
-      "name": "Frost White",
+      "name": "Calacatta Florida",
       "count": 3
     },
     {
@@ -135,46 +149,42 @@
       "count": 3
     },
     {
-      "name": "Iceberg",
-      "count": 3
-    },
-    {
       "name": "Lyra",
       "count": 3
     },
     {
-      "name": "Calacatta Florida",
-      "count": 2
+      "name": "Snow White",
+      "count": 3
     },
     {
       "name": "Calacatta Monaco",
-      "count": 2
-    },
-    {
-      "name": "Calacatta Porto",
       "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 8,
+  "downloads_catalog": 10,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 85
+      "users": 95
     },
     {
       "name": "China",
-      "users": 35
+      "users": 37
     },
     {
       "name": "Mexico",
-      "users": 24
+      "users": 28
     },
     {
       "name": "Germany",
       "users": 4
+    },
+    {
+      "name": "Hong Kong",
+      "users": 2
     },
     {
       "name": "India",
@@ -190,10 +200,6 @@
     },
     {
       "name": "France",
-      "users": 1
-    },
-    {
-      "name": "Hong Kong",
       "users": 1
     },
     {
