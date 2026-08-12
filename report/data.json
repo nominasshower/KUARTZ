@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T14:16:19.583946+00:00",
+  "generated_at": "2026-08-12T14:17:44.572748+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -69,21 +69,27 @@
     },
     {
       "date": "20260810",
-      "sessions": 21,
-      "users": 20,
-      "pageviews": 22
+      "sessions": 23,
+      "users": 21,
+      "pageviews": 30
     },
     {
       "date": "20260811",
+      "sessions": 26,
+      "users": 22,
+      "pageviews": 30
+    },
+    {
+      "date": "20260812",
       "sessions": 4,
-      "users": 3,
-      "pageviews": 3
+      "users": 4,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 218,
-    "users": 179,
-    "pageviews": 265
+    "sessions": 246,
+    "users": 201,
+    "pageviews": 302
   },
   "applications": [
     {
@@ -92,25 +98,25 @@
     },
     {
       "name": "walls",
-      "count": 4
+      "count": 5
     },
     {
       "name": "vanity",
-      "count": 3
+      "count": 4
     }
   ],
   "colors_viewed": [
+    {
+      "name": "Calacatta Carola",
+      "count": 8
+    },
     {
       "name": "Calacatta Statuario",
       "count": 8
     },
     {
-      "name": "Calacatta Carola",
-      "count": 7
-    },
-    {
       "name": "Calacatta Bengala",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Galaxy White",
@@ -118,7 +124,7 @@
     },
     {
       "name": "Iced White",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Pure White",
@@ -137,6 +143,10 @@
       "count": 4
     },
     {
+      "name": "Lyra",
+      "count": 4
+    },
+    {
       "name": "Calacatta Almond",
       "count": 3
     },
@@ -145,49 +155,49 @@
       "count": 3
     },
     {
-      "name": "Galaxy Sand",
+      "name": "Calacatta Monaco",
       "count": 3
     },
     {
-      "name": "Lyra",
+      "name": "Galaxy Sand",
       "count": 3
     },
     {
       "name": "Snow White",
       "count": 3
-    },
-    {
-      "name": "Calacatta Monaco",
-      "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 10,
+  "downloads_catalog": 11,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 95
+      "users": 104
     },
     {
       "name": "China",
-      "users": 37
+      "users": 41
     },
     {
       "name": "Mexico",
-      "users": 28
+      "users": 30
     },
     {
       "name": "Germany",
-      "users": 4
-    },
-    {
-      "name": "Hong Kong",
-      "users": 2
+      "users": 6
     },
     {
       "name": "India",
+      "users": 3
+    },
+    {
+      "name": "Canada",
+      "users": 2
+    },
+    {
+      "name": "Hong Kong",
       "users": 2
     },
     {
@@ -195,15 +205,11 @@
       "users": 2
     },
     {
-      "name": "Canada",
-      "users": 1
-    },
-    {
-      "name": "France",
-      "users": 1
-    },
-    {
       "name": "Netherlands",
+      "users": 2
+    },
+    {
+      "name": "Colombia",
       "users": 1
     }
   ]
