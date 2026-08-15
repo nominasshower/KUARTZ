@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:12:34.256179+00:00",
+  "generated_at": "2026-08-15T13:25:32.524000+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -87,21 +87,27 @@
     },
     {
       "date": "20260813",
-      "sessions": 29,
-      "users": 22,
-      "pageviews": 37
+      "sessions": 31,
+      "users": 23,
+      "pageviews": 42
     },
     {
       "date": "20260814",
-      "sessions": 2,
-      "users": 1,
-      "pageviews": 2
+      "sessions": 18,
+      "users": 13,
+      "pageviews": 16
+    },
+    {
+      "date": "20260815",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 301,
-    "users": 239,
-    "pageviews": 369
+    "sessions": 322,
+    "users": 255,
+    "pageviews": 391
   },
   "applications": [
     {
@@ -114,7 +120,7 @@
     },
     {
       "name": "walls",
-      "count": 7
+      "count": 8
     }
   ],
   "colors_viewed": [
@@ -136,7 +142,7 @@
     },
     {
       "name": "Iced White",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Calacatta Golden Pearl",
@@ -148,6 +154,10 @@
     },
     {
       "name": "Calacatta Florida",
+      "count": 5
+    },
+    {
+      "name": "Calacatta Monaco",
       "count": 5
     },
     {
@@ -167,16 +177,12 @@
       "count": 4
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Porto",
       "count": 4
     },
     {
       "name": "Lyra",
       "count": 4
-    },
-    {
-      "name": "Calacatta Everest",
-      "count": 3
     }
   ],
   "leads_by_color": [],
@@ -186,27 +192,27 @@
   "countries": [
     {
       "name": "United States",
-      "users": 127
+      "users": 134
     },
     {
       "name": "China",
-      "users": 45
+      "users": 49
     },
     {
       "name": "Mexico",
-      "users": 35
+      "users": 37
     },
     {
       "name": "Germany",
       "users": 10
     },
     {
-      "name": "India",
-      "users": 3
+      "name": "Canada",
+      "users": 4
     },
     {
-      "name": "Canada",
-      "users": 2
+      "name": "India",
+      "users": 3
     },
     {
       "name": "Hong Kong",
