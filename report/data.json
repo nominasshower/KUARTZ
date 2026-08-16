@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:25:32.524000+00:00",
+  "generated_at": "2026-08-16T13:25:51.299995+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -99,15 +99,15 @@
     },
     {
       "date": "20260815",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
+      "sessions": 13,
+      "users": 13,
+      "pageviews": 13
     }
   ],
   "totals": {
-    "sessions": 322,
-    "users": 255,
-    "pageviews": 391
+    "sessions": 332,
+    "users": 265,
+    "pageviews": 401
   },
   "applications": [
     {
@@ -187,20 +187,20 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 17,
+  "downloads_catalog": 18,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 134
+      "users": 137
     },
     {
       "name": "China",
-      "users": 49
+      "users": 54
     },
     {
       "name": "Mexico",
-      "users": 37
+      "users": 38
     },
     {
       "name": "Germany",
@@ -212,7 +212,7 @@
     },
     {
       "name": "India",
-      "users": 3
+      "users": 4
     },
     {
       "name": "Hong Kong",
