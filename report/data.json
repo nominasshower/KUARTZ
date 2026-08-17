@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T14:08:30.483396+00:00",
+  "generated_at": "2026-08-17T13:34:59.627154+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -45,43 +45,143 @@
     },
     {
       "date": "20260806",
-      "sessions": 22,
-      "users": 17,
-      "pageviews": 26
+      "sessions": 25,
+      "users": 20,
+      "pageviews": 29
     },
     {
       "date": "20260807",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 3
+      "sessions": 27,
+      "users": 23,
+      "pageviews": 28
+    },
+    {
+      "date": "20260808",
+      "sessions": 15,
+      "users": 14,
+      "pageviews": 15
+    },
+    {
+      "date": "20260809",
+      "sessions": 13,
+      "users": 13,
+      "pageviews": 14
+    },
+    {
+      "date": "20260810",
+      "sessions": 23,
+      "users": 21,
+      "pageviews": 30
+    },
+    {
+      "date": "20260811",
+      "sessions": 26,
+      "users": 23,
+      "pageviews": 31
+    },
+    {
+      "date": "20260812",
+      "sessions": 28,
+      "users": 23,
+      "pageviews": 29
+    },
+    {
+      "date": "20260813",
+      "sessions": 31,
+      "users": 23,
+      "pageviews": 42
+    },
+    {
+      "date": "20260814",
+      "sessions": 18,
+      "users": 13,
+      "pageviews": 16
+    },
+    {
+      "date": "20260815",
+      "sessions": 13,
+      "users": 13,
+      "pageviews": 13
+    },
+    {
+      "date": "20260816",
+      "sessions": 12,
+      "users": 11,
+      "pageviews": 13
+    },
+    {
+      "date": "20260817",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 139,
-    "users": 113,
-    "pageviews": 183
+    "sessions": 349,
+    "users": 281,
+    "pageviews": 419
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 8
+      "count": 12
     },
     {
       "name": "vanity",
-      "count": 3
+      "count": 8
     },
     {
       "name": "walls",
-      "count": 3
+      "count": 8
     }
   ],
   "colors_viewed": [
     {
+      "name": "Calacatta Bengala",
+      "count": 10
+    },
+    {
       "name": "Calacatta Statuario",
-      "count": 5
+      "count": 9
+    },
+    {
+      "name": "Calacatta Carola",
+      "count": 8
     },
     {
       "name": "Galaxy White",
+      "count": 8
+    },
+    {
+      "name": "Iced White",
+      "count": 8
+    },
+    {
+      "name": "Calacatta Florida",
+      "count": 6
+    },
+    {
+      "name": "Calacatta Golden Pearl",
+      "count": 6
+    },
+    {
+      "name": "Snow White",
+      "count": 6
+    },
+    {
+      "name": "Calacatta Almond",
+      "count": 5
+    },
+    {
+      "name": "Calacatta Monaco",
+      "count": 5
+    },
+    {
+      "name": "Frost White",
+      "count": 5
+    },
+    {
+      "name": "Iceberg",
       "count": 5
     },
     {
@@ -89,94 +189,58 @@
       "count": 5
     },
     {
-      "name": "Calacatta Carola",
+      "name": "Calacatta Everest",
       "count": 4
     },
     {
-      "name": "Iced White",
+      "name": "Calacatta Porto",
       "count": 4
-    },
-    {
-      "name": "Calacatta Almond",
-      "count": 3
-    },
-    {
-      "name": "Calacatta Bengala",
-      "count": 3
-    },
-    {
-      "name": "Frost White",
-      "count": 3
-    },
-    {
-      "name": "Calacatta Florida",
-      "count": 2
-    },
-    {
-      "name": "Calacatta Monaco",
-      "count": 2
-    },
-    {
-      "name": "Galaxy Black",
-      "count": 2
-    },
-    {
-      "name": "Galaxy Gray",
-      "count": 2
-    },
-    {
-      "name": "Lyra",
-      "count": 2
-    },
-    {
-      "name": "Snow White",
-      "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 7,
+  "downloads_catalog": 18,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 60
-    },
-    {
-      "name": "Mexico",
-      "users": 20
+      "users": 140
     },
     {
       "name": "China",
-      "users": 19
+      "users": 59
+    },
+    {
+      "name": "Mexico",
+      "users": 41
     },
     {
       "name": "Germany",
-      "users": 4
-    },
-    {
-      "name": "Canada",
-      "users": 1
-    },
-    {
-      "name": "France",
-      "users": 1
-    },
-    {
-      "name": "Hong Kong",
-      "users": 1
+      "users": 10
     },
     {
       "name": "India",
-      "users": 1
+      "users": 6
+    },
+    {
+      "name": "Canada",
+      "users": 4
+    },
+    {
+      "name": "United Kingdom",
+      "users": 3
+    },
+    {
+      "name": "France",
+      "users": 2
+    },
+    {
+      "name": "Hong Kong",
+      "users": 2
     },
     {
       "name": "Iran",
-      "users": 1
-    },
-    {
-      "name": "Netherlands",
-      "users": 1
+      "users": 2
     }
   ]
 }
