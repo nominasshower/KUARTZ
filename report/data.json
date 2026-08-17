@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T13:25:51.299995+00:00",
+  "generated_at": "2026-08-17T13:34:59.627154+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -102,12 +102,24 @@
       "sessions": 13,
       "users": 13,
       "pageviews": 13
+    },
+    {
+      "date": "20260816",
+      "sessions": 12,
+      "users": 11,
+      "pageviews": 13
+    },
+    {
+      "date": "20260817",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 332,
-    "users": 265,
-    "pageviews": 401
+    "sessions": 349,
+    "users": 281,
+    "pageviews": 419
   },
   "applications": [
     {
@@ -145,6 +157,10 @@
       "count": 8
     },
     {
+      "name": "Calacatta Florida",
+      "count": 6
+    },
+    {
       "name": "Calacatta Golden Pearl",
       "count": 6
     },
@@ -153,7 +169,7 @@
       "count": 6
     },
     {
-      "name": "Calacatta Florida",
+      "name": "Calacatta Almond",
       "count": 5
     },
     {
@@ -173,15 +189,11 @@
       "count": 5
     },
     {
-      "name": "Calacatta Almond",
+      "name": "Calacatta Everest",
       "count": 4
     },
     {
       "name": "Calacatta Porto",
-      "count": 4
-    },
-    {
-      "name": "Lyra",
       "count": 4
     }
   ],
@@ -192,27 +204,35 @@
   "countries": [
     {
       "name": "United States",
-      "users": 137
+      "users": 140
     },
     {
       "name": "China",
-      "users": 54
+      "users": 59
     },
     {
       "name": "Mexico",
-      "users": 38
+      "users": 41
     },
     {
       "name": "Germany",
       "users": 10
     },
     {
+      "name": "India",
+      "users": 6
+    },
+    {
       "name": "Canada",
       "users": 4
     },
     {
-      "name": "India",
-      "users": 4
+      "name": "United Kingdom",
+      "users": 3
+    },
+    {
+      "name": "France",
+      "users": 2
     },
     {
       "name": "Hong Kong",
@@ -220,14 +240,6 @@
     },
     {
       "name": "Iran",
-      "users": 2
-    },
-    {
-      "name": "Netherlands",
-      "users": 2
-    },
-    {
-      "name": "United Kingdom",
       "users": 2
     }
   ]
