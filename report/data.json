@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T13:34:59.627154+00:00",
+  "generated_at": "2026-08-18T13:37:08.669034+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -105,21 +105,27 @@
     },
     {
       "date": "20260816",
-      "sessions": 12,
-      "users": 11,
-      "pageviews": 13
+      "sessions": 14,
+      "users": 13,
+      "pageviews": 14
     },
     {
       "date": "20260817",
-      "sessions": 5,
-      "users": 5,
+      "sessions": 17,
+      "users": 15,
+      "pageviews": 16
+    },
+    {
+      "date": "20260818",
+      "sessions": 6,
+      "users": 4,
       "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 349,
-    "users": 281,
-    "pageviews": 419
+    "sessions": 370,
+    "users": 294,
+    "pageviews": 436
   },
   "applications": [
     {
@@ -128,7 +134,7 @@
     },
     {
       "name": "vanity",
-      "count": 8
+      "count": 9
     },
     {
       "name": "walls",
@@ -145,16 +151,20 @@
       "count": 9
     },
     {
+      "name": "Galaxy White",
+      "count": 9
+    },
+    {
+      "name": "Iced White",
+      "count": 9
+    },
+    {
       "name": "Calacatta Carola",
       "count": 8
     },
     {
-      "name": "Galaxy White",
-      "count": 8
-    },
-    {
-      "name": "Iced White",
-      "count": 8
+      "name": "Snow White",
+      "count": 7
     },
     {
       "name": "Calacatta Florida",
@@ -165,7 +175,15 @@
       "count": 6
     },
     {
-      "name": "Snow White",
+      "name": "Frost White",
+      "count": 6
+    },
+    {
+      "name": "Iceberg",
+      "count": 6
+    },
+    {
+      "name": "Pure White",
       "count": 6
     },
     {
@@ -177,23 +195,11 @@
       "count": 5
     },
     {
-      "name": "Frost White",
-      "count": 5
-    },
-    {
-      "name": "Iceberg",
-      "count": 5
-    },
-    {
-      "name": "Pure White",
+      "name": "Lyra",
       "count": 5
     },
     {
       "name": "Calacatta Everest",
-      "count": 4
-    },
-    {
-      "name": "Calacatta Porto",
       "count": 4
     }
   ],
@@ -204,15 +210,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 140
+      "users": 142
     },
     {
       "name": "China",
-      "users": 59
+      "users": 67
     },
     {
       "name": "Mexico",
-      "users": 41
+      "users": 43
     },
     {
       "name": "Germany",
@@ -227,6 +233,10 @@
       "users": 4
     },
     {
+      "name": "Iran",
+      "users": 3
+    },
+    {
       "name": "United Kingdom",
       "users": 3
     },
@@ -236,10 +246,6 @@
     },
     {
       "name": "Hong Kong",
-      "users": 2
-    },
-    {
-      "name": "Iran",
       "users": 2
     }
   ]
