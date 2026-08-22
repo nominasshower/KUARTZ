@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T13:40:09.410031+00:00",
+  "generated_at": "2026-08-22T13:26:24.629846+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -129,21 +129,27 @@
     },
     {
       "date": "20260820",
-      "sessions": 32,
-      "users": 26,
-      "pageviews": 29
+      "sessions": 36,
+      "users": 29,
+      "pageviews": 33
     },
     {
       "date": "20260821",
-      "sessions": 2,
-      "users": 2,
-      "pageviews": 2
+      "sessions": 18,
+      "users": 15,
+      "pageviews": 16
+    },
+    {
+      "date": "20260822",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 465,
-    "users": 372,
-    "pageviews": 534
+    "sessions": 485,
+    "users": 389,
+    "pageviews": 553
   },
   "applications": [
     {
@@ -165,7 +171,15 @@
       "count": 13
     },
     {
+      "name": "Iceberg",
+      "count": 12
+    },
+    {
       "name": "Calacatta Statuario",
+      "count": 11
+    },
+    {
+      "name": "Iced White",
       "count": 11
     },
     {
@@ -173,15 +187,7 @@
       "count": 10
     },
     {
-      "name": "Iced White",
-      "count": 10
-    },
-    {
       "name": "Galaxy White",
-      "count": 9
-    },
-    {
-      "name": "Iceberg",
       "count": 9
     },
     {
@@ -228,15 +234,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 192
+      "users": 205
     },
     {
       "name": "China",
-      "users": 82
+      "users": 84
     },
     {
       "name": "Mexico",
-      "users": 48
+      "users": 49
     },
     {
       "name": "Germany",
