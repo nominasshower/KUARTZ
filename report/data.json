@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:26:24.629846+00:00",
+  "generated_at": "2026-08-23T13:27:03.333428+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -135,21 +135,27 @@
     },
     {
       "date": "20260821",
-      "sessions": 18,
+      "sessions": 19,
       "users": 15,
       "pageviews": 16
     },
     {
       "date": "20260822",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 6,
+      "users": 5,
+      "pageviews": 5
+    },
+    {
+      "date": "20260823",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 485,
-    "users": 389,
-    "pageviews": 553
+    "sessions": 494,
+    "users": 396,
+    "pageviews": 559
   },
   "applications": [
     {
@@ -234,15 +240,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 205
+      "users": 208
     },
     {
       "name": "China",
-      "users": 84
+      "users": 87
     },
     {
       "name": "Mexico",
-      "users": 49
+      "users": 50
     },
     {
       "name": "Germany",
