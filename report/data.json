@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T13:45:02.974857+00:00",
+  "generated_at": "2026-08-25T13:43:47.472971+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -149,38 +149,44 @@
       "date": "20260823",
       "sessions": 7,
       "users": 7,
-      "pageviews": 6
+      "pageviews": 7
     },
     {
       "date": "20260824",
-      "sessions": 5,
-      "users": 4,
-      "pageviews": 4
+      "sessions": 5818,
+      "users": 5699,
+      "pageviews": 6921
+    },
+    {
+      "date": "20260825",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 502,
-    "users": 404,
-    "pageviews": 567
+    "sessions": 6338,
+    "users": 6143,
+    "pageviews": 7486
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 14
+      "count": 15
     },
     {
       "name": "vanity",
-      "count": 10
+      "count": 14
     },
     {
       "name": "walls",
-      "count": 8
+      "count": 9
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 13
+      "count": 177
     },
     {
       "name": "Iceberg",
@@ -203,6 +209,10 @@
       "count": 9
     },
     {
+      "name": "Snow White",
+      "count": 9
+    },
+    {
       "name": "Calacatta Monaco",
       "count": 8
     },
@@ -211,8 +221,8 @@
       "count": 8
     },
     {
-      "name": "Snow White",
-      "count": 8
+      "name": "Calacatta Florida",
+      "count": 7
     },
     {
       "name": "Calacatta Golden Pearl",
@@ -221,10 +231,6 @@
     {
       "name": "Pure White",
       "count": 7
-    },
-    {
-      "name": "Calacatta Florida",
-      "count": 6
     },
     {
       "name": "Calacatta Porto",
@@ -241,48 +247,48 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 24,
+  "downloads_catalog": 26,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 211
+      "users": 5838
     },
     {
       "name": "China",
-      "users": 89
+      "users": 92
     },
     {
       "name": "Mexico",
-      "users": 50
-    },
-    {
-      "name": "Germany",
-      "users": 10
-    },
-    {
-      "name": "India",
-      "users": 7
+      "users": 52
     },
     {
       "name": "Canada",
-      "users": 5
+      "users": 26
     },
     {
-      "name": "Spain",
-      "users": 4
+      "name": "Netherlands",
+      "users": 17
     },
     {
-      "name": "Brazil",
-      "users": 3
+      "name": "Germany",
+      "users": 11
     },
     {
-      "name": "Iran",
-      "users": 3
+      "name": "India",
+      "users": 10
+    },
+    {
+      "name": "Ireland",
+      "users": 9
     },
     {
       "name": "Singapore",
-      "users": 3
+      "users": 9
+    },
+    {
+      "name": "France",
+      "users": 5
     }
   ]
 }
