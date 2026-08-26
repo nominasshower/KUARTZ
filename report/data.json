@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:43:47.472971+00:00",
+  "generated_at": "2026-08-26T13:49:24.082468+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -159,15 +159,21 @@
     },
     {
       "date": "20260825",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 34,
+      "users": 31,
+      "pageviews": 50
+    },
+    {
+      "date": "20260826",
+      "sessions": 4,
+      "users": 4,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 6338,
-    "users": 6143,
-    "pageviews": 7486
+    "sessions": 6366,
+    "users": 6175,
+    "pageviews": 7538
   },
   "applications": [
     {
@@ -186,7 +192,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 177
+      "count": 179
     },
     {
       "name": "Iceberg",
@@ -247,20 +253,20 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 26,
+  "downloads_catalog": 29,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 5838
+      "users": 5863
     },
     {
       "name": "China",
-      "users": 92
+      "users": 95
     },
     {
       "name": "Mexico",
-      "users": 52
+      "users": 55
     },
     {
       "name": "Canada",
@@ -271,12 +277,12 @@
       "users": 17
     },
     {
-      "name": "Germany",
-      "users": 11
+      "name": "India",
+      "users": 12
     },
     {
-      "name": "India",
-      "users": 10
+      "name": "Germany",
+      "users": 11
     },
     {
       "name": "Ireland",
