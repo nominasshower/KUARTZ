@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T22:43:29.081358+00:00",
+  "generated_at": "2026-08-28T22:50:33.585847+00:00",
   "daily": [
     {
       "date": "20260730",
@@ -152,37 +152,49 @@
       "pageviews": 7
     },
     {
+      "date": "20260824",
+      "sessions": 6552,
+      "users": 6505,
+      "pageviews": 9368
+    },
+    {
       "date": "20260825",
-      "sessions": 34,
-      "users": 31,
-      "pageviews": 50
+      "sessions": 35,
+      "users": 32,
+      "pageviews": 56
     },
     {
       "date": "20260826",
-      "sessions": 36,
-      "users": 30,
-      "pageviews": 53
+      "sessions": 39,
+      "users": 32,
+      "pageviews": 56
     },
     {
       "date": "20260827",
-      "sessions": 10,
-      "users": 10,
-      "pageviews": 10
+      "sessions": 12,
+      "users": 12,
+      "pageviews": 14
+    },
+    {
+      "date": "20260828",
+      "sessions": 14,
+      "users": 13,
+      "pageviews": 13
     }
   ],
   "totals": {
-    "sessions": 578,
-    "users": 470,
-    "pageviews": 677
+    "sessions": 7142,
+    "users": 6987,
+    "pageviews": 10071
   },
   "applications": [
     {
       "name": "kitchen",
-      "count": 16
+      "count": 17
     },
     {
       "name": "vanity",
-      "count": 16
+      "count": 17
     },
     {
       "name": "walls",
@@ -253,48 +265,48 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 27,
+  "downloads_catalog": 35,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 261
+      "users": 6682
     },
     {
       "name": "China",
-      "users": 95
+      "users": 103
     },
     {
       "name": "Mexico",
-      "users": 56
-    },
-    {
-      "name": "Germany",
-      "users": 10
-    },
-    {
-      "name": "India",
-      "users": 10
+      "users": 64
     },
     {
       "name": "Canada",
-      "users": 6
+      "users": 29
     },
     {
-      "name": "Spain",
-      "users": 5
+      "name": "Netherlands",
+      "users": 19
     },
     {
-      "name": "Brazil",
-      "users": 3
+      "name": "India",
+      "users": 13
     },
     {
-      "name": "Iran",
-      "users": 3
+      "name": "Germany",
+      "users": 11
+    },
+    {
+      "name": "Ireland",
+      "users": 11
+    },
+    {
+      "name": "Singapore",
+      "users": 9
     },
     {
       "name": "United Kingdom",
-      "users": 3
+      "users": 6
     }
   ]
 }
