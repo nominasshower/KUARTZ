@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-08-30T17:06:54.095673+00:00",
+  "generated_at": "2026-08-31T19:20:35.649506+00:00",
   "daily": [
-    {
-      "date": "20260731",
-      "sessions": 7,
-      "users": 4,
-      "pageviews": 10
-    },
     {
       "date": "20260801",
       "sessions": 17,
@@ -179,38 +173,44 @@
       "date": "20260829",
       "sessions": 14,
       "users": 13,
-      "pageviews": 13
+      "pageviews": 14
     },
     {
       "date": "20260830",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
+      "sessions": 14,
+      "users": 13,
+      "pageviews": 14
+    },
+    {
+      "date": "20260831",
+      "sessions": 7,
+      "users": 7,
+      "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 7152,
-    "users": 7008,
-    "pageviews": 10055
+    "sessions": 7168,
+    "users": 7025,
+    "pageviews": 10063
   },
   "applications": [
     {
-      "name": "kitchen",
-      "count": 17
+      "name": "vanity",
+      "count": 16
     },
     {
-      "name": "vanity",
-      "count": 17
+      "name": "kitchen",
+      "count": 14
     },
     {
       "name": "walls",
-      "count": 10
+      "count": 9
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 244
+      "count": 243
     },
     {
       "name": "Calacatta Carola",
@@ -218,7 +218,7 @@
     },
     {
       "name": "Calacatta Statuario",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Iceberg",
@@ -226,11 +226,11 @@
     },
     {
       "name": "Iced White",
-      "count": 11
+      "count": 10
     },
     {
       "name": "Calacatta Golden Pearl",
-      "count": 10
+      "count": 9
     },
     {
       "name": "Calacatta Monaco",
@@ -265,8 +265,8 @@
       "count": 7
     },
     {
-      "name": "Lyra",
-      "count": 7
+      "name": "Calacatta Almond",
+      "count": 6
     }
   ],
   "leads_by_color": [],
@@ -276,11 +276,11 @@
   "countries": [
     {
       "name": "United States",
-      "users": 6689
+      "users": 6695
     },
     {
       "name": "China",
-      "users": 112
+      "users": 120
     },
     {
       "name": "Mexico",
@@ -300,7 +300,7 @@
     },
     {
       "name": "Germany",
-      "users": 11
+      "users": 12
     },
     {
       "name": "Ireland",
