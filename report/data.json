@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-08-31T19:20:35.649506+00:00",
+  "generated_at": "2026-09-01T17:06:13.137401+00:00",
   "daily": [
-    {
-      "date": "20260801",
-      "sessions": 17,
-      "users": 15,
-      "pageviews": 19
-    },
     {
       "date": "20260802",
       "sessions": 13,
@@ -177,34 +171,40 @@
     },
     {
       "date": "20260830",
-      "sessions": 14,
-      "users": 13,
-      "pageviews": 14
+      "sessions": 15,
+      "users": 14,
+      "pageviews": 15
     },
     {
       "date": "20260831",
-      "sessions": 7,
-      "users": 7,
+      "sessions": 20,
+      "users": 17,
+      "pageviews": 17
+    },
+    {
+      "date": "20260901",
+      "sessions": 6,
+      "users": 6,
       "pageviews": 6
     }
   ],
   "totals": {
     "sessions": 7168,
-    "users": 7025,
-    "pageviews": 10063
+    "users": 7027,
+    "pageviews": 10062
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 16
+      "count": 17
     },
     {
       "name": "kitchen",
-      "count": 14
+      "count": 13
     },
     {
       "name": "walls",
-      "count": 9
+      "count": 11
     }
   ],
   "colors_viewed": [
@@ -214,10 +214,6 @@
     },
     {
       "name": "Calacatta Carola",
-      "count": 13
-    },
-    {
-      "name": "Calacatta Statuario",
       "count": 12
     },
     {
@@ -225,15 +221,15 @@
       "count": 12
     },
     {
+      "name": "Calacatta Statuario",
+      "count": 11
+    },
+    {
       "name": "Iced White",
       "count": 10
     },
     {
       "name": "Calacatta Golden Pearl",
-      "count": 9
-    },
-    {
-      "name": "Calacatta Monaco",
       "count": 9
     },
     {
@@ -253,7 +249,7 @@
       "count": 8
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Calacatta Monaco",
       "count": 8
     },
     {
@@ -265,41 +261,45 @@
       "count": 7
     },
     {
+      "name": "Calacatta Porto",
+      "count": 7
+    },
+    {
       "name": "Calacatta Almond",
       "count": 6
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 35,
+  "downloads_catalog": 34,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6695
+      "users": 6694
     },
     {
       "name": "China",
-      "users": 120
+      "users": 121
     },
     {
       "name": "Mexico",
-      "users": 64
+      "users": 66
     },
     {
       "name": "Canada",
-      "users": 29
+      "users": 30
     },
     {
       "name": "Netherlands",
       "users": 19
     },
     {
-      "name": "India",
-      "users": 13
+      "name": "Germany",
+      "users": 12
     },
     {
-      "name": "Germany",
+      "name": "India",
       "users": 12
     },
     {
@@ -311,8 +311,8 @@
       "users": 9
     },
     {
-      "name": "United Kingdom",
-      "users": 6
+      "name": "Spain",
+      "users": 7
     }
   ]
 }
