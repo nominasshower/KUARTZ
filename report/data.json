@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-01T17:06:13.137401+00:00",
+  "generated_at": "2026-09-02T16:57:08.678273+00:00",
   "daily": [
-    {
-      "date": "20260802",
-      "sessions": 13,
-      "users": 12,
-      "pageviews": 13
-    },
     {
       "date": "20260803",
       "sessions": 25,
@@ -179,19 +173,25 @@
       "date": "20260831",
       "sessions": 20,
       "users": 17,
-      "pageviews": 17
+      "pageviews": 18
     },
     {
       "date": "20260901",
-      "sessions": 6,
-      "users": 6,
+      "sessions": 36,
+      "users": 30,
+      "pageviews": 34
+    },
+    {
+      "date": "20260902",
+      "sessions": 5,
+      "users": 4,
       "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 7168,
-    "users": 7027,
-    "pageviews": 10062
+    "sessions": 7205,
+    "users": 7043,
+    "pageviews": 10084
   },
   "applications": [
     {
@@ -200,36 +200,44 @@
     },
     {
       "name": "kitchen",
-      "count": 13
+      "count": 14
     },
     {
       "name": "walls",
-      "count": 11
+      "count": 12
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 243
+      "count": 244
     },
     {
       "name": "Calacatta Carola",
-      "count": 12
+      "count": 14
     },
     {
       "name": "Iceberg",
-      "count": 12
+      "count": 14
     },
     {
       "name": "Calacatta Statuario",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Iced White",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Calacatta Golden Pearl",
+      "count": 10
+    },
+    {
+      "name": "Calacatta Florida",
+      "count": 9
+    },
+    {
+      "name": "Calacatta Monaco",
       "count": 9
     },
     {
@@ -245,11 +253,11 @@
       "count": 9
     },
     {
-      "name": "Calacatta Florida",
+      "name": "Calacatta Everest",
       "count": 8
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Porto",
       "count": 8
     },
     {
@@ -257,34 +265,26 @@
       "count": 8
     },
     {
-      "name": "Calacatta Everest",
-      "count": 7
-    },
-    {
-      "name": "Calacatta Porto",
-      "count": 7
-    },
-    {
       "name": "Calacatta Almond",
-      "count": 6
+      "count": 7
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 34,
+  "downloads_catalog": 35,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6694
+      "users": 6703
     },
     {
       "name": "China",
-      "users": 121
+      "users": 123
     },
     {
       "name": "Mexico",
-      "users": 66
+      "users": 70
     },
     {
       "name": "Canada",
@@ -292,15 +292,15 @@
     },
     {
       "name": "Netherlands",
-      "users": 19
-    },
-    {
-      "name": "Germany",
-      "users": 12
+      "users": 18
     },
     {
       "name": "India",
       "users": 12
+    },
+    {
+      "name": "Germany",
+      "users": 11
     },
     {
       "name": "Ireland",
@@ -312,7 +312,7 @@
     },
     {
       "name": "Spain",
-      "users": 7
+      "users": 9
     }
   ]
 }
