@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-02T16:57:08.678273+00:00",
+  "generated_at": "2026-09-03T16:50:31.635438+00:00",
   "daily": [
-    {
-      "date": "20260803",
-      "sessions": 25,
-      "users": 21,
-      "pageviews": 26
-    },
     {
       "date": "20260804",
       "sessions": 17,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20260901",
-      "sessions": 36,
-      "users": 30,
-      "pageviews": 34
+      "sessions": 38,
+      "users": 32,
+      "pageviews": 41
     },
     {
       "date": "20260902",
-      "sessions": 5,
-      "users": 4,
-      "pageviews": 6
+      "sessions": 16,
+      "users": 12,
+      "pageviews": 23
+    },
+    {
+      "date": "20260903",
+      "sessions": 8,
+      "users": 8,
+      "pageviews": 9
     }
   ],
   "totals": {
-    "sessions": 7205,
-    "users": 7043,
-    "pageviews": 10084
+    "sessions": 7187,
+    "users": 7042,
+    "pageviews": 10091
   },
   "applications": [
     {
@@ -210,38 +210,38 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 244
+      "count": 245
     },
     {
-      "name": "Calacatta Carola",
-      "count": 14
+      "name": "Lyra",
+      "count": 16
+    },
+    {
+      "name": "Calacatta Statuario",
+      "count": 15
     },
     {
       "name": "Iceberg",
       "count": 14
     },
     {
-      "name": "Calacatta Statuario",
-      "count": 12
-    },
-    {
-      "name": "Iced White",
-      "count": 11
+      "name": "Calacatta Carola",
+      "count": 13
     },
     {
       "name": "Calacatta Golden Pearl",
       "count": 10
     },
     {
-      "name": "Calacatta Florida",
-      "count": 9
-    },
-    {
-      "name": "Calacatta Monaco",
-      "count": 9
-    },
-    {
       "name": "Galaxy White",
+      "count": 10
+    },
+    {
+      "name": "Iced White",
+      "count": 10
+    },
+    {
+      "name": "Calacatta Florida",
       "count": 9
     },
     {
@@ -257,34 +257,34 @@
       "count": 8
     },
     {
+      "name": "Calacatta Monaco",
+      "count": 8
+    },
+    {
       "name": "Calacatta Porto",
       "count": 8
     },
     {
       "name": "Frost White",
       "count": 8
-    },
-    {
-      "name": "Calacatta Almond",
-      "count": 7
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 35,
+  "downloads_catalog": 36,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6703
+      "users": 6697
     },
     {
       "name": "China",
-      "users": 123
+      "users": 122
     },
     {
       "name": "Mexico",
-      "users": 70
+      "users": 71
     },
     {
       "name": "Canada",
