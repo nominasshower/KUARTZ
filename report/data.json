@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-04T16:41:29.520651+00:00",
+  "generated_at": "2026-09-05T15:44:19.850652+00:00",
   "daily": [
-    {
-      "date": "20260805",
-      "sessions": 29,
-      "users": 25,
-      "pageviews": 30
-    },
     {
       "date": "20260806",
       "sessions": 25,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20260903",
-      "sessions": 29,
-      "users": 23,
-      "pageviews": 27
+      "sessions": 31,
+      "users": 24,
+      "pageviews": 30
     },
     {
       "date": "20260904",
-      "sessions": 3,
-      "users": 2,
-      "pageviews": 12
+      "sessions": 10,
+      "users": 10,
+      "pageviews": 21
+    },
+    {
+      "date": "20260905",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 0
     }
   ],
   "totals": {
-    "sessions": 7196,
-    "users": 7034,
-    "pageviews": 10092
+    "sessions": 7189,
+    "users": 7019,
+    "pageviews": 10074
   },
   "applications": [
     {
@@ -200,7 +200,7 @@
     },
     {
       "name": "kitchen",
-      "count": 13
+      "count": 12
     },
     {
       "name": "walls",
@@ -210,11 +210,11 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 245
+      "count": 246
     },
     {
       "name": "Calacatta Statuario",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Iceberg",
@@ -237,15 +237,19 @@
       "count": 10
     },
     {
+      "name": "Calacatta Monaco",
+      "count": 9
+    },
+    {
       "name": "Iced White",
       "count": 9
     },
     {
-      "name": "Calacatta Everest",
-      "count": 8
+      "name": "Snow White",
+      "count": 9
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Everest",
       "count": 8
     },
     {
@@ -254,10 +258,6 @@
     },
     {
       "name": "Galaxy Sand",
-      "count": 8
-    },
-    {
-      "name": "Snow White",
       "count": 8
     },
     {
@@ -271,12 +271,12 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 36,
+  "downloads_catalog": 37,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6686
+      "users": 6682
     },
     {
       "name": "China",
@@ -284,11 +284,11 @@
     },
     {
       "name": "Mexico",
-      "users": 77
+      "users": 71
     },
     {
       "name": "Canada",
-      "users": 30
+      "users": 29
     },
     {
       "name": "Netherlands",
@@ -299,12 +299,12 @@
       "users": 12
     },
     {
-      "name": "Germany",
+      "name": "Ireland",
       "users": 11
     },
     {
-      "name": "Ireland",
-      "users": 11
+      "name": "Germany",
+      "users": 10
     },
     {
       "name": "Singapore",
