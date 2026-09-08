@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-07T18:02:08.678772+00:00",
+  "generated_at": "2026-09-08T16:59:25.628291+00:00",
   "daily": [
-    {
-      "date": "20260808",
-      "sessions": 15,
-      "users": 14,
-      "pageviews": 15
-    },
     {
       "date": "20260809",
       "sessions": 13,
@@ -177,26 +171,32 @@
     },
     {
       "date": "20260906",
-      "sessions": 11,
-      "users": 9,
-      "pageviews": 10
+      "sessions": 12,
+      "users": 10,
+      "pageviews": 11
     },
     {
       "date": "20260907",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 4
+      "sessions": 13,
+      "users": 13,
+      "pageviews": 12
+    },
+    {
+      "date": "20260908",
+      "sessions": 8,
+      "users": 8,
+      "pageviews": 8
     }
   ],
   "totals": {
-    "sessions": 7160,
-    "users": 7004,
-    "pageviews": 10040
+    "sessions": 7167,
+    "users": 7008,
+    "pageviews": 10042
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 18
+      "count": 19
     },
     {
       "name": "kitchen",
@@ -210,7 +210,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 246
+      "count": 245
     },
     {
       "name": "Calacatta Statuario",
@@ -218,18 +218,18 @@
     },
     {
       "name": "Calacatta Carola",
-      "count": 14
+      "count": 13
     },
     {
       "name": "Iceberg",
-      "count": 14
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Calacatta Florida",
+      "count": 11
+    },
+    {
+      "name": "Calacatta Golden Pearl",
       "count": 11
     },
     {
@@ -238,10 +238,6 @@
     },
     {
       "name": "Lyra",
-      "count": 10
-    },
-    {
-      "name": "Calacatta Everest",
       "count": 9
     },
     {
@@ -249,16 +245,16 @@
       "count": 9
     },
     {
-      "name": "Iced White",
+      "name": "Calacatta Everest",
       "count": 8
     },
     {
       "name": "Calacatta Porto",
-      "count": 7
+      "count": 8
     },
     {
-      "name": "Galaxy Sand",
-      "count": 7
+      "name": "Iced White",
+      "count": 8
     },
     {
       "name": "Calacatta Lincoln Marquina",
@@ -267,24 +263,28 @@
     {
       "name": "Frost White",
       "count": 6
+    },
+    {
+      "name": "Galaxy Sand",
+      "count": 6
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 41,
+  "downloads_catalog": 42,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6665
+      "users": 6658
     },
     {
       "name": "China",
-      "users": 120
+      "users": 121
     },
     {
       "name": "Mexico",
-      "users": 68
+      "users": 70
     },
     {
       "name": "Canada",
@@ -303,16 +303,16 @@
       "users": 11
     },
     {
+      "name": "Singapore",
+      "users": 11
+    },
+    {
       "name": "Germany",
       "users": 10
     },
     {
-      "name": "Singapore",
-      "users": 9
-    },
-    {
       "name": "Spain",
-      "users": 8
+      "users": 9
     }
   ]
 }
