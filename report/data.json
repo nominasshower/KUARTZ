@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-08T16:59:25.628291+00:00",
+  "generated_at": "2026-09-09T16:58:20.518662+00:00",
   "daily": [
-    {
-      "date": "20260809",
-      "sessions": 13,
-      "users": 13,
-      "pageviews": 14
-    },
     {
       "date": "20260810",
       "sessions": 23,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20260908",
-      "sessions": 8,
-      "users": 8,
-      "pageviews": 8
+      "sessions": 32,
+      "users": 29,
+      "pageviews": 30
+    },
+    {
+      "date": "20260909",
+      "sessions": 10,
+      "users": 9,
+      "pageviews": 7
     }
   ],
   "totals": {
-    "sessions": 7167,
-    "users": 7008,
-    "pageviews": 10042
+    "sessions": 7176,
+    "users": 7022,
+    "pageviews": 10057
   },
   "applications": [
     {
@@ -210,19 +210,19 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 245
+      "count": 244
     },
     {
       "name": "Calacatta Statuario",
       "count": 16
     },
     {
-      "name": "Calacatta Carola",
+      "name": "Iceberg",
       "count": 13
     },
     {
-      "name": "Iceberg",
-      "count": 13
+      "name": "Calacatta Carola",
+      "count": 12
     },
     {
       "name": "Calacatta Florida",
@@ -235,6 +235,10 @@
     {
       "name": "Calacatta Monaco",
       "count": 10
+    },
+    {
+      "name": "Iced White",
+      "count": 9
     },
     {
       "name": "Lyra",
@@ -253,7 +257,7 @@
       "count": 8
     },
     {
-      "name": "Iced White",
+      "name": "Pure White",
       "count": 8
     },
     {
@@ -262,10 +266,6 @@
     },
     {
       "name": "Frost White",
-      "count": 6
-    },
-    {
-      "name": "Galaxy Sand",
       "count": 6
     }
   ],
@@ -276,15 +276,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 6658
+      "users": 6668
     },
     {
       "name": "China",
-      "users": 121
+      "users": 123
     },
     {
       "name": "Mexico",
-      "users": 70
+      "users": 73
     },
     {
       "name": "Canada",
@@ -292,11 +292,11 @@
     },
     {
       "name": "Netherlands",
-      "users": 18
+      "users": 19
     },
     {
       "name": "India",
-      "users": 12
+      "users": 11
     },
     {
       "name": "Ireland",
