@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-10T16:50:36.223603+00:00",
+  "generated_at": "2026-09-11T16:50:59.966664+00:00",
   "daily": [
-    {
-      "date": "20260811",
-      "sessions": 26,
-      "users": 23,
-      "pageviews": 31
-    },
     {
       "date": "20260812",
       "sessions": 28,
@@ -177,30 +171,36 @@
     },
     {
       "date": "20260909",
-      "sessions": 21,
-      "users": 17,
-      "pageviews": 21
+      "sessions": 24,
+      "users": 19,
+      "pageviews": 29
     },
     {
       "date": "20260910",
-      "sessions": 6,
-      "users": 4,
-      "pageviews": 8
+      "sessions": 26,
+      "users": 22,
+      "pageviews": 29
+    },
+    {
+      "date": "20260911",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 7165,
-    "users": 7016,
-    "pageviews": 10053
+    "sessions": 7201,
+    "users": 7011,
+    "pageviews": 10054
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 19
+      "count": 18
     },
     {
       "name": "kitchen",
-      "count": 11
+      "count": 12
     },
     {
       "name": "walls",
@@ -210,18 +210,22 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 242
+      "count": 244
     },
     {
       "name": "Calacatta Statuario",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Iceberg",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Calacatta Carola",
+      "count": 11
+    },
+    {
+      "name": "Calacatta Golden Pearl",
       "count": 11
     },
     {
@@ -229,15 +233,11 @@
       "count": 10
     },
     {
-      "name": "Calacatta Golden Pearl",
-      "count": 10
-    },
-    {
       "name": "Calacatta Monaco",
-      "count": 10
+      "count": 9
     },
     {
-      "name": "Lyra",
+      "name": "Snow White",
       "count": 9
     },
     {
@@ -253,25 +253,25 @@
       "count": 8
     },
     {
+      "name": "Lyra",
+      "count": 8
+    },
+    {
       "name": "Pure White",
       "count": 8
     },
     {
-      "name": "Snow White",
-      "count": 8
+      "name": "Marquina",
+      "count": 7
     },
     {
       "name": "Calacatta Lincoln Marquina",
-      "count": 6
-    },
-    {
-      "name": "Frost White",
       "count": 6
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 41,
+  "downloads_catalog": 43,
   "quote_form_submits": 0,
   "countries": [
     {
@@ -280,11 +280,11 @@
     },
     {
       "name": "China",
-      "users": 121
+      "users": 117
     },
     {
       "name": "Mexico",
-      "users": 71
+      "users": 72
     },
     {
       "name": "Canada",
@@ -296,23 +296,23 @@
     },
     {
       "name": "Singapore",
-      "users": 12
+      "users": 16
     },
     {
       "name": "India",
-      "users": 11
+      "users": 13
     },
     {
       "name": "Ireland",
       "users": 11
     },
     {
-      "name": "Germany",
-      "users": 10
-    },
-    {
       "name": "Spain",
       "users": 9
+    },
+    {
+      "name": "Germany",
+      "users": 8
     }
   ]
 }
