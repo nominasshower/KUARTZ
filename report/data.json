@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-12T15:57:20.866407+00:00",
+  "generated_at": "2026-09-13T16:47:00.496502+00:00",
   "daily": [
-    {
-      "date": "20260813",
-      "sessions": 31,
-      "users": 23,
-      "pageviews": 42
-    },
     {
       "date": "20260814",
       "sessions": 18,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20260911",
-      "sessions": 13,
-      "users": 12,
-      "pageviews": 13
+      "sessions": 16,
+      "users": 14,
+      "pageviews": 16
     },
     {
       "date": "20260912",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 12,
+      "users": 12,
+      "pageviews": 12
+    },
+    {
+      "date": "20260913",
+      "sessions": 4,
+      "users": 4,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 7170,
-    "users": 6994,
-    "pageviews": 10038
+    "sessions": 7143,
+    "users": 6982,
+    "pageviews": 10013
   },
   "applications": [
     {
@@ -204,20 +204,20 @@
     },
     {
       "name": "walls",
-      "count": 9
+      "count": 8
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 244
-    },
-    {
-      "name": "Iceberg",
-      "count": 14
+      "count": 243
     },
     {
       "name": "Calacatta Statuario",
+      "count": 13
+    },
+    {
+      "name": "Iceberg",
       "count": 13
     },
     {
@@ -230,15 +230,7 @@
     },
     {
       "name": "Calacatta Florida",
-      "count": 10
-    },
-    {
-      "name": "Calacatta Monaco",
       "count": 9
-    },
-    {
-      "name": "Iced White",
-      "count": 8
     },
     {
       "name": "Lyra",
@@ -249,15 +241,11 @@
       "count": 8
     },
     {
-      "name": "Snow White",
-      "count": 8
-    },
-    {
       "name": "Calacatta Everest",
       "count": 7
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Calacatta Monaco",
       "count": 7
     },
     {
@@ -265,7 +253,19 @@
       "count": 7
     },
     {
-      "name": "Calacatta Lincoln Marquina",
+      "name": "Calacatta Porto",
+      "count": 6
+    },
+    {
+      "name": "Galaxy Sand",
+      "count": 6
+    },
+    {
+      "name": "Iced White",
+      "count": 6
+    },
+    {
+      "name": "Snow White",
       "count": 6
     }
   ],
@@ -276,27 +276,27 @@
   "countries": [
     {
       "name": "United States",
-      "users": 6655
+      "users": 6643
     },
     {
       "name": "China",
-      "users": 115
+      "users": 118
     },
     {
       "name": "Mexico",
-      "users": 69
+      "users": 70
     },
     {
       "name": "Canada",
-      "users": 30
+      "users": 29
+    },
+    {
+      "name": "Singapore",
+      "users": 20
     },
     {
       "name": "Netherlands",
       "users": 19
-    },
-    {
-      "name": "Singapore",
-      "users": 18
     },
     {
       "name": "India",
@@ -311,8 +311,8 @@
       "users": 9
     },
     {
-      "name": "Germany",
-      "users": 8
+      "name": "Hong Kong",
+      "users": 6
     }
   ]
 }
