@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-13T16:47:00.496502+00:00",
+  "generated_at": "2026-09-14T18:18:15.497501+00:00",
   "daily": [
-    {
-      "date": "20260814",
-      "sessions": 18,
-      "users": 13,
-      "pageviews": 16
-    },
     {
       "date": "20260815",
       "sessions": 13,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20260913",
+      "sessions": 8,
+      "users": 6,
+      "pageviews": 7
+    },
+    {
+      "date": "20260914",
       "sessions": 4,
-      "users": 4,
+      "users": 3,
       "pageviews": 3
     }
   ],
   "totals": {
     "sessions": 7143,
-    "users": 6982,
-    "pageviews": 10013
+    "users": 6978,
+    "pageviews": 10004
   },
   "applications": [
     {
@@ -204,7 +204,7 @@
     },
     {
       "name": "walls",
-      "count": 8
+      "count": 7
     }
   ],
   "colors_viewed": [
@@ -276,19 +276,19 @@
   "countries": [
     {
       "name": "United States",
-      "users": 6643
+      "users": 6638
     },
     {
       "name": "China",
-      "users": 118
+      "users": 117
     },
     {
       "name": "Mexico",
-      "users": 70
+      "users": 69
     },
     {
       "name": "Canada",
-      "users": 29
+      "users": 27
     },
     {
       "name": "Singapore",
