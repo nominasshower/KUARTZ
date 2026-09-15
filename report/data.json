@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-14T18:18:15.497501+00:00",
+  "generated_at": "2026-09-15T17:26:11.308919+00:00",
   "daily": [
-    {
-      "date": "20260815",
-      "sessions": 13,
-      "users": 13,
-      "pageviews": 13
-    },
     {
       "date": "20260816",
       "sessions": 14,
@@ -183,15 +177,15 @@
     },
     {
       "date": "20260914",
-      "sessions": 4,
-      "users": 3,
-      "pageviews": 3
+      "sessions": 14,
+      "users": 12,
+      "pageviews": 17
     }
   ],
   "totals": {
-    "sessions": 7143,
-    "users": 6978,
-    "pageviews": 10004
+    "sessions": 7136,
+    "users": 6976,
+    "pageviews": 10005
   },
   "applications": [
     {
@@ -210,23 +204,23 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 243
-    },
-    {
-      "name": "Calacatta Statuario",
-      "count": 13
+      "count": 244
     },
     {
       "name": "Iceberg",
+      "count": 15
+    },
+    {
+      "name": "Calacatta Statuario",
+      "count": 14
+    },
+    {
+      "name": "Calacatta Golden Pearl",
       "count": 13
     },
     {
       "name": "Calacatta Carola",
-      "count": 11
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Calacatta Florida",
@@ -234,6 +228,10 @@
     },
     {
       "name": "Lyra",
+      "count": 9
+    },
+    {
+      "name": "Calacatta Everest",
       "count": 8
     },
     {
@@ -241,11 +239,19 @@
       "count": 8
     },
     {
-      "name": "Calacatta Everest",
+      "name": "Calacatta Monaco",
       "count": 7
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Porto",
+      "count": 7
+    },
+    {
+      "name": "Galaxy Sand",
+      "count": 7
+    },
+    {
+      "name": "Iced White",
       "count": 7
     },
     {
@@ -253,38 +259,26 @@
       "count": 7
     },
     {
-      "name": "Calacatta Porto",
-      "count": 6
-    },
-    {
-      "name": "Galaxy Sand",
-      "count": 6
-    },
-    {
-      "name": "Iced White",
-      "count": 6
-    },
-    {
       "name": "Snow White",
-      "count": 6
+      "count": 7
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 37,
+  "downloads_catalog": 36,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6638
+      "users": 6637
     },
     {
       "name": "China",
-      "users": 117
+      "users": 111
     },
     {
       "name": "Mexico",
-      "users": 69
+      "users": 72
     },
     {
       "name": "Canada",
@@ -300,7 +294,7 @@
     },
     {
       "name": "India",
-      "users": 14
+      "users": 13
     },
     {
       "name": "Ireland",
