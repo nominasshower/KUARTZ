@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-15T17:26:11.308919+00:00",
+  "generated_at": "2026-09-16T17:25:26.815646+00:00",
   "daily": [
-    {
-      "date": "20260816",
-      "sessions": 14,
-      "users": 13,
-      "pageviews": 14
-    },
     {
       "date": "20260817",
       "sessions": 19,
@@ -177,20 +171,32 @@
     },
     {
       "date": "20260914",
-      "sessions": 14,
-      "users": 12,
-      "pageviews": 17
+      "sessions": 16,
+      "users": 14,
+      "pageviews": 19
+    },
+    {
+      "date": "20260915",
+      "sessions": 16,
+      "users": 13,
+      "pageviews": 11
+    },
+    {
+      "date": "20260916",
+      "sessions": 4,
+      "users": 3,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 7136,
-    "users": 6976,
-    "pageviews": 10005
+    "sessions": 7140,
+    "users": 6985,
+    "pageviews": 10007
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 14
+      "count": 17
     },
     {
       "name": "kitchen",
@@ -215,12 +221,12 @@
       "count": 14
     },
     {
-      "name": "Calacatta Golden Pearl",
+      "name": "Calacatta Carola",
       "count": 13
     },
     {
-      "name": "Calacatta Carola",
-      "count": 12
+      "name": "Calacatta Golden Pearl",
+      "count": 13
     },
     {
       "name": "Calacatta Florida",
@@ -231,12 +237,12 @@
       "count": 9
     },
     {
-      "name": "Calacatta Everest",
+      "name": "Pure White",
       "count": 8
     },
     {
-      "name": "Pure White",
-      "count": 8
+      "name": "Calacatta Everest",
+      "count": 7
     },
     {
       "name": "Calacatta Monaco",
@@ -265,20 +271,20 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 36,
+  "downloads_catalog": 37,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6637
+      "users": 6644
     },
     {
       "name": "China",
-      "users": 111
+      "users": 108
     },
     {
       "name": "Mexico",
-      "users": 72
+      "users": 71
     },
     {
       "name": "Canada",
