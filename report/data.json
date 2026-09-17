@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-16T17:25:26.815646+00:00",
+  "generated_at": "2026-09-17T17:24:38.939155+00:00",
   "daily": [
-    {
-      "date": "20260817",
-      "sessions": 19,
-      "users": 17,
-      "pageviews": 18
-    },
     {
       "date": "20260818",
       "sessions": 31,
@@ -177,26 +171,32 @@
     },
     {
       "date": "20260915",
-      "sessions": 16,
-      "users": 13,
-      "pageviews": 11
+      "sessions": 17,
+      "users": 14,
+      "pageviews": 14
     },
     {
       "date": "20260916",
-      "sessions": 4,
-      "users": 3,
-      "pageviews": 3
+      "sessions": 13,
+      "users": 11,
+      "pageviews": 11
+    },
+    {
+      "date": "20260917",
+      "sessions": 18,
+      "users": 18,
+      "pageviews": 17
     }
   ],
   "totals": {
-    "sessions": 7140,
-    "users": 6985,
-    "pageviews": 10007
+    "sessions": 7154,
+    "users": 6991,
+    "pageviews": 10017
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 17
+      "count": 16
     },
     {
       "name": "kitchen",
@@ -210,14 +210,14 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 244
-    },
-    {
-      "name": "Iceberg",
-      "count": 15
+      "count": 246
     },
     {
       "name": "Calacatta Statuario",
+      "count": 14
+    },
+    {
+      "name": "Iceberg",
       "count": 14
     },
     {
@@ -234,10 +234,6 @@
     },
     {
       "name": "Lyra",
-      "count": 9
-    },
-    {
-      "name": "Pure White",
       "count": 8
     },
     {
@@ -253,34 +249,38 @@
       "count": 7
     },
     {
-      "name": "Galaxy Sand",
-      "count": 7
-    },
-    {
-      "name": "Iced White",
-      "count": 7
-    },
-    {
       "name": "Marquina",
       "count": 7
     },
     {
-      "name": "Snow White",
+      "name": "Pure White",
       "count": 7
+    },
+    {
+      "name": "Galaxy Sand",
+      "count": 6
+    },
+    {
+      "name": "Iced White",
+      "count": 6
+    },
+    {
+      "name": "Snow White",
+      "count": 6
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 37,
+  "downloads_catalog": 39,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6644
+      "users": 6649
     },
     {
       "name": "China",
-      "users": 108
+      "users": 111
     },
     {
       "name": "Mexico",
