@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-19T16:11:06.380305+00:00",
+  "generated_at": "2026-09-20T16:39:30.194087+00:00",
   "daily": [
-    {
-      "date": "20260820",
-      "sessions": 36,
-      "users": 29,
-      "pageviews": 33
-    },
     {
       "date": "20260821",
       "sessions": 19,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20260919",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 10,
+      "users": 8,
+      "pageviews": 14
+    },
+    {
+      "date": "20260920",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 7140,
-    "users": 6959,
-    "pageviews": 9983
+    "sessions": 7104,
+    "users": 6948,
+    "pageviews": 9965
   },
   "applications": [
     {
@@ -200,7 +200,7 @@
     },
     {
       "name": "kitchen",
-      "count": 10
+      "count": 11
     },
     {
       "name": "walls",
@@ -210,14 +210,14 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 244
-    },
-    {
-      "name": "Iceberg",
-      "count": 15
+      "count": 245
     },
     {
       "name": "Calacatta Golden Pearl",
+      "count": 13
+    },
+    {
+      "name": "Calacatta Statuario",
       "count": 13
     },
     {
@@ -225,11 +225,11 @@
       "count": 12
     },
     {
-      "name": "Calacatta Statuario",
-      "count": 12
+      "name": "Calacatta Florida",
+      "count": 9
     },
     {
-      "name": "Calacatta Florida",
+      "name": "Iceberg",
       "count": 9
     },
     {
@@ -238,7 +238,7 @@
     },
     {
       "name": "Calacatta Everest",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Calacatta Porto",
@@ -253,45 +253,45 @@
       "count": 6
     },
     {
-      "name": "Galaxy Gray",
+      "name": "Calacatta Lincoln Marquina",
       "count": 5
     },
     {
-      "name": "Iced White",
+      "name": "Calacatta Monaco",
+      "count": 5
+    },
+    {
+      "name": "Galaxy Gray",
       "count": 5
     },
     {
       "name": "Marquina",
       "count": 5
-    },
-    {
-      "name": "Snow White",
-      "count": 5
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 37,
+  "downloads_catalog": 36,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6635
+      "users": 6625
     },
     {
       "name": "China",
-      "users": 98
+      "users": 95
     },
     {
       "name": "Mexico",
-      "users": 69
-    },
-    {
-      "name": "Canada",
-      "users": 26
+      "users": 68
     },
     {
       "name": "Singapore",
+      "users": 29
+    },
+    {
+      "name": "Canada",
       "users": 26
     },
     {
@@ -307,11 +307,11 @@
       "users": 11
     },
     {
-      "name": "Spain",
-      "users": 8
+      "name": "Hong Kong",
+      "users": 6
     },
     {
-      "name": "Hong Kong",
+      "name": "Spain",
       "users": 6
     }
   ]
