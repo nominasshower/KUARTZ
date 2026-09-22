@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-21T18:25:21.996992+00:00",
+  "generated_at": "2026-09-22T17:28:57.341913+00:00",
   "daily": [
-    {
-      "date": "20260822",
-      "sessions": 6,
-      "users": 5,
-      "pageviews": 5
-    },
     {
       "date": "20260823",
       "sessions": 7,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20260921",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 4
+      "sessions": 19,
+      "users": 18,
+      "pageviews": 19
+    },
+    {
+      "date": "20260922",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 8
     }
   ],
   "totals": {
-    "sessions": 7104,
-    "users": 6948,
-    "pageviews": 9961
+    "sessions": 7135,
+    "users": 6961,
+    "pageviews": 9979
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 16
+      "count": 17
     },
     {
       "name": "kitchen",
@@ -204,7 +204,7 @@
     },
     {
       "name": "walls",
-      "count": 9
+      "count": 11
     }
   ],
   "colors_viewed": [
@@ -241,6 +241,18 @@
       "count": 7
     },
     {
+      "name": "Calacatta Lincoln Marquina",
+      "count": 7
+    },
+    {
+      "name": "Galaxy Black",
+      "count": 7
+    },
+    {
+      "name": "Galaxy Gray",
+      "count": 7
+    },
+    {
       "name": "Calacatta Porto",
       "count": 6
     },
@@ -253,42 +265,30 @@
       "count": 6
     },
     {
-      "name": "Calacatta Lincoln Marquina",
-      "count": 5
-    },
-    {
       "name": "Calacatta Monaco",
-      "count": 5
-    },
-    {
-      "name": "Galaxy Gray",
-      "count": 5
-    },
-    {
-      "name": "Marquina",
       "count": 5
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 37,
+  "downloads_catalog": 38,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6620
+      "users": 6626
     },
     {
       "name": "China",
-      "users": 94
+      "users": 93
     },
     {
       "name": "Mexico",
-      "users": 67
+      "users": 73
     },
     {
       "name": "Singapore",
-      "users": 33
+      "users": 36
     },
     {
       "name": "Canada",
