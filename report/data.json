@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-22T17:28:57.341913+00:00",
+  "generated_at": "2026-09-23T17:38:32.605341+00:00",
   "daily": [
-    {
-      "date": "20260823",
-      "sessions": 7,
-      "users": 7,
-      "pageviews": 7
-    },
     {
       "date": "20260824",
       "sessions": 6552,
@@ -177,26 +171,32 @@
     },
     {
       "date": "20260921",
-      "sessions": 19,
-      "users": 18,
-      "pageviews": 19
+      "sessions": 21,
+      "users": 19,
+      "pageviews": 22
     },
     {
       "date": "20260922",
-      "sessions": 8,
-      "users": 7,
+      "sessions": 15,
+      "users": 14,
+      "pageviews": 16
+    },
+    {
+      "date": "20260923",
+      "sessions": 9,
+      "users": 9,
       "pageviews": 8
     }
   ],
   "totals": {
-    "sessions": 7135,
-    "users": 6961,
-    "pageviews": 9979
+    "sessions": 7147,
+    "users": 6964,
+    "pageviews": 9991
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 17
+      "count": 21
     },
     {
       "name": "kitchen",
@@ -253,6 +253,10 @@
       "count": 7
     },
     {
+      "name": "Manhattan Gray",
+      "count": 7
+    },
+    {
       "name": "Calacatta Porto",
       "count": 6
     },
@@ -263,20 +267,16 @@
     {
       "name": "Pure White",
       "count": 6
-    },
-    {
-      "name": "Calacatta Monaco",
-      "count": 5
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 38,
+  "downloads_catalog": 41,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 6626
+      "users": 6629
     },
     {
       "name": "China",
@@ -284,11 +284,11 @@
     },
     {
       "name": "Mexico",
-      "users": 73
+      "users": 74
     },
     {
       "name": "Singapore",
-      "users": 36
+      "users": 39
     },
     {
       "name": "Canada",
@@ -300,7 +300,7 @@
     },
     {
       "name": "India",
-      "users": 12
+      "users": 14
     },
     {
       "name": "Ireland",
