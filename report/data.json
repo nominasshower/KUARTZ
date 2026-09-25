@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-24T17:41:54.461454+00:00",
+  "generated_at": "2026-09-25T17:43:06.199426+00:00",
   "daily": [
-    {
-      "date": "20260825",
-      "sessions": 35,
-      "users": 32,
-      "pageviews": 56
-    },
     {
       "date": "20260826",
       "sessions": 39,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20260923",
-      "sessions": 20,
-      "users": 18,
-      "pageviews": 20
+      "sessions": 21,
+      "users": 20,
+      "pageviews": 23
     },
     {
       "date": "20260924",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 4
+      "sessions": 15,
+      "users": 13,
+      "pageviews": 17
+    },
+    {
+      "date": "20260925",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 586,
-    "users": 482,
-    "pageviews": 641
+    "sessions": 564,
+    "users": 463,
+    "pageviews": 602
   },
   "applications": [
     {
@@ -210,7 +210,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 22
+      "count": 20
     },
     {
       "name": "Calacatta Statuario",
@@ -271,16 +271,16 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 35,
+  "downloads_catalog": 32,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 222
+      "users": 203
     },
     {
       "name": "China",
-      "users": 90
+      "users": 87
     },
     {
       "name": "Mexico",
@@ -288,11 +288,11 @@
     },
     {
       "name": "Singapore",
-      "users": 36
+      "users": 40
     },
     {
       "name": "India",
-      "users": 13
+      "users": 12
     },
     {
       "name": "Hong Kong",
