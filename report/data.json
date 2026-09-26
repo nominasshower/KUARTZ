@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-09-25T17:43:06.199426+00:00",
+  "generated_at": "2026-09-26T16:50:50.871845+00:00",
   "daily": [
-    {
-      "date": "20260826",
-      "sessions": 39,
-      "users": 32,
-      "pageviews": 56
-    },
     {
       "date": "20260827",
       "sessions": 12,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20260924",
-      "sessions": 15,
-      "users": 13,
+      "sessions": 16,
+      "users": 14,
       "pageviews": 17
     },
     {
       "date": "20260925",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 9,
+      "users": 9,
+      "pageviews": 8
+    },
+    {
+      "date": "20260926",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 564,
-    "users": 463,
-    "pageviews": 602
+    "sessions": 536,
+    "users": 444,
+    "pageviews": 555
   },
   "applications": [
     {
@@ -204,13 +204,13 @@
     },
     {
       "name": "walls",
-      "count": 11
+      "count": 10
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 20
+      "count": 16
     },
     {
       "name": "Calacatta Statuario",
@@ -271,24 +271,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 32,
+  "downloads_catalog": 31,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 203
+      "users": 185
     },
     {
       "name": "China",
-      "users": 87
+      "users": 83
     },
     {
       "name": "Mexico",
-      "users": 73
+      "users": 75
     },
     {
       "name": "Singapore",
-      "users": 40
+      "users": 44
     },
     {
       "name": "India",
@@ -296,10 +296,6 @@
     },
     {
       "name": "Hong Kong",
-      "users": 6
-    },
-    {
-      "name": "Spain",
       "users": 6
     },
     {
@@ -311,7 +307,11 @@
       "users": 5
     },
     {
-      "name": "Canada",
+      "name": "Spain",
+      "users": 5
+    },
+    {
+      "name": "Germany",
       "users": 4
     }
   ]
