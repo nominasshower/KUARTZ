@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-03T16:55:41.732203+00:00",
+  "generated_at": "2026-10-04T17:13:57.656216+00:00",
   "daily": [
-    {
-      "date": "20260903",
-      "sessions": 31,
-      "users": 24,
-      "pageviews": 30
-    },
     {
       "date": "20260904",
       "sessions": 11,
@@ -177,21 +171,27 @@
     },
     {
       "date": "20261002",
-      "sessions": 9,
-      "users": 8,
-      "pageviews": 8
+      "sessions": 11,
+      "users": 9,
+      "pageviews": 11
     },
     {
       "date": "20261003",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 4
+    },
+    {
+      "date": "20261004",
       "sessions": 1,
       "users": 1,
       "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 505,
-    "users": 426,
-    "pageviews": 530
+    "sessions": 481,
+    "users": 412,
+    "pageviews": 507
   },
   "applications": [
     {
@@ -200,7 +200,7 @@
     },
     {
       "name": "kitchen",
-      "count": 13
+      "count": 12
     },
     {
       "name": "walls",
@@ -210,22 +210,14 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 12
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Galaxy Black",
       "count": 8
     },
     {
-      "name": "Calacatta Florida",
-      "count": 7
-    },
-    {
-      "name": "Iceberg",
+      "name": "Calacatta Golden Pearl",
       "count": 7
     },
     {
@@ -233,16 +225,20 @@
       "count": 7
     },
     {
-      "name": "Calacatta Carola",
+      "name": "Calacatta Florida",
       "count": 6
     },
     {
-      "name": "Calacatta Statuario",
-      "count": 5
+      "name": "Iceberg",
+      "count": 6
     },
     {
       "name": "Galaxy Gray",
       "count": 5
+    },
+    {
+      "name": "Calacatta Carola",
+      "count": 4
     },
     {
       "name": "Calacatta Everest",
@@ -253,7 +249,7 @@
       "count": 4
     },
     {
-      "name": "Lyra",
+      "name": "Calacatta Statuario",
       "count": 4
     },
     {
@@ -261,58 +257,62 @@
       "count": 4
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Porto",
       "count": 3
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Calacatta Victoria",
+      "count": 3
+    },
+    {
+      "name": "Galaxy White",
       "count": 3
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 28,
+  "downloads_catalog": 26,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 182
+      "users": 178
     },
     {
       "name": "Singapore",
-      "users": 69
+      "users": 74
     },
     {
       "name": "Mexico",
-      "users": 65
+      "users": 61
     },
     {
       "name": "China",
-      "users": 58
+      "users": 54
     },
     {
       "name": "India",
       "users": 12
     },
     {
-      "name": "Germany",
-      "users": 5
-    },
-    {
       "name": "Hong Kong",
       "users": 5
     },
     {
-      "name": "South Korea",
-      "users": 5
+      "name": "Germany",
+      "users": 4
     },
     {
       "name": "Brazil",
-      "users": 4
+      "users": 3
     },
     {
       "name": "France",
       "users": 3
+    },
+    {
+      "name": "Canada",
+      "users": 2
     }
   ]
 }
