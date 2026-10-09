@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-08T19:06:14.589921+00:00",
+  "generated_at": "2026-10-09T18:36:54.992052+00:00",
   "daily": [
-    {
-      "date": "20260908",
-      "sessions": 33,
-      "users": 30,
-      "pageviews": 34
-    },
     {
       "date": "20260909",
       "sessions": 24,
@@ -177,30 +171,36 @@
     },
     {
       "date": "20261007",
-      "sessions": 20,
-      "users": 16,
-      "pageviews": 22
+      "sessions": 21,
+      "users": 17,
+      "pageviews": 25
     },
     {
       "date": "20261008",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 8
+      "sessions": 20,
+      "users": 18,
+      "pageviews": 22
+    },
+    {
+      "date": "20261009",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 498,
-    "users": 431,
-    "pageviews": 526
+    "sessions": 481,
+    "users": 415,
+    "pageviews": 512
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 14
+      "count": 16
     },
     {
       "name": "kitchen",
-      "count": 9
+      "count": 10
     },
     {
       "name": "walls",
@@ -210,18 +210,30 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 13
+      "count": 14
     },
     {
-      "name": "Manhattan Gray",
-      "count": 9
+      "name": "Calacatta Carola",
+      "count": 8
     },
     {
-      "name": "Galaxy Black",
-      "count": 7
+      "name": "Calacatta Golden Pearl",
+      "count": 8
     },
     {
       "name": "Iceberg",
+      "count": 8
+    },
+    {
+      "name": "Manhattan Gray",
+      "count": 8
+    },
+    {
+      "name": "Calacatta Florida",
+      "count": 7
+    },
+    {
+      "name": "Galaxy Black",
       "count": 7
     },
     {
@@ -229,66 +241,54 @@
       "count": 7
     },
     {
-      "name": "Calacatta Carola",
-      "count": 6
-    },
-    {
-      "name": "Calacatta Florida",
-      "count": 6
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 6
-    },
-    {
-      "name": "Galaxy Gray",
-      "count": 6
-    },
-    {
-      "name": "Pure White",
+      "name": "Calacatta Everest",
       "count": 6
     },
     {
       "name": "Calacatta Lincoln Marquina",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Calacatta Statuario",
+      "count": 6
+    },
+    {
+      "name": "Galaxy Gray",
       "count": 5
     },
     {
-      "name": "Calacatta Everest",
-      "count": 4
-    },
-    {
       "name": "Galaxy White",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Iced White",
-      "count": 4
+      "count": 5
+    },
+    {
+      "name": "Pure White",
+      "count": 5
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 21,
+  "downloads_catalog": 23,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 200
+      "users": 185
     },
     {
       "name": "Singapore",
-      "users": 87
+      "users": 91
     },
     {
       "name": "Mexico",
-      "users": 60
+      "users": 59
     },
     {
       "name": "China",
-      "users": 44
+      "users": 41
     },
     {
       "name": "India",
@@ -307,7 +307,7 @@
       "users": 3
     },
     {
-      "name": "Hong Kong",
+      "name": "Canada",
       "users": 2
     },
     {
