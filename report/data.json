@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-11T17:52:18.893146+00:00",
+  "generated_at": "2026-10-12T21:30:35.772283+00:00",
   "daily": [
-    {
-      "date": "20260911",
-      "sessions": 16,
-      "users": 14,
-      "pageviews": 16
-    },
     {
       "date": "20260912",
       "sessions": 12,
@@ -179,19 +173,25 @@
       "date": "20261010",
       "sessions": 8,
       "users": 8,
-      "pageviews": 8
+      "pageviews": 9
     },
     {
       "date": "20261011",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 7,
+      "users": 6,
+      "pageviews": 7
+    },
+    {
+      "date": "20261012",
+      "sessions": 8,
+      "users": 8,
+      "pageviews": 7
     }
   ],
   "totals": {
-    "sessions": 453,
+    "sessions": 451,
     "users": 395,
-    "pageviews": 473
+    "pageviews": 471
   },
   "applications": [
     {
@@ -210,14 +210,10 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 12
+      "count": 11
     },
     {
       "name": "Calacatta Carola",
-      "count": 8
-    },
-    {
-      "name": "Iceberg",
       "count": 8
     },
     {
@@ -229,11 +225,11 @@
       "count": 7
     },
     {
-      "name": "Calacatta Florida",
-      "count": 6
+      "name": "Iceberg",
+      "count": 7
     },
     {
-      "name": "Calacatta Golden Pearl",
+      "name": "Calacatta Florida",
       "count": 6
     },
     {
@@ -245,15 +241,15 @@
       "count": 5
     },
     {
+      "name": "Calacatta Golden Pearl",
+      "count": 5
+    },
+    {
       "name": "Calacatta Statuario",
       "count": 5
     },
     {
       "name": "Galaxy Gray",
-      "count": 5
-    },
-    {
-      "name": "Galaxy White",
       "count": 5
     },
     {
@@ -267,28 +263,32 @@
     {
       "name": "Calacatta Porto",
       "count": 4
+    },
+    {
+      "name": "Galaxy White",
+      "count": 4
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 19,
+  "downloads_catalog": 20,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 173
+      "users": 169
     },
     {
       "name": "Singapore",
-      "users": 97
+      "users": 98
     },
     {
       "name": "Mexico",
-      "users": 58
+      "users": 61
     },
     {
       "name": "China",
-      "users": 36
+      "users": 37
     },
     {
       "name": "India",
@@ -311,7 +311,7 @@
       "users": 2
     },
     {
-      "name": "Hong Kong",
+      "name": "Philippines",
       "users": 2
     }
   ]
