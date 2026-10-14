@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-13T19:41:51.421238+00:00",
+  "generated_at": "2026-10-14T17:44:02.725112+00:00",
   "daily": [
-    {
-      "date": "20260913",
-      "sessions": 8,
-      "users": 6,
-      "pageviews": 7
-    },
     {
       "date": "20260914",
       "sessions": 16,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261013",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 4
+      "sessions": 15,
+      "users": 13,
+      "pageviews": 11
+    },
+    {
+      "date": "20261014",
+      "sessions": 8,
+      "users": 8,
+      "pageviews": 7
     }
   ],
   "totals": {
-    "sessions": 457,
-    "users": 400,
-    "pageviews": 473
+    "sessions": 466,
+    "users": 408,
+    "pageviews": 480
   },
   "applications": [
     {
@@ -210,7 +210,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 11
+      "count": 13
     },
     {
       "name": "Calacatta Carola",
@@ -276,7 +276,7 @@
   "countries": [
     {
       "name": "United States",
-      "users": 176
+      "users": 187
     },
     {
       "name": "Singapore",
@@ -284,11 +284,11 @@
     },
     {
       "name": "Mexico",
-      "users": 63
+      "users": 62
     },
     {
       "name": "China",
-      "users": 33
+      "users": 31
     },
     {
       "name": "India",
