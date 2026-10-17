@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-16T17:08:04.933704+00:00",
+  "generated_at": "2026-10-17T16:04:33.878257+00:00",
   "daily": [
-    {
-      "date": "20260916",
-      "sessions": 13,
-      "users": 11,
-      "pageviews": 13
-    },
     {
       "date": "20260917",
       "sessions": 33,
@@ -177,24 +171,30 @@
     },
     {
       "date": "20261015",
-      "sessions": 16,
-      "users": 16,
-      "pageviews": 15
+      "sessions": 19,
+      "users": 19,
+      "pageviews": 23
+    },
+    {
+      "date": "20261016",
+      "sessions": 9,
+      "users": 7,
+      "pageviews": 10
     }
   ],
   "totals": {
-    "sessions": 467,
+    "sessions": 466,
     "users": 410,
-    "pageviews": 482
+    "pageviews": 487
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 15
+      "count": 16
     },
     {
       "name": "kitchen",
-      "count": 10
+      "count": 11
     },
     {
       "name": "walls",
@@ -204,14 +204,18 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 12
-    },
-    {
-      "name": "Galaxy Black",
-      "count": 7
+      "count": 13
     },
     {
       "name": "Calacatta Carola",
+      "count": 7
+    },
+    {
+      "name": "Calacatta Almond",
+      "count": 6
+    },
+    {
+      "name": "Calacatta Florida",
       "count": 6
     },
     {
@@ -219,24 +223,24 @@
       "count": 6
     },
     {
+      "name": "Galaxy Black",
+      "count": 6
+    },
+    {
       "name": "Manhattan Gray",
       "count": 6
     },
     {
-      "name": "Calacatta Florida",
+      "name": "Marquina",
+      "count": 6
+    },
+    {
+      "name": "Calacatta Porto",
       "count": 5
     },
     {
       "name": "Iceberg",
       "count": 5
-    },
-    {
-      "name": "Marquina",
-      "count": 5
-    },
-    {
-      "name": "Calacatta Almond",
-      "count": 4
     },
     {
       "name": "Calacatta Everest",
@@ -247,7 +251,7 @@
       "count": 4
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Calacatta Salamanca",
       "count": 4
     },
     {
@@ -257,20 +261,16 @@
     {
       "name": "Galaxy White",
       "count": 4
-    },
-    {
-      "name": "Pure White",
-      "count": 4
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 21,
+  "downloads_catalog": 23,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 196
+      "users": 199
     },
     {
       "name": "Singapore",
@@ -282,7 +282,7 @@
     },
     {
       "name": "China",
-      "users": 26
+      "users": 23
     },
     {
       "name": "India",
