@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-21T17:49:03.783926+00:00",
+  "generated_at": "2026-10-22T17:48:51.527703+00:00",
   "daily": [
-    {
-      "date": "20260921",
-      "sessions": 21,
-      "users": 19,
-      "pageviews": 22
-    },
     {
       "date": "20260922",
       "sessions": 16,
@@ -183,24 +177,24 @@
     },
     {
       "date": "20261021",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 17,
+      "users": 16,
+      "pageviews": 19
     }
   ],
   "totals": {
-    "sessions": 435,
-    "users": 382,
-    "pageviews": 453
+    "sessions": 430,
+    "users": 376,
+    "pageviews": 449
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 15
+      "count": 13
     },
     {
       "name": "kitchen",
-      "count": 9
+      "count": 10
     },
     {
       "name": "walls",
@@ -213,19 +207,11 @@
       "count": 9
     },
     {
-      "name": "Calacatta Carola",
-      "count": 6
-    },
-    {
       "name": "Calacatta Florida",
-      "count": 6
+      "count": 7
     },
     {
-      "name": "Galaxy Black",
-      "count": 6
-    },
-    {
-      "name": "Manhattan Gray",
+      "name": "Calacatta Carola",
       "count": 6
     },
     {
@@ -233,7 +219,7 @@
       "count": 6
     },
     {
-      "name": "Calacatta Lincoln Marquina",
+      "name": "Calacatta Almond",
       "count": 5
     },
     {
@@ -241,12 +227,8 @@
       "count": 5
     },
     {
-      "name": "Calacatta Almond",
-      "count": 4
-    },
-    {
-      "name": "Galaxy White",
-      "count": 4
+      "name": "Manhattan Gray",
+      "count": 5
     },
     {
       "name": "Iceberg",
@@ -265,13 +247,25 @@
       "count": 3
     },
     {
+      "name": "Calacatta Lincoln Marquina",
+      "count": 3
+    },
+    {
       "name": "Calacatta Salamanca",
+      "count": 3
+    },
+    {
+      "name": "Calacatta Statuario",
+      "count": 3
+    },
+    {
+      "name": "Galaxy White",
       "count": 3
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 18,
+  "downloads_catalog": 17,
   "quote_form_submits": 0,
   "countries": [
     {
@@ -280,19 +274,19 @@
     },
     {
       "name": "Singapore",
-      "users": 88
+      "users": 85
     },
     {
       "name": "Mexico",
-      "users": 63
+      "users": 61
     },
     {
       "name": "China",
-      "users": 19
+      "users": 17
     },
     {
       "name": "India",
-      "users": 8
+      "users": 9
     },
     {
       "name": "Canada",
