@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-23T17:38:54.642957+00:00",
+  "generated_at": "2026-10-24T16:24:02.275045+00:00",
   "daily": [
-    {
-      "date": "20260923",
-      "sessions": 21,
-      "users": 20,
-      "pageviews": 23
-    },
     {
       "date": "20260924",
       "sessions": 16,
@@ -183,34 +177,34 @@
     },
     {
       "date": "20261023",
-      "sessions": 2,
-      "users": 2,
-      "pageviews": 2
+      "sessions": 10,
+      "users": 10,
+      "pageviews": 11
     }
   ],
   "totals": {
-    "sessions": 431,
-    "users": 370,
-    "pageviews": 449
+    "sessions": 418,
+    "users": 356,
+    "pageviews": 435
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 13
-    },
-    {
-      "name": "kitchen",
       "count": 10
     },
     {
+      "name": "kitchen",
+      "count": 8
+    },
+    {
       "name": "walls",
-      "count": 3
+      "count": 2
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Calacatta Carola",
@@ -230,10 +224,6 @@
     },
     {
       "name": "Calacatta Porto",
-      "count": 5
-    },
-    {
-      "name": "Manhattan Gray",
       "count": 5
     },
     {
@@ -267,28 +257,32 @@
     {
       "name": "Galaxy White",
       "count": 3
+    },
+    {
+      "name": "Iced White",
+      "count": 3
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 16,
+  "downloads_catalog": 15,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 180
+      "users": 170
     },
     {
       "name": "Singapore",
-      "users": 81
+      "users": 78
     },
     {
       "name": "Mexico",
-      "users": 59
+      "users": 57
     },
     {
       "name": "China",
-      "users": 17
+      "users": 16
     },
     {
       "name": "India",
