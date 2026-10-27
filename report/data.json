@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-26T18:58:55.041750+00:00",
+  "generated_at": "2026-10-27T18:30:21.272188+00:00",
   "daily": [
-    {
-      "date": "20260926",
-      "sessions": 8,
-      "users": 8,
-      "pageviews": 8
-    },
     {
       "date": "20260927",
       "sessions": 8,
@@ -183,24 +177,24 @@
     },
     {
       "date": "20261026",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 14,
+      "users": 12,
+      "pageviews": 13
     }
   ],
   "totals": {
-    "sessions": 402,
-    "users": 343,
-    "pageviews": 418
+    "sessions": 407,
+    "users": 345,
+    "pageviews": 422
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 10
+      "count": 14
     },
     {
       "name": "kitchen",
-      "count": 8
+      "count": 7
     },
     {
       "name": "walls",
@@ -210,15 +204,19 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 11
+      "count": 15
     },
     {
       "name": "Calacatta Carola",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Calacatta Florida",
-      "count": 7
+      "count": 8
+    },
+    {
+      "name": "Calacatta Porto",
+      "count": 6
     },
     {
       "name": "Marquina",
@@ -229,15 +227,23 @@
       "count": 5
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Calacatta Statuario",
       "count": 5
     },
     {
-      "name": "Calacatta Statuario",
+      "name": "Calacatta Golden Pearl",
+      "count": 4
+    },
+    {
+      "name": "Galaxy White",
       "count": 4
     },
     {
       "name": "Iceberg",
+      "count": 4
+    },
+    {
+      "name": "Lyra",
       "count": 4
     },
     {
@@ -249,61 +255,49 @@
       "count": 3
     },
     {
-      "name": "Calacatta Golden Pearl",
-      "count": 3
-    },
-    {
       "name": "Calacatta Lincoln Marquina",
       "count": 3
     },
     {
       "name": "Calacatta Salamanca",
       "count": 3
-    },
-    {
-      "name": "Galaxy White",
-      "count": 3
-    },
-    {
-      "name": "Iced White",
-      "count": 3
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 15,
+  "downloads_catalog": 16,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 169
+      "users": 174
     },
     {
       "name": "Singapore",
-      "users": 71
+      "users": 67
     },
     {
       "name": "Mexico",
-      "users": 53
+      "users": 55
     },
     {
       "name": "China",
-      "users": 15
+      "users": 14
     },
     {
       "name": "India",
-      "users": 6
+      "users": 7
     },
     {
       "name": "Canada",
       "users": 5
     },
     {
-      "name": "Germany",
-      "users": 4
+      "name": "France",
+      "users": 3
     },
     {
-      "name": "France",
+      "name": "Germany",
       "users": 3
     },
     {
