@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-27T18:30:21.272188+00:00",
+  "generated_at": "2026-10-28T18:36:22.163081+00:00",
   "daily": [
-    {
-      "date": "20260927",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 8
-    },
     {
       "date": "20260928",
       "sessions": 22,
@@ -180,17 +174,23 @@
       "sessions": 14,
       "users": 12,
       "pageviews": 13
+    },
+    {
+      "date": "20261027",
+      "sessions": 18,
+      "users": 15,
+      "pageviews": 17
     }
   ],
   "totals": {
-    "sessions": 407,
-    "users": 345,
-    "pageviews": 422
+    "sessions": 417,
+    "users": 351,
+    "pageviews": 431
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 14
+      "count": 16
     },
     {
       "name": "kitchen",
@@ -198,20 +198,24 @@
     },
     {
       "name": "walls",
-      "count": 2
+      "count": 4
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 15
+      "count": 17
     },
     {
       "name": "Calacatta Carola",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Calacatta Florida",
+      "count": 9
+    },
+    {
+      "name": "Marquina",
       "count": 8
     },
     {
@@ -219,7 +223,11 @@
       "count": 6
     },
     {
-      "name": "Marquina",
+      "name": "Iceberg",
+      "count": 6
+    },
+    {
+      "name": "Lyra",
       "count": 6
     },
     {
@@ -227,11 +235,15 @@
       "count": 5
     },
     {
+      "name": "Calacatta Golden Pearl",
+      "count": 5
+    },
+    {
       "name": "Calacatta Statuario",
       "count": 5
     },
     {
-      "name": "Calacatta Golden Pearl",
+      "name": "Calacatta Everest",
       "count": 4
     },
     {
@@ -239,20 +251,8 @@
       "count": 4
     },
     {
-      "name": "Iceberg",
-      "count": 4
-    },
-    {
-      "name": "Lyra",
-      "count": 4
-    },
-    {
       "name": "Pure White",
       "count": 4
-    },
-    {
-      "name": "Calacatta Everest",
-      "count": 3
     },
     {
       "name": "Calacatta Lincoln Marquina",
@@ -265,20 +265,20 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 16,
+  "downloads_catalog": 18,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 174
+      "users": 181
     },
     {
       "name": "Singapore",
-      "users": 67
+      "users": 63
     },
     {
       "name": "Mexico",
-      "users": 55
+      "users": 61
     },
     {
       "name": "China",
@@ -286,23 +286,23 @@
     },
     {
       "name": "India",
-      "users": 7
+      "users": 6
     },
     {
       "name": "Canada",
       "users": 5
     },
     {
-      "name": "France",
+      "name": "United Kingdom",
       "users": 3
+    },
+    {
+      "name": "France",
+      "users": 2
     },
     {
       "name": "Germany",
-      "users": 3
-    },
-    {
-      "name": "United Kingdom",
-      "users": 3
+      "users": 2
     },
     {
       "name": "Hong Kong",
