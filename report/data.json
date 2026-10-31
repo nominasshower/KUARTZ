@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-30T18:22:13.891230+00:00",
+  "generated_at": "2026-10-31T17:28:33.097779+00:00",
   "daily": [
-    {
-      "date": "20260930",
-      "sessions": 14,
-      "users": 13,
-      "pageviews": 17
-    },
     {
       "date": "20261001",
       "sessions": 23,
@@ -180,12 +174,18 @@
       "sessions": 19,
       "users": 17,
       "pageviews": 20
+    },
+    {
+      "date": "20261030",
+      "sessions": 12,
+      "users": 11,
+      "pageviews": 14
     }
   ],
   "totals": {
-    "sessions": 403,
-    "users": 339,
-    "pageviews": 420
+    "sessions": 401,
+    "users": 335,
+    "pageviews": 417
   },
   "applications": [
     {
@@ -204,19 +204,19 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Calacatta Carola",
-      "count": 11
+      "count": 13
     },
     {
       "name": "Calacatta Florida",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Calacatta Almond",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Calacatta Porto",
@@ -228,10 +228,18 @@
     },
     {
       "name": "Calacatta Golden Pearl",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Calacatta Statuario",
+      "count": 6
+    },
+    {
+      "name": "Frost White",
+      "count": 5
+    },
+    {
+      "name": "Galaxy White",
       "count": 5
     },
     {
@@ -251,38 +259,30 @@
       "count": 4
     },
     {
-      "name": "Frost White",
-      "count": 4
-    },
-    {
       "name": "Galaxy Gray",
-      "count": 4
-    },
-    {
-      "name": "Galaxy White",
       "count": 4
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 21,
+  "downloads_catalog": 19,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 175
+      "users": 174
     },
     {
       "name": "Mexico",
-      "users": 61
+      "users": 63
     },
     {
       "name": "Singapore",
-      "users": 55
+      "users": 52
     },
     {
       "name": "China",
-      "users": 12
+      "users": 10
     },
     {
       "name": "India",
