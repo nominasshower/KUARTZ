@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-10-31T17:28:33.097779+00:00",
+  "generated_at": "2026-11-01T18:13:27.799111+00:00",
   "daily": [
-    {
-      "date": "20261001",
-      "sessions": 23,
-      "users": 22,
-      "pageviews": 27
-    },
     {
       "date": "20261002",
       "sessions": 11,
@@ -180,12 +174,24 @@
       "sessions": 12,
       "users": 11,
       "pageviews": 14
+    },
+    {
+      "date": "20261031",
+      "sessions": 9,
+      "users": 9,
+      "pageviews": 11
+    },
+    {
+      "date": "20261101",
+      "sessions": 1,
+      "users": 0,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 401,
-    "users": 335,
-    "pageviews": 417
+    "sessions": 388,
+    "users": 323,
+    "pageviews": 402
   },
   "applications": [
     {
@@ -194,7 +200,7 @@
     },
     {
       "name": "kitchen",
-      "count": 6
+      "count": 7
     },
     {
       "name": "walls",
@@ -204,7 +210,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 18
+      "count": 20
     },
     {
       "name": "Calacatta Carola",
@@ -265,24 +271,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 19,
+  "downloads_catalog": 20,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 174
+      "users": 166
     },
     {
       "name": "Mexico",
-      "users": 63
+      "users": 62
     },
     {
       "name": "Singapore",
-      "users": 52
+      "users": 49
     },
     {
       "name": "China",
-      "users": 10
+      "users": 11
     },
     {
       "name": "India",
@@ -301,11 +307,11 @@
       "users": 3
     },
     {
-      "name": "United Kingdom",
-      "users": 3
+      "name": "Hong Kong",
+      "users": 2
     },
     {
-      "name": "Hong Kong",
+      "name": "Iran",
       "users": 2
     }
   ]
