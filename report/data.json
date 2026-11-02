@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-01T18:13:27.799111+00:00",
+  "generated_at": "2026-11-02T22:04:07.294894+00:00",
   "daily": [
-    {
-      "date": "20261002",
-      "sessions": 11,
-      "users": 9,
-      "pageviews": 11
-    },
     {
       "date": "20261003",
       "sessions": 5,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261101",
-      "sessions": 1,
-      "users": 0,
-      "pageviews": 1
+      "sessions": 3,
+      "users": 2,
+      "pageviews": 3
+    },
+    {
+      "date": "20261102",
+      "sessions": 7,
+      "users": 6,
+      "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 388,
-    "users": 323,
-    "pageviews": 402
+    "sessions": 386,
+    "users": 322,
+    "pageviews": 399
   },
   "applications": [
     {
@@ -200,11 +200,11 @@
     },
     {
       "name": "kitchen",
-      "count": 7
+      "count": 6
     },
     {
       "name": "walls",
-      "count": 3
+      "count": 2
     }
   ],
   "colors_viewed": [
@@ -276,23 +276,23 @@
   "countries": [
     {
       "name": "United States",
-      "users": 166
+      "users": 167
     },
     {
       "name": "Mexico",
-      "users": 62
+      "users": 61
     },
     {
       "name": "Singapore",
-      "users": 49
+      "users": 47
     },
     {
       "name": "China",
-      "users": 11
+      "users": 10
     },
     {
       "name": "India",
-      "users": 6
+      "users": 7
     },
     {
       "name": "Canada",
