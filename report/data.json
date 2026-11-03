@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-02T22:04:07.294894+00:00",
+  "generated_at": "2026-11-03T19:55:46.712076+00:00",
   "daily": [
-    {
-      "date": "20261003",
-      "sessions": 5,
-      "users": 5,
-      "pageviews": 5
-    },
     {
       "date": "20261004",
       "sessions": 7,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20261102",
-      "sessions": 7,
-      "users": 6,
-      "pageviews": 6
+      "sessions": 26,
+      "users": 25,
+      "pageviews": 27
+    },
+    {
+      "date": "20261103",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 386,
-    "users": 322,
-    "pageviews": 399
+    "sessions": 401,
+    "users": 336,
+    "pageviews": 416
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 15
+      "count": 16
     },
     {
       "name": "kitchen",
@@ -276,15 +276,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 167
+      "users": 172
     },
     {
       "name": "Mexico",
-      "users": 61
+      "users": 63
     },
     {
       "name": "Singapore",
-      "users": 47
+      "users": 46
     },
     {
       "name": "China",
@@ -292,26 +292,26 @@
     },
     {
       "name": "India",
-      "users": 7
+      "users": 8
+    },
+    {
+      "name": "",
+      "users": 5
     },
     {
       "name": "Canada",
       "users": 5
     },
     {
+      "name": "Germany",
+      "users": 4
+    },
+    {
       "name": "Russia",
       "users": 4
     },
     {
-      "name": "Germany",
-      "users": 3
-    },
-    {
-      "name": "Hong Kong",
-      "users": 2
-    },
-    {
-      "name": "Iran",
+      "name": "France",
       "users": 2
     }
   ]
