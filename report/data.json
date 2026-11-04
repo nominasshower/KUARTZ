@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-03T19:55:46.712076+00:00",
+  "generated_at": "2026-11-04T20:12:40.304127+00:00",
   "daily": [
-    {
-      "date": "20261004",
-      "sessions": 7,
-      "users": 7,
-      "pageviews": 7
-    },
     {
       "date": "20261005",
       "sessions": 12,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20261103",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 12,
+      "users": 11,
+      "pageviews": 11
+    },
+    {
+      "date": "20261104",
+      "sessions": 4,
+      "users": 2,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 401,
-    "users": 336,
-    "pageviews": 416
+    "sessions": 409,
+    "users": 341,
+    "pageviews": 422
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 16
+      "count": 17
     },
     {
       "name": "kitchen",
@@ -225,16 +225,16 @@
       "count": 8
     },
     {
+      "name": "Calacatta Golden Pearl",
+      "count": 7
+    },
+    {
       "name": "Calacatta Porto",
       "count": 7
     },
     {
       "name": "Marquina",
       "count": 7
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 6
     },
     {
       "name": "Calacatta Statuario",
@@ -271,31 +271,31 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 20,
+  "downloads_catalog": 22,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 172
+      "users": 175
     },
     {
       "name": "Mexico",
-      "users": 63
+      "users": 66
     },
     {
       "name": "Singapore",
-      "users": 46
+      "users": 42
     },
     {
       "name": "China",
-      "users": 10
+      "users": 11
     },
     {
       "name": "India",
       "users": 8
     },
     {
-      "name": "",
+      "name": "(not set)",
       "users": 5
     },
     {
@@ -311,8 +311,8 @@
       "users": 4
     },
     {
-      "name": "France",
-      "users": 2
+      "name": "Hong Kong",
+      "users": 3
     }
   ]
 }
