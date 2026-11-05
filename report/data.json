@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-04T20:12:40.304127+00:00",
+  "generated_at": "2026-11-05T20:26:14.401852+00:00",
   "daily": [
-    {
-      "date": "20261005",
-      "sessions": 12,
-      "users": 12,
-      "pageviews": 11
-    },
     {
       "date": "20261006",
       "sessions": 21,
@@ -183,15 +177,15 @@
     },
     {
       "date": "20261104",
-      "sessions": 4,
-      "users": 2,
-      "pageviews": 3
+      "sessions": 19,
+      "users": 16,
+      "pageviews": 17
     }
   ],
   "totals": {
-    "sessions": 409,
-    "users": 341,
-    "pageviews": 422
+    "sessions": 412,
+    "users": 343,
+    "pageviews": 425
   },
   "applications": [
     {
@@ -200,7 +194,7 @@
     },
     {
       "name": "kitchen",
-      "count": 6
+      "count": 8
     },
     {
       "name": "walls",
@@ -271,24 +265,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 22,
+  "downloads_catalog": 26,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 175
+      "users": 170
     },
     {
       "name": "Mexico",
-      "users": 66
+      "users": 68
     },
     {
       "name": "Singapore",
-      "users": 42
+      "users": 39
     },
     {
       "name": "China",
-      "users": 11
+      "users": 17
     },
     {
       "name": "India",
@@ -304,7 +298,7 @@
     },
     {
       "name": "Germany",
-      "users": 4
+      "users": 5
     },
     {
       "name": "Russia",
