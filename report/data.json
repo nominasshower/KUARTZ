@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-07T17:55:12.830781+00:00",
+  "generated_at": "2026-11-08T18:11:05.969966+00:00",
   "daily": [
-    {
-      "date": "20261008",
-      "sessions": 20,
-      "users": 18,
-      "pageviews": 21
-    },
     {
       "date": "20261009",
       "sessions": 16,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20261107",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 9,
+      "users": 6,
+      "pageviews": 11
+    },
+    {
+      "date": "20261108",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 3
     }
   ],
   "totals": {
-    "sessions": 389,
-    "users": 326,
-    "pageviews": 395
+    "sessions": 379,
+    "users": 316,
+    "pageviews": 387
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 16
+      "count": 13
     },
     {
       "name": "kitchen",
@@ -210,38 +210,30 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 17
+      "count": 16
     },
     {
       "name": "Calacatta Carola",
-      "count": 11
-    },
-    {
-      "name": "Calacatta Almond",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Calacatta Florida",
       "count": 8
     },
     {
+      "name": "Calacatta Almond",
+      "count": 6
+    },
+    {
       "name": "Calacatta Golden Pearl",
-      "count": 7
+      "count": 5
     },
     {
       "name": "Calacatta Porto",
-      "count": 7
-    },
-    {
-      "name": "Calacatta Statuario",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Frost White",
-      "count": 4
-    },
-    {
-      "name": "Galaxy White",
       "count": 4
     },
     {
@@ -249,11 +241,15 @@
       "count": 4
     },
     {
-      "name": "Calacatta Monaco",
+      "name": "Calacatta Statuario",
       "count": 3
     },
     {
       "name": "Galaxy Gray",
+      "count": 3
+    },
+    {
+      "name": "Galaxy White",
       "count": 3
     },
     {
@@ -265,13 +261,17 @@
       "count": 3
     },
     {
-      "name": "Calacatta Everest",
+      "name": "Calacatta Monaco",
+      "count": 2
+    },
+    {
+      "name": "Pure White",
       "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 24,
+  "downloads_catalog": 23,
   "quote_form_submits": 0,
   "countries": [
     {
@@ -280,15 +280,15 @@
     },
     {
       "name": "Mexico",
-      "users": 66
+      "users": 64
     },
     {
       "name": "Singapore",
-      "users": 33
+      "users": 27
     },
     {
       "name": "China",
-      "users": 14
+      "users": 13
     },
     {
       "name": "India",
@@ -296,7 +296,7 @@
     },
     {
       "name": "(not set)",
-      "users": 6
+      "users": 7
     },
     {
       "name": "Canada",
@@ -311,7 +311,7 @@
       "users": 4
     },
     {
-      "name": "Hong Kong",
+      "name": "France",
       "users": 3
     }
   ]
