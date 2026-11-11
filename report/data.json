@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-10T20:09:30.264347+00:00",
+  "generated_at": "2026-11-11T19:57:10.636832+00:00",
   "daily": [
-    {
-      "date": "20261011",
-      "sessions": 7,
-      "users": 6,
-      "pageviews": 7
-    },
     {
       "date": "20261012",
       "sessions": 20,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261110",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 23,
+      "users": 22,
+      "pageviews": 29
+    },
+    {
+      "date": "20261111",
+      "sessions": 4,
+      "users": 3,
+      "pageviews": 4
     }
   ],
   "totals": {
-    "sessions": 382,
-    "users": 319,
-    "pageviews": 390
+    "sessions": 401,
+    "users": 337,
+    "pageviews": 415
   },
   "applications": [
     {
@@ -210,11 +210,11 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Calacatta Carola",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Calacatta Florida",
@@ -225,11 +225,15 @@
       "count": 6
     },
     {
+      "name": "Calacatta Porto",
+      "count": 6
+    },
+    {
       "name": "Calacatta Golden Pearl",
       "count": 5
     },
     {
-      "name": "Calacatta Porto",
+      "name": "Lyra",
       "count": 5
     },
     {
@@ -238,10 +242,6 @@
     },
     {
       "name": "Iceberg",
-      "count": 4
-    },
-    {
-      "name": "Lyra",
       "count": 4
     },
     {
@@ -261,46 +261,46 @@
       "count": 2
     },
     {
-      "name": "Galaxy White",
+      "name": "Calacatta Victoria",
       "count": 2
     },
     {
-      "name": "Pure White",
+      "name": "Galaxy White",
       "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 23,
+  "downloads_catalog": 22,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 165
+      "users": 177
     },
     {
       "name": "Mexico",
-      "users": 61
+      "users": 66
     },
     {
       "name": "China",
-      "users": 23
+      "users": 25
     },
     {
       "name": "Singapore",
-      "users": 19
+      "users": 15
     },
     {
       "name": "India",
-      "users": 8
+      "users": 9
     },
     {
       "name": "(not set)",
-      "users": 7
+      "users": 8
     },
     {
       "name": "Canada",
-      "users": 5
+      "users": 6
     },
     {
       "name": "Germany",
