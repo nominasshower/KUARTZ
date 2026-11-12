@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-11T19:57:10.636832+00:00",
+  "generated_at": "2026-11-12T20:36:43.024134+00:00",
   "daily": [
-    {
-      "date": "20261012",
-      "sessions": 20,
-      "users": 18,
-      "pageviews": 17
-    },
     {
       "date": "20261013",
       "sessions": 15,
@@ -183,20 +177,20 @@
     },
     {
       "date": "20261111",
-      "sessions": 4,
-      "users": 3,
-      "pageviews": 4
+      "sessions": 27,
+      "users": 20,
+      "pageviews": 23
     }
   ],
   "totals": {
-    "sessions": 401,
-    "users": 337,
-    "pageviews": 415
+    "sessions": 404,
+    "users": 336,
+    "pageviews": 417
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 14
+      "count": 13
     },
     {
       "name": "kitchen",
@@ -271,24 +265,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 22,
+  "downloads_catalog": 23,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 177
+      "users": 173
     },
     {
       "name": "Mexico",
-      "users": 66
+      "users": 62
     },
     {
       "name": "China",
-      "users": 25
+      "users": 24
     },
     {
       "name": "Singapore",
-      "users": 15
+      "users": 19
     },
     {
       "name": "India",
@@ -311,7 +305,7 @@
       "users": 4
     },
     {
-      "name": "France",
+      "name": "Brazil",
       "users": 3
     }
   ]
