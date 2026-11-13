@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-12T20:36:43.024134+00:00",
+  "generated_at": "2026-11-13T20:13:40.490743+00:00",
   "daily": [
-    {
-      "date": "20261013",
-      "sessions": 15,
-      "users": 13,
-      "pageviews": 13
-    },
     {
       "date": "20261014",
       "sessions": 26,
@@ -180,12 +174,24 @@
       "sessions": 27,
       "users": 20,
       "pageviews": 23
+    },
+    {
+      "date": "20261112",
+      "sessions": 11,
+      "users": 11,
+      "pageviews": 11
+    },
+    {
+      "date": "20261113",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 404,
-    "users": 336,
-    "pageviews": 417
+    "sessions": 401,
+    "users": 337,
+    "pageviews": 416
   },
   "applications": [
     {
@@ -282,7 +288,7 @@
     },
     {
       "name": "Singapore",
-      "users": 19
+      "users": 20
     },
     {
       "name": "India",
