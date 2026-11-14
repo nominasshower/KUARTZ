@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-13T20:13:40.490743+00:00",
+  "generated_at": "2026-11-14T18:37:17.183248+00:00",
   "daily": [
-    {
-      "date": "20261014",
-      "sessions": 26,
-      "users": 23,
-      "pageviews": 25
-    },
     {
       "date": "20261015",
       "sessions": 19,
@@ -170,12 +164,6 @@
       "pageviews": 29
     },
     {
-      "date": "20261111",
-      "sessions": 27,
-      "users": 20,
-      "pageviews": 23
-    },
-    {
       "date": "20261112",
       "sessions": 11,
       "users": 11,
@@ -183,15 +171,21 @@
     },
     {
       "date": "20261113",
+      "sessions": 17,
+      "users": 12,
+      "pageviews": 14
+    },
+    {
+      "date": "20261114",
       "sessions": 1,
       "users": 1,
       "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 401,
-    "users": 337,
-    "pageviews": 416
+    "sessions": 365,
+    "users": 306,
+    "pageviews": 382
   },
   "applications": [
     {
@@ -200,7 +194,7 @@
     },
     {
       "name": "kitchen",
-      "count": 6
+      "count": 5
     },
     {
       "name": "walls",
@@ -210,7 +204,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 16
+      "count": 14
     },
     {
       "name": "Calacatta Carola",
@@ -253,6 +247,10 @@
       "count": 3
     },
     {
+      "name": "Galaxy White",
+      "count": 3
+    },
+    {
       "name": "Marquina",
       "count": 3
     },
@@ -263,24 +261,20 @@
     {
       "name": "Calacatta Victoria",
       "count": 2
-    },
-    {
-      "name": "Galaxy White",
-      "count": 2
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 23,
+  "downloads_catalog": 22,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 173
+      "users": 156
     },
     {
       "name": "Mexico",
-      "users": 62
+      "users": 59
     },
     {
       "name": "China",
@@ -288,7 +282,7 @@
     },
     {
       "name": "Singapore",
-      "users": 20
+      "users": 11
     },
     {
       "name": "India",
@@ -311,7 +305,7 @@
       "users": 4
     },
     {
-      "name": "Brazil",
+      "name": "France",
       "users": 3
     }
   ]
