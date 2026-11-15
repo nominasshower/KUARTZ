@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-14T18:37:17.183248+00:00",
+  "generated_at": "2026-11-15T19:13:13.740205+00:00",
   "daily": [
-    {
-      "date": "20261015",
-      "sessions": 19,
-      "users": 19,
-      "pageviews": 23
-    },
     {
       "date": "20261016",
       "sessions": 9,
@@ -164,10 +158,10 @@
       "pageviews": 29
     },
     {
-      "date": "20261112",
-      "sessions": 11,
-      "users": 11,
-      "pageviews": 11
+      "date": "20261111",
+      "sessions": 27,
+      "users": 20,
+      "pageviews": 23
     },
     {
       "date": "20261113",
@@ -177,15 +171,21 @@
     },
     {
       "date": "20261114",
+      "sessions": 5,
+      "users": 3,
+      "pageviews": 4
+    },
+    {
+      "date": "20261115",
       "sessions": 1,
       "users": 1,
       "pageviews": 1
     }
   ],
   "totals": {
-    "sessions": 365,
-    "users": 306,
-    "pageviews": 382
+    "sessions": 367,
+    "users": 299,
+    "pageviews": 375
   },
   "applications": [
     {
@@ -194,7 +194,7 @@
     },
     {
       "name": "kitchen",
-      "count": 5
+      "count": 4
     },
     {
       "name": "walls",
@@ -208,7 +208,7 @@
     },
     {
       "name": "Calacatta Carola",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Calacatta Florida",
@@ -216,19 +216,19 @@
     },
     {
       "name": "Calacatta Almond",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Calacatta Porto",
-      "count": 6
-    },
-    {
-      "name": "Calacatta Golden Pearl",
       "count": 5
     },
     {
       "name": "Lyra",
       "count": 5
+    },
+    {
+      "name": "Calacatta Golden Pearl",
+      "count": 4
     },
     {
       "name": "Frost White",
@@ -265,12 +265,12 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 22,
+  "downloads_catalog": 21,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 156
+      "users": 140
     },
     {
       "name": "Mexico",
@@ -278,35 +278,35 @@
     },
     {
       "name": "China",
-      "users": 24
+      "users": 23
     },
     {
       "name": "Singapore",
-      "users": 11
+      "users": 17
+    },
+    {
+      "name": "(not set)",
+      "users": 9
     },
     {
       "name": "India",
       "users": 9
     },
     {
-      "name": "(not set)",
-      "users": 8
-    },
-    {
       "name": "Canada",
-      "users": 6
+      "users": 7
     },
     {
       "name": "Germany",
       "users": 5
     },
     {
-      "name": "Russia",
+      "name": "France",
       "users": 4
     },
     {
-      "name": "France",
-      "users": 3
+      "name": "Iran",
+      "users": 4
     }
   ]
 }
