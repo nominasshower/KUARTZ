@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-17T21:28:14.750864+00:00",
+  "generated_at": "2026-11-18T21:02:40.608884+00:00",
   "daily": [
-    {
-      "date": "20261018",
-      "sessions": 5,
-      "users": 2,
-      "pageviews": 5
-    },
     {
       "date": "20261019",
       "sessions": 12,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261117",
+      "sessions": 11,
+      "users": 11,
+      "pageviews": 12
+    },
+    {
+      "date": "20261118",
       "sessions": 4,
       "users": 4,
-      "pageviews": 5
+      "pageviews": 4
     }
   ],
   "totals": {
-    "sessions": 384,
-    "users": 317,
-    "pageviews": 392
+    "sessions": 390,
+    "users": 326,
+    "pageviews": 398
   },
   "applications": [
     {
@@ -233,16 +233,16 @@
       "count": 4
     },
     {
-      "name": "Calacatta Porto",
-      "count": 4
-    },
-    {
       "name": "Frost White",
       "count": 4
     },
     {
       "name": "Iceberg",
       "count": 4
+    },
+    {
+      "name": "Calacatta Porto",
+      "count": 3
     },
     {
       "name": "Calacatta Statuario",
@@ -276,19 +276,19 @@
   "countries": [
     {
       "name": "United States",
-      "users": 150
+      "users": 155
     },
     {
       "name": "Mexico",
-      "users": 60
+      "users": 59
     },
     {
       "name": "China",
-      "users": 23
+      "users": 25
     },
     {
       "name": "Singapore",
-      "users": 20
+      "users": 23
     },
     {
       "name": "(not set)",
@@ -299,11 +299,11 @@
       "users": 9
     },
     {
-      "name": "Canada",
+      "name": "Germany",
       "users": 7
     },
     {
-      "name": "Germany",
+      "name": "Canada",
       "users": 6
     },
     {
