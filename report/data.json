@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-18T21:02:40.608884+00:00",
+  "generated_at": "2026-11-19T21:07:37.544346+00:00",
   "daily": [
-    {
-      "date": "20261019",
-      "sessions": 12,
-      "users": 10,
-      "pageviews": 13
-    },
     {
       "date": "20261020",
       "sessions": 17,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20261118",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 4
+      "sessions": 14,
+      "users": 13,
+      "pageviews": 13
+    },
+    {
+      "date": "20261119",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 5
     }
   ],
   "totals": {
-    "sessions": 390,
-    "users": 326,
-    "pageviews": 398
+    "sessions": 393,
+    "users": 331,
+    "pageviews": 399
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 12
+      "count": 14
     },
     {
       "name": "kitchen",
@@ -257,11 +257,11 @@
       "count": 3
     },
     {
-      "name": "Marquina",
-      "count": 2
+      "name": "Pure White",
+      "count": 3
     },
     {
-      "name": "Pure White",
+      "name": "Marquina",
       "count": 2
     },
     {
@@ -271,24 +271,24 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 19,
+  "downloads_catalog": 20,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 155
+      "users": 160
     },
     {
       "name": "Mexico",
-      "users": 59
-    },
-    {
-      "name": "China",
-      "users": 25
+      "users": 60
     },
     {
       "name": "Singapore",
-      "users": 23
+      "users": 26
+    },
+    {
+      "name": "China",
+      "users": 24
     },
     {
       "name": "(not set)",
@@ -296,19 +296,19 @@
     },
     {
       "name": "India",
-      "users": 9
-    },
-    {
-      "name": "Germany",
-      "users": 7
+      "users": 8
     },
     {
       "name": "Canada",
       "users": 6
     },
     {
+      "name": "Germany",
+      "users": 6
+    },
+    {
       "name": "France",
-      "users": 5
+      "users": 4
     },
     {
       "name": "Iran",
