@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-20T20:52:58.179425+00:00",
+  "generated_at": "2026-11-21T19:53:43.608582+00:00",
   "daily": [
-    {
-      "date": "20261021",
-      "sessions": 17,
-      "users": 16,
-      "pageviews": 19
-    },
     {
       "date": "20261022",
       "sessions": 15,
@@ -183,24 +177,30 @@
     },
     {
       "date": "20261120",
-      "sessions": 4,
-      "users": 3,
-      "pageviews": 4
+      "sessions": 11,
+      "users": 9,
+      "pageviews": 10
+    },
+    {
+      "date": "20261121",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 394,
-    "users": 331,
-    "pageviews": 402
+    "sessions": 386,
+    "users": 328,
+    "pageviews": 391
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 18
+      "count": 19
     },
     {
       "name": "kitchen",
-      "count": 4
+      "count": 3
     },
     {
       "name": "walls",
@@ -210,7 +210,7 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Calacatta Carola",
@@ -221,16 +221,12 @@
       "count": 7
     },
     {
-      "name": "Lyra",
+      "name": "Calacatta Golden Pearl",
       "count": 5
     },
     {
-      "name": "Calacatta Almond",
-      "count": 4
-    },
-    {
-      "name": "Calacatta Golden Pearl",
-      "count": 4
+      "name": "Lyra",
+      "count": 5
     },
     {
       "name": "Frost White",
@@ -239,6 +235,10 @@
     {
       "name": "Iceberg",
       "count": 4
+    },
+    {
+      "name": "Calacatta Almond",
+      "count": 3
     },
     {
       "name": "Calacatta Porto",
@@ -276,7 +276,7 @@
   "countries": [
     {
       "name": "United States",
-      "users": 162
+      "users": 157
     },
     {
       "name": "Mexico",
@@ -284,7 +284,7 @@
     },
     {
       "name": "Singapore",
-      "users": 26
+      "users": 28
     },
     {
       "name": "China",
@@ -292,11 +292,11 @@
     },
     {
       "name": "(not set)",
-      "users": 10
+      "users": 11
     },
     {
       "name": "India",
-      "users": 8
+      "users": 7
     },
     {
       "name": "Germany",
