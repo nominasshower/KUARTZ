@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-21T19:53:43.608582+00:00",
+  "generated_at": "2026-11-22T20:05:28.945044+00:00",
   "daily": [
-    {
-      "date": "20261022",
-      "sessions": 15,
-      "users": 10,
-      "pageviews": 16
-    },
     {
       "date": "20261023",
       "sessions": 10,
@@ -183,15 +177,15 @@
     },
     {
       "date": "20261121",
-      "sessions": 2,
-      "users": 2,
-      "pageviews": 2
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 6
     }
   ],
   "totals": {
-    "sessions": 386,
-    "users": 328,
-    "pageviews": 391
+    "sessions": 375,
+    "users": 323,
+    "pageviews": 379
   },
   "applications": [
     {
@@ -210,15 +204,15 @@
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 14
-    },
-    {
-      "name": "Calacatta Carola",
-      "count": 8
+      "count": 13
     },
     {
       "name": "Calacatta Florida",
       "count": 7
+    },
+    {
+      "name": "Calacatta Carola",
+      "count": 5
     },
     {
       "name": "Calacatta Golden Pearl",
@@ -245,10 +239,6 @@
       "count": 3
     },
     {
-      "name": "Calacatta Statuario",
-      "count": 3
-    },
-    {
       "name": "Galaxy Gray",
       "count": 3
     },
@@ -259,6 +249,10 @@
     {
       "name": "Pure White",
       "count": 3
+    },
+    {
+      "name": "Calacatta Statuario",
+      "count": 2
     },
     {
       "name": "Marquina",
@@ -276,7 +270,7 @@
   "countries": [
     {
       "name": "United States",
-      "users": 157
+      "users": 153
     },
     {
       "name": "Mexico",
@@ -288,7 +282,7 @@
     },
     {
       "name": "China",
-      "users": 24
+      "users": 25
     },
     {
       "name": "(not set)",
@@ -311,7 +305,7 @@
       "users": 5
     },
     {
-      "name": "Iran",
+      "name": "Russia",
       "users": 4
     }
   ]
