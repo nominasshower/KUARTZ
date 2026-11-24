@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-24T00:31:40.843107+00:00",
+  "generated_at": "2026-11-24T22:52:09.574772+00:00",
   "daily": [
-    {
-      "date": "20261024",
-      "sessions": 5,
-      "users": 4,
-      "pageviews": 5
-    },
     {
       "date": "20261025",
       "sessions": 3,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261123",
-      "sessions": 6,
-      "users": 4,
-      "pageviews": 6
+      "sessions": 8,
+      "users": 6,
+      "pageviews": 8
+    },
+    {
+      "date": "20261124",
+      "sessions": 5,
+      "users": 5,
+      "pageviews": 4
     }
   ],
   "totals": {
-    "sessions": 380,
-    "users": 326,
-    "pageviews": 383
+    "sessions": 382,
+    "users": 329,
+    "pageviews": 384
   },
   "applications": [
     {
@@ -271,7 +271,7 @@
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 21,
+  "downloads_catalog": 22,
   "quote_form_submits": 0,
   "countries": [
     {
@@ -284,7 +284,7 @@
     },
     {
       "name": "Singapore",
-      "users": 27
+      "users": 28
     },
     {
       "name": "China",
@@ -295,11 +295,11 @@
       "users": 11
     },
     {
-      "name": "Canada",
+      "name": "Brazil",
       "users": 6
     },
     {
-      "name": "Germany",
+      "name": "Canada",
       "users": 6
     },
     {
@@ -311,8 +311,8 @@
       "users": 5
     },
     {
-      "name": "Brazil",
-      "users": 4
+      "name": "Germany",
+      "users": 5
     }
   ]
 }
