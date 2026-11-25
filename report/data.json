@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-24T22:52:09.574772+00:00",
+  "generated_at": "2026-11-25T22:05:19.709583+00:00",
   "daily": [
-    {
-      "date": "20261025",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
-    },
     {
       "date": "20261026",
       "sessions": 14,
@@ -183,15 +177,21 @@
     },
     {
       "date": "20261124",
-      "sessions": 5,
-      "users": 5,
-      "pageviews": 4
+      "sessions": 15,
+      "users": 14,
+      "pageviews": 14
+    },
+    {
+      "date": "20261125",
+      "sessions": 2,
+      "users": 2,
+      "pageviews": 2
     }
   ],
   "totals": {
-    "sessions": 382,
-    "users": 329,
-    "pageviews": 384
+    "sessions": 391,
+    "users": 337,
+    "pageviews": 393
   },
   "applications": [
     {
@@ -276,15 +276,15 @@
   "countries": [
     {
       "name": "United States",
-      "users": 156
+      "users": 159
     },
     {
       "name": "Mexico",
-      "users": 57
+      "users": 58
     },
     {
       "name": "Singapore",
-      "users": 28
+      "users": 31
     },
     {
       "name": "China",
@@ -299,12 +299,12 @@
       "users": 6
     },
     {
-      "name": "Canada",
+      "name": "India",
       "users": 6
     },
     {
-      "name": "India",
-      "users": 6
+      "name": "Canada",
+      "users": 5
     },
     {
       "name": "France",
