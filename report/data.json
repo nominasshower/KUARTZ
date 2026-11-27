@@ -1,12 +1,6 @@
 {
-  "generated_at": "2026-11-26T22:03:57.088308+00:00",
+  "generated_at": "2026-11-27T21:46:20.394952+00:00",
   "daily": [
-    {
-      "date": "20261027",
-      "sessions": 18,
-      "users": 15,
-      "pageviews": 17
-    },
     {
       "date": "20261028",
       "sessions": 10,
@@ -183,20 +177,26 @@
     },
     {
       "date": "20261126",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "sessions": 17,
+      "users": 16,
+      "pageviews": 17
+    },
+    {
+      "date": "20261127",
+      "sessions": 7,
+      "users": 6,
+      "pageviews": 8
     }
   ],
   "totals": {
-    "sessions": 389,
-    "users": 335,
-    "pageviews": 391
+    "sessions": 394,
+    "users": 342,
+    "pageviews": 398
   },
   "applications": [
     {
       "name": "vanity",
-      "count": 16
+      "count": 14
     },
     {
       "name": "kitchen",
@@ -204,20 +204,20 @@
     },
     {
       "name": "walls",
-      "count": 3
+      "count": 1
     }
   ],
   "colors_viewed": [
     {
       "name": "Calacatta Bengala",
-      "count": 8
-    },
-    {
-      "name": "Calacatta Florida",
-      "count": 5
+      "count": 7
     },
     {
       "name": "Calacatta Carola",
+      "count": 4
+    },
+    {
+      "name": "Calacatta Florida",
       "count": 4
     },
     {
@@ -229,19 +229,7 @@
       "count": 4
     },
     {
-      "name": "Iceberg",
-      "count": 4
-    },
-    {
-      "name": "Lyra",
-      "count": 4
-    },
-    {
       "name": "Calacatta Almond",
-      "count": 3
-    },
-    {
-      "name": "Galaxy Gray",
       "count": 3
     },
     {
@@ -253,30 +241,42 @@
       "count": 2
     },
     {
+      "name": "Calacatta Victoria",
+      "count": 2
+    },
+    {
+      "name": "Galaxy Gray",
+      "count": 2
+    },
+    {
       "name": "Galaxy White",
       "count": 2
     },
     {
-      "name": "Marquina",
+      "name": "Iceberg",
       "count": 2
     },
     {
-      "name": "Calacatta Everest",
-      "count": 1
+      "name": "Lyra",
+      "count": 2
     },
     {
       "name": "Calacatta Monaco",
+      "count": 1
+    },
+    {
+      "name": "Calacatta Salamanca",
       "count": 1
     }
   ],
   "leads_by_color": [],
   "total_leads": 0,
-  "downloads_catalog": 25,
+  "downloads_catalog": 24,
   "quote_form_submits": 0,
   "countries": [
     {
       "name": "United States",
-      "users": 155
+      "users": 154
     },
     {
       "name": "Mexico",
@@ -284,7 +284,7 @@
     },
     {
       "name": "Singapore",
-      "users": 32
+      "users": 34
     },
     {
       "name": "China",
@@ -296,6 +296,10 @@
     },
     {
       "name": "Brazil",
+      "users": 7
+    },
+    {
+      "name": "India",
       "users": 6
     },
     {
@@ -308,10 +312,6 @@
     },
     {
       "name": "Germany",
-      "users": 5
-    },
-    {
-      "name": "Hong Kong",
       "users": 5
     }
   ]
